@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.5-6d096</span>
+   &#160;<span id="projectnumber">1.0.21-e9b0</span>
    </div>
   </td>
  </tr>
@@ -86,7 +86,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">p4est_step4.c File Reference</div>  </div>
 </div><!--header-->
@@ -111,11 +112,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:acf76952e8bce38ae846f262e5d772da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exact solution for the 2D Poisson problem.  <a href="#acf76952e8bce38ae846f262e5d772da9">More...</a><br/></td></tr>
 <tr class="separator:acf76952e8bce38ae846f262e5d772da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2178d52be444d7b4bc02e25e1fc1984a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step4_8c.html#a2178d52be444d7b4bc02e25e1fc1984a">is_boundary_unitsquare</a> (<a class="el" href="structp4est__t.html">p4est_t</a> *p4est, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> tt, <a class="el" href="structp4est__quadrant__t.html">p4est_quadrant_t</a> *node)</td></tr>
-<tr class="memdesc:a2178d52be444d7b4bc02e25e1fc1984a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the boundary status on the unit square.  <a href="#a2178d52be444d7b4bc02e25e1fc1984a">More...</a><br/></td></tr>
+<tr class="memdesc:a2178d52be444d7b4bc02e25e1fc1984a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the boundary status on the unit square/cube.  <a href="#a2178d52be444d7b4bc02e25e1fc1984a">More...</a><br/></td></tr>
 <tr class="separator:a2178d52be444d7b4bc02e25e1fc1984a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c53f2d58ecaa2eb4bbcbd9627ef5311"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step4_8c.html#a8c53f2d58ecaa2eb4bbcbd9627ef5311">lnodes_decode2</a> (p4est_lnodes_code_t face_code, int hanging_corner[<a class="el" href="p4est__connectivity_8h.html#acb49ce9f7b688a2c6b6d62bda9ff5555">P4EST_CHILDREN</a>])</td></tr>
-<tr class="memdesc:a8c53f2d58ecaa2eb4bbcbd9627ef5311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the information from <a class="el" href="structp4est__lnodes__t.html" title="Store a parallel numbering of Lobatto points of a given degree &gt; 0. ">p4est_lnodes_t</a> for a given element.  <a href="#a8c53f2d58ecaa2eb4bbcbd9627ef5311">More...</a><br/></td></tr>
+<tr class="memdesc:a8c53f2d58ecaa2eb4bbcbd9627ef5311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the information from p{4,8}est_lnodes_t for a given element.  <a href="#a8c53f2d58ecaa2eb4bbcbd9627ef5311">More...</a><br/></td></tr>
 <tr class="separator:a8c53f2d58ecaa2eb4bbcbd9627ef5311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c90e9f048a3eaedb84163f118b6bbe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step4_8c.html#a03c90e9f048a3eaedb84163f118b6bbe">interpolate_hanging_nodes</a> (p4est_lnodes_code_t face_code, double inplace[<a class="el" href="p4est__connectivity_8h.html#acb49ce9f7b688a2c6b6d62bda9ff5555">P4EST_CHILDREN</a>])</td></tr>
+<tr class="memdesc:a03c90e9f048a3eaedb84163f118b6bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute values at hanging nodes by interpolation.  <a href="#a03c90e9f048a3eaedb84163f118b6bbe">More...</a><br/></td></tr>
+<tr class="separator:a03c90e9f048a3eaedb84163f118b6bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f5d08ce6582a229a2b838146fde833a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step4_8c.html#a3f5d08ce6582a229a2b838146fde833a">share_sum</a> (<a class="el" href="structp4est__t.html">p4est_t</a> *p4est, <a class="el" href="structp4est__lnodes__t.html">p4est_lnodes_t</a> *lnodes, double *v)</td></tr>
 <tr class="memdesc:a3f5d08ce6582a229a2b838146fde833a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parallel sum of values in node vector across all sharers.  <a href="#a3f5d08ce6582a229a2b838146fde833a">More...</a><br/></td></tr>
 <tr class="separator:a3f5d08ce6582a229a2b838146fde833a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +162,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step4_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function of the step4 example program.  <a href="#a3c04138a5bfe5d72780bb7e82a18e627">More...</a><br/></td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:acded771b870059751275f8f67b9b6b8d"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step4_8c.html#acded771b870059751275f8f67b9b6b8d">corner_num_hanging</a> [<a class="el" href="p4est__connectivity_8h.html#acb49ce9f7b688a2c6b6d62bda9ff5555">P4EST_CHILDREN</a>]</td></tr>
+<tr class="memdesc:acded771b870059751275f8f67b9b6b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">List number of possible independent nodes for each hanging node.  <a href="#acded771b870059751275f8f67b9b6b8d">More...</a><br/></td></tr>
+<tr class="separator:acded771b870059751275f8f67b9b6b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f7a9620140cc7a53fc197a36dc2e81"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step4_8c.html#a81f7a9620140cc7a53fc197a36dc2e81">zero</a> = 0</td></tr>
+<tr class="memdesc:a81f7a9620140cc7a53fc197a36dc2e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant zero.  <a href="#a81f7a9620140cc7a53fc197a36dc2e81">More...</a><br/></td></tr>
+<tr class="separator:a81f7a9620140cc7a53fc197a36dc2e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb37fd52561bca559b9878908917d85"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step4_8c.html#afeb37fd52561bca559b9878908917d85">ones</a> = <a class="el" href="p4est__connectivity_8h.html#acb49ce9f7b688a2c6b6d62bda9ff5555">P4EST_CHILDREN</a> - 1</td></tr>
+<tr class="memdesc:afeb37fd52561bca559b9878908917d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">One bit per dimension.  <a href="#afeb37fd52561bca559b9878908917d85">More...</a><br/></td></tr>
+<tr class="separator:afeb37fd52561bca559b9878908917d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad586eb01be2684ef34d8919c0783fb5e"><td class="memItemLeft" align="right" valign="top">static const int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step4_8c.html#ad586eb01be2684ef34d8919c0783fb5e">corner_to_hanging</a> [<a class="el" href="p4est__connectivity_8h.html#acb49ce9f7b688a2c6b6d62bda9ff5555">P4EST_CHILDREN</a>]</td></tr>
+<tr class="memdesc:ad586eb01be2684ef34d8919c0783fb5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each node i of the reference quadrant, corner_num_hanging[i] many.  <a href="#ad586eb01be2684ef34d8919c0783fb5e">More...</a><br/></td></tr>
+<tr class="separator:ad586eb01be2684ef34d8919c0783fb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This 2D example program solves the Poisson equation using finite elements. </p>
@@ -222,7 +241,7 @@ Functions</h2></td></tr>
 <p>This is the negative Laplace operator acting on the function <em>uexact</em>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vxyz</td><td>x, y, and z coordinates in physical space. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vxyz</td><td>x, y, and z coordinates in physical space. Even for the 2D case z is well defined, but ignored here. </td></tr>
   </table>
   </dd>
 </dl>
@@ -256,7 +275,7 @@ Functions</h2></td></tr>
 <p>We pick a function with zero Dirichlet boundary conditions on the unit square. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vxyz</td><td>x, y, and z coordinates in physical space. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vxyz</td><td>x, y, and z coordinates in physical space. Even for the 2D case z is well defined, but ignored here. </td></tr>
   </table>
   </dd>
 </dl>
@@ -328,6 +347,50 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a03c90e9f048a3eaedb84163f118b6bbe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void interpolate_hanging_nodes </td>
+          <td>(</td>
+          <td class="paramtype">p4est_lnodes_code_t&#160;</td>
+          <td class="paramname"><em>face_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>inplace</em>[P4EST_CHILDREN]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute values at hanging nodes by interpolation. </p>
+<p>A face hanging node in 3D depends on the four corner nodes of the face, edge hanging nodes or face hanging nodes in 2D depend on two nodes. This function works in place, we have to be careful about the ordering. Face hanging node values are not reused, so they are overwritten first. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">face_code</td><td>This number encodes the child id of the quadrant and the hanging status of faces and edges. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">inplace</td><td>On input, the values at the independent nodes. On output, interpolated to hanging node locations. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a2178d52be444d7b4bc02e25e1fc1984a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -366,7 +429,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Determine the boundary status on the unit square. </p>
+<p>Determine the boundary status on the unit square/cube. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p4est</td><td>Can be used to access the connectivity. </td></tr>
@@ -411,12 +474,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Decode the information from <a class="el" href="structp4est__lnodes__t.html" title="Store a parallel numbering of Lobatto points of a given degree &gt; 0. ">p4est_lnodes_t</a> for a given element. </p>
+<p>Decode the information from p{4,8}est_lnodes_t for a given element. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="p4est__lnodes_8h_source.html">p4est_lnodes.h</a> for an in-depth discussion of the encoding. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">face_code</td><td>Bit code as defined in <a class="el" href="p4est__lnodes_8h_source.html">p4est_lnodes.h</a>. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">hanging_corner</td><td>Undefined if no node is hanging. If any node is hanging, this contains one integer per corner, which is -1 for corners that are not hanging, and the number of the non-hanging corner on the hanging face otherwise. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">face_code</td><td>Bit code as defined in p{4,8}est_lnodes.h. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hanging_corner</td><td>Undefined if no node is hanging. If any node is hanging, this contains one integer per corner, which is -1 for corners that are not hanging, and the number of the non-hanging corner on the hanging face/edge otherwise. For faces in 3D, it is diagonally opposite. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1139,6 +1202,98 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="acded771b870059751275f8f67b9b6b8d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int corner_num_hanging[<a class="el" href="p4est__connectivity_8h.html#acb49ce9f7b688a2c6b6d62bda9ff5555">P4EST_CHILDREN</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line"></div>
+<div class="line">{ 1, 2, 2, 1 }</div>
+</div><!-- fragment -->
+<p>List number of possible independent nodes for each hanging node. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad586eb01be2684ef34d8919c0783fb5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int* corner_to_hanging[<a class="el" href="p4est__connectivity_8h.html#acb49ce9f7b688a2c6b6d62bda9ff5555">P4EST_CHILDREN</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For each node i of the reference quadrant, corner_num_hanging[i] many. </p>
+
+</div>
+</div>
+<a class="anchor" id="afeb37fd52561bca559b9878908917d85"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ones = <a class="el" href="p4est__connectivity_8h.html#acb49ce9f7b688a2c6b6d62bda9ff5555">P4EST_CHILDREN</a> - 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>One bit per dimension. </p>
+
+</div>
+</div>
+<a class="anchor" id="a81f7a9620140cc7a53fc197a36dc2e81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int zero = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constant zero. </p>
 
 </div>
 </div>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.5-6d096</span>
+   &#160;<span id="projectnumber">1.0.21-e9b0</span>
    </div>
   </td>
  </tr>
@@ -90,13 +90,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>This 3D example program only writes a VTK file for now.  
+<p>This 3D example program solves the Poisson equation using finite elements.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="p4est__to__p8est_8h_source.html">p4est_to_p8est.h</a>&gt;</code><br/>
 <code>#include &quot;<a class="el" href="p4est__step4_8c.html">p4est_step4.c</a>&quot;</code><br/>
 </div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This 3D example program only writes a VTK file for now. </p>
-<p>See <a class="el" href="p4est__step4_8c.html" title="This 2D example program solves the Poisson equation using finite elements. ">p4est_step4.c</a> for a real numerical example.</p>
+<div class="textblock"><p>This 3D example program solves the Poisson equation using finite elements. </p>
 <p>To avoid redundancy, it shares the source code of the 2D example and changes it to 3D using the preprocessor defines in <a class="el" href="p4est__to__p8est_8h.html" title="transforms 2D p4est routines into 3D p8est routines ">p4est_to_p8est.h</a>.</p>
 <p>It is entirely possible to write a 3D-only program without relying on this mechanism. In this case use the p8est* header files, functions, and data structures. </p>
 </div></div><!-- contents -->

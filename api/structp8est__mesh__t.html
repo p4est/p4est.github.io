@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.5-6d096</span>
+   &#160;<span id="projectnumber">1.0.21-e9b0</span>
    </div>
   </td>
  </tr>
@@ -120,7 +120,7 @@ int8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="separator:a33ef1170a2df1e400a8d3026ab773730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04bb30b9efc5bb23f21961718aaa71ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04bb30b9efc5bb23f21961718aaa71ea"></a>
 <a class="el" href="structsc__array__t.html">sc_array_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structp8est__mesh__t.html#a04bb30b9efc5bb23f21961718aaa71ea">quad_to_half</a></td></tr>
-<tr class="memdesc:a04bb30b9efc5bb23f21961718aaa71ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores half-size neigbors <br/></td></tr>
+<tr class="memdesc:a04bb30b9efc5bb23f21961718aaa71ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores half-size neighbors <br/></td></tr>
 <tr class="separator:a04bb30b9efc5bb23f21961718aaa71ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af157688d319a78011b16b4aadec82344"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af157688d319a78011b16b4aadec82344"></a>
 <a class="el" href="p4est__base_8h.html#a9f350ee78755ec6e7d25fb1dca474573">p4est_locidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>local_num_corners</b></td></tr>
@@ -144,7 +144,7 @@ int8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <p>For each local quadrant, its tree number is stored in quad_to_tree. For each ghost quadrant, its owner rank is stored in ghost_to_proc.</p>
 <p>The quad_to_quad list stores one value for each local quadrant's face. This value is in 0..local_num_quadrants-1 for local quadrants, or in local_num_quadrants + (0..ghost_num_quadrants-1) for ghost quadrants. The quad_to_face list has equally many entries which are either:</p>
 <ol type="1">
-<li>A value of v = 0..23 indicates one same-size neighbor. This value is decoded as v = r * 6 + nf, where nf = 0..5 is the neigbbor's connecting face number and r = 0..3 is the relative orientation of the neighbor's face, see <a class="el" href="p8est__connectivity_8h.html" title="The coarse topological description of the forest. ">p8est_connectivity.h</a>.</li>
+<li>A value of v = 0..23 indicates one same-size neighbor. This value is decoded as v = r * 6 + nf, where nf = 0..5 is the neighbor's connecting face number and r = 0..3 is the relative orientation of the neighbor's face, see <a class="el" href="p8est__connectivity_8h.html" title="The coarse topological description of the forest. ">p8est_connectivity.h</a>.</li>
 <li>A value of v = 24..119 indicates a double-size neighbor. This value is decoded as v = 24 + h * 24 + r * 6 + nf, where r and nf are as above and h = 0..3 is the number of the subface.</li>
 <li>A value of v = -24..-1 indicates four half-size neighbors. In this case the corresponding quad_to_quad index points into the quad_to_half array which stores four quadrant numbers per index, and the orientation of the smaller faces follows from 24 + v. The entries of quad_to_half encode between local and ghost quadrant in the same way as the quad_to_quad values described above. A quadrant on the boundary of the forest sees itself and its face number.</li>
 </ol>
