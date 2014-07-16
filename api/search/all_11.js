@@ -13,12 +13,5 @@ var searchData=
   ['tree_5fto_5ftree',['tree_to_tree',['../structp4est__connectivity__t.html#a39be6b54d2cbb0b4590ebcb9202b67f6',1,'p4est_connectivity_t::tree_to_tree()'],['../structp8est__connectivity__t.html#a8d6121d731192d08127a526113b0de0a',1,'p8est_connectivity_t::tree_to_tree()']]],
   ['tree_5fto_5fvertex',['tree_to_vertex',['../structp4est__connectivity__t.html#a20c8bf561ccea00758133a6dc5ea6ffa',1,'p4est_connectivity_t::tree_to_vertex()'],['../structp8est__connectivity__t.html#a28daa48b0e7ecf8857891fabda0c7d20',1,'p8est_connectivity_t::tree_to_vertex()']]],
   ['treeid',['treeid',['../structp4est__iter__volume__info__t.html#aaf61bf1bcb4fe8eaaa4acda3d478823b',1,'p4est_iter_volume_info_t::treeid()'],['../structp4est__iter__face__side__t.html#a09b72c0c4192c9d507d73197c8e681be',1,'p4est_iter_face_side_t::treeid()'],['../structp4est__iter__corner__side__t.html#a8588e7bfde4e4825386b0f1bec110de9',1,'p4est_iter_corner_side_t::treeid()'],['../structp8est__iter__volume__info__t.html#a30b9666f033b2d5adf85905d0d512590',1,'p8est_iter_volume_info_t::treeid()'],['../structp8est__iter__face__side__t.html#aa1db1adb98e4835f4dc0d3c6a26c3326',1,'p8est_iter_face_side_t::treeid()'],['../structp8est__iter__edge__side__t.html#a07bff5b9e214a0b2138f1aadc1c0b8d6',1,'p8est_iter_edge_side_t::treeid()'],['../structp8est__iter__corner__side__t.html#a4b6852e35de4fc5f7e7d9930288f9dde',1,'p8est_iter_corner_side_t::treeid()']]],
-  ['trees',['trees',['../structp4est__t.html#a2179a08f95fd925d6173f78907b04f0a',1,'p4est_t::trees()'],['../structp8est__t.html#ae57e729fac57ba857cc0a95702ecf180',1,'p8est_t::trees()']]],
-  ['trilinear_5fanode_5ft',['trilinear_anode_t',['../structtrilinear__anode__t.html',1,'']]],
-  ['trilinear_5fdnode_5ft',['trilinear_dnode_t',['../structtrilinear__dnode__t.html',1,'']]],
-  ['trilinear_5felem_5ft',['trilinear_elem_t',['../structtrilinear__elem__t.html',1,'']]],
-  ['trilinear_5felement_5finfo2_5ft',['trilinear_element_info2_t',['../structtrilinear__element__info2__t.html',1,'']]],
-  ['trilinear_5fmesh_5fextra_5ft',['trilinear_mesh_extra_t',['../structtrilinear__mesh__extra__t.html',1,'']]],
-  ['trilinear_5fmesh_5ft',['trilinear_mesh_t',['../structtrilinear__mesh__t.html',1,'']]],
-  ['trilinear_5fnode_5ft',['trilinear_node_t',['../uniontrilinear__node__t.html',1,'']]]
+  ['trees',['trees',['../structp4est__t.html#a2179a08f95fd925d6173f78907b04f0a',1,'p4est_t::trees()'],['../structp8est__t.html#ae57e729fac57ba857cc0a95702ecf180',1,'p8est_t::trees()']]]
 ];

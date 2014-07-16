@@ -535,12 +535,10 @@ var searchData=
   ['p8est_5fwrap_5ft',['p8est_wrap_t',['../structp8est__wrap__t.html',1,'']]],
   ['pad16',['pad16',['../structp4est__quadrant__t.html#a60b929302e6f57cca9bc7407e75404cd',1,'p4est_quadrant_t::pad16()'],['../structp8est__quadrant__t.html#ab9afb8652e92931772c13b086d1a3a4f',1,'p8est_quadrant_t::pad16()']]],
   ['pad8',['pad8',['../structp4est__quadrant__t.html#ad984db59cf18250feaa9a963001f69fc',1,'p4est_quadrant_t::pad8()'],['../structp8est__quadrant__t.html#ab8370d17e7caf3875a7c01951b8c1160',1,'p8est_quadrant_t::pad8()']]],
-  ['phantom_5felem_5ft',['phantom_elem_t',['../structphantom__elem__t.html',1,'']]],
   ['piggy1',['piggy1',['../unionp4est__quadrant__t_1_1p4est__quadrant__data.html#ab7b5ab363a19179bd229c252af5ea249',1,'p4est_quadrant_t::p4est_quadrant_data::piggy1()'],['../unionp8est__quadrant__t_1_1p8est__quadrant__data.html#abd0306c3be91b11cffbd026dd9a3dc82',1,'p8est_quadrant_t::p8est_quadrant_data::piggy1()']]],
   ['piggy2',['piggy2',['../unionp4est__quadrant__t_1_1p4est__quadrant__data.html#a7bb85747b145039eaa24233876b3acb1',1,'p4est_quadrant_t::p4est_quadrant_data::piggy2()'],['../unionp8est__quadrant__t_1_1p8est__quadrant__data.html#a8b1204337149f89a381c15ab756d8902',1,'p8est_quadrant_t::p8est_quadrant_data::piggy2()']]],
   ['piggy3',['piggy3',['../unionp4est__quadrant__t_1_1p4est__quadrant__data.html#a968228c8076c0f62231fa980610096a4',1,'p4est_quadrant_t::p4est_quadrant_data::piggy3()'],['../unionp8est__quadrant__t_1_1p8est__quadrant__data.html#aa4045804631d4507472ff9faa39b0e43',1,'p8est_quadrant_t::p8est_quadrant_data::piggy3()']]],
   ['ple',['ple',['../p4est__step1_8c.html#a909866d1b2faeea2fc7826144dfc3d9b',1,'p4est_step1.c']]],
   ['plv',['plv',['../p4est__step1_8c.html#ac404e0109b09fd9ea4021628a182dfc2',1,'p4est_step1.c']]],
-  ['point_5ft',['point_t',['../structpoint__t.html',1,'']]],
   ['proc_5foffsets',['proc_offsets',['../structp4est__ghost__t.html#a7199a9e8a4b76c493bbb3cb56d2ffe01',1,'p4est_ghost_t::proc_offsets()'],['../structp8est__ghost__t.html#a68b91cda8d4060357694f94b8be130a5',1,'p8est_ghost_t::proc_offsets()']]]
 ];
