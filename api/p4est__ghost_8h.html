@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -107,9 +107,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aba3dbcc0f8fcad3c85885678649c0e1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__ghost_8h.html#aba3dbcc0f8fcad3c85885678649c0e1c">p4est_ghost_is_valid</a> (<a class="el" href="structp4est__ghost__t.html">p4est_ghost_t</a> *ghost)</td></tr>
-<tr class="memdesc:aba3dbcc0f8fcad3c85885678649c0e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Examine if a ghost structure is valid.  <a href="#aba3dbcc0f8fcad3c85885678649c0e1c">More...</a><br/></td></tr>
-<tr class="separator:aba3dbcc0f8fcad3c85885678649c0e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375ee382d34d8f28b73d1420e3b16f51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__ghost_8h.html#a375ee382d34d8f28b73d1420e3b16f51">p4est_ghost_is_valid</a> (<a class="el" href="structp4est__t.html">p4est_t</a> *p4est, <a class="el" href="structp4est__ghost__t.html">p4est_ghost_t</a> *ghost)</td></tr>
+<tr class="memdesc:a375ee382d34d8f28b73d1420e3b16f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Examine if a ghost structure is valid.  <a href="#a375ee382d34d8f28b73d1420e3b16f51">More...</a><br/></td></tr>
+<tr class="separator:a375ee382d34d8f28b73d1420e3b16f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af65d884112344032ec94153513c080f7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__ghost_8h.html#af65d884112344032ec94153513c080f7">p4est_ghost_memory_used</a> (<a class="el" href="structp4est__ghost__t.html">p4est_ghost_t</a> *ghost)</td></tr>
 <tr class="memdesc:af65d884112344032ec94153513c080f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the memory usage of the ghost layer.  <a href="#af65d884112344032ec94153513c080f7">More...</a><br/></td></tr>
 <tr class="separator:af65d884112344032ec94153513c080f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -588,25 +588,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aba3dbcc0f8fcad3c85885678649c0e1c"></a>
+<a class="anchor" id="a375ee382d34d8f28b73d1420e3b16f51"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int p4est_ghost_is_valid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structp4est__ghost__t.html">p4est_ghost_t</a> *&#160;</td>
-          <td class="paramname"><em>ghost</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structp4est__t.html">p4est_t</a> *&#160;</td>
+          <td class="paramname"><em>p4est</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structp4est__ghost__t.html">p4est_ghost_t</a> *&#160;</td>
+          <td class="paramname"><em>ghost</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Examine if a ghost structure is valid. </p>
-<p>Test if within a ghost-structure the array ghosts is in Test if local_num in piggy3 data member of the quadrants in ghosts and mirrors are in ascending order (ascending within each rank for ghost).</p>
+<p>Test if within a ghost-structure the array ghosts is in p4est_quadrant_compare_piggy order. Test if local_num in piggy3 data member of the quadrants in ghosts and mirrors are in ascending order (ascending within each rank for ghost).</p>
 <p>Test if the p4est_locidx_t arrays are in ascending order (for mirror_proc_mirrors ascending within each rank) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p4est</td><td>the forest. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ghost</td><td>Ghost layer structure. </td></tr>
   </table>
   </dd>

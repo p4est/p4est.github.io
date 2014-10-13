@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -95,37 +95,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>We provide the identity transformation for reference.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="p4est__geometry_8h_source.html">p4est_geometry.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="p8est__geometry_8h_source.html">p8est_geometry.h</a>&gt;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3d865099e76cc3d84857d0639a80f238"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d865099e76cc3d84857d0639a80f238"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_geometry_identity_X</b> (p4est_geometry_t *geom, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> which_tree, const double abc[3], double xyz[3])</td></tr>
-<tr class="separator:a3d865099e76cc3d84857d0639a80f238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd16197112fb38e736c91355073ff181"><td class="memItemLeft" align="right" valign="top">p4est_geometry_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__geometry_8c.html#abd16197112fb38e736c91355073ff181">p4est_geometry_new_identity</a> (void)</td></tr>
-<tr class="memdesc:abd16197112fb38e736c91355073ff181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a geometry structure for the identity transformation.  <a href="#abd16197112fb38e736c91355073ff181">More...</a><br/></td></tr>
-<tr class="separator:abd16197112fb38e736c91355073ff181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad389d94045e366e64a0c7854739f1f8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__geometry_8c.html#ad389d94045e366e64a0c7854739f1f8f">p4est_geometry_destroy</a> (p4est_geometry_t *geom)</td></tr>
+<tr class="memdesc:ad389d94045e366e64a0c7854739f1f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be used to conveniently destroy a geometry structure.  <a href="#ad389d94045e366e64a0c7854739f1f8f">More...</a><br/></td></tr>
+<tr class="separator:ad389d94045e366e64a0c7854739f1f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df4b6e2da2bcb714da1658d5aa64ae7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7df4b6e2da2bcb714da1658d5aa64ae7"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_geometry_connectivity_X</b> (p4est_geometry_t *geom, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> which_tree, const double abc[3], double xyz[3])</td></tr>
+<tr class="separator:a7df4b6e2da2bcb714da1658d5aa64ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ba2d7b679c66899ddb82c1623e7ce4"><td class="memItemLeft" align="right" valign="top">p4est_geometry_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__geometry_8c.html#af9ba2d7b679c66899ddb82c1623e7ce4">p4est_geometry_new_connectivity</a> (<a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *conn)</td></tr>
+<tr class="memdesc:af9ba2d7b679c66899ddb82c1623e7ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a geometry structure based on the vertices in a connectivity.  <a href="#af9ba2d7b679c66899ddb82c1623e7ce4">More...</a><br/></td></tr>
+<tr class="separator:af9ba2d7b679c66899ddb82c1623e7ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We provide the identity transformation for reference. </p>
 <p>Please implement p4est_geometry_t as you see fit. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="abd16197112fb38e736c91355073ff181"></a>
+<a class="anchor" id="ad389d94045e366e64a0c7854739f1f8f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">p4est_geometry_t* p4est_geometry_new_identity </td>
+          <td class="memname">void p4est_geometry_destroy </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">p4est_geometry_t *&#160;</td>
+          <td class="paramname"><em>geom</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a geometry structure for the identity transformation. </p>
-<p>This function is just for demonstration since a NULL geometry works too. </p>
-<dl class="section return"><dt>Returns</dt><dd>Geometry structure which must be freed with P4EST_FREE. </dd></dl>
+<p>Can be used to conveniently destroy a geometry structure. </p>
+<p>The user is free not to call this function at all if they handle the memory of the p4est_geometry_t in their own way. </p>
+
+</div>
+</div>
+<a class="anchor" id="af9ba2d7b679c66899ddb82c1623e7ce4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">p4est_geometry_t* p4est_geometry_new_connectivity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a geometry structure based on the vertices in a connectivity. </p>
+<p>The transformation is constructed using bilinear interpolation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn</td><td>A <a class="el" href="structp4est__connectivity__t.html" title="This structure holds the 2D inter-tree connectivity information. ">p4est_connectivity_t</a> with valid vertices. We do NOT take ownership and expect this structure to stay alive. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Geometry structure; use with p4est_geometry_destroy. </dd></dl>
 
 </div>
 </div>

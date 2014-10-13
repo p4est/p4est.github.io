@@ -1,6 +1,7 @@
 var searchData=
 [
   ['p4est_5fcoarsen_5ft',['p4est_coarsen_t',['../p4est_8h.html#a828e892c579d930dca67beb259c94b7e',1,'p4est.h']]],
+  ['p4est_5fgeometry_5fdestroy_5ft',['p4est_geometry_destroy_t',['../p4est__geometry_8h.html#a07b54b67653a32e83228686a67106c63',1,'p4est_geometry.h']]],
   ['p4est_5fgeometry_5fx_5ft',['p4est_geometry_X_t',['../p4est__geometry_8h.html#a951eef637e8ab11b0f3561c6b912556c',1,'p4est_geometry.h']]],
   ['p4est_5fgloidx_5ft',['p4est_gloidx_t',['../p4est__base_8h.html#af4d787f9b2520af0cfe9a10b89235749',1,'p4est_base.h']]],
   ['p4est_5finit_5ft',['p4est_init_t',['../p4est_8h.html#afa4d681a64c992efa907dfd589eba1ec',1,'p4est.h']]],
@@ -13,7 +14,15 @@ var searchData=
   ['p4est_5freplace_5ft',['p4est_replace_t',['../p4est__extended_8h.html#ae1e49029e7ba64500482e3959c150a3d',1,'p4est_extended.h']]],
   ['p4est_5ftopidx_5ft',['p4est_topidx_t',['../p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c',1,'p4est_base.h']]],
   ['p4est_5fweight_5ft',['p4est_weight_t',['../p4est_8h.html#ab5b13e2b7ed3829a87838b346dce3d9d',1,'p4est.h']]],
+  ['p6est_5fcoarsen_5fcolumn_5ft',['p6est_coarsen_column_t',['../p6est_8h.html#afbc9a4085644c219d3f0c7adf169889d',1,'p6est.h']]],
+  ['p6est_5fcoarsen_5flayer_5ft',['p6est_coarsen_layer_t',['../p6est_8h.html#a25b6a5222a8a566e2a095deac52324bd',1,'p6est.h']]],
+  ['p6est_5finit_5ft',['p6est_init_t',['../p6est_8h.html#ac41269d2608682d84f170de732adee9f',1,'p6est.h']]],
+  ['p6est_5frefine_5fcolumn_5ft',['p6est_refine_column_t',['../p6est_8h.html#a5c2b54d3979d6557b24a2772a4f32481',1,'p6est.h']]],
+  ['p6est_5frefine_5flayer_5ft',['p6est_refine_layer_t',['../p6est_8h.html#acbb17147311ba6cc82165720fc122270',1,'p6est.h']]],
+  ['p6est_5freplace_5ft',['p6est_replace_t',['../p6est_8h.html#a01a3a4a80e2d1dc4cfd00cf257abc45f',1,'p6est.h']]],
+  ['p6est_5fweight_5ft',['p6est_weight_t',['../p6est_8h.html#af975229bf979f1b0249c89bc50f6a7b5',1,'p6est.h']]],
   ['p8est_5fcoarsen_5ft',['p8est_coarsen_t',['../p8est_8h.html#ae517017d7c3fb32b94628352841d8f52',1,'p8est.h']]],
+  ['p8est_5fgeometry_5fdestroy_5ft',['p8est_geometry_destroy_t',['../p8est__geometry_8h.html#a4cb820957c9b837c901b9d72cd52b6ca',1,'p8est_geometry.h']]],
   ['p8est_5fgeometry_5fx_5ft',['p8est_geometry_X_t',['../p8est__geometry_8h.html#a25b1af90f25b93f793812e9286fadaad',1,'p8est_geometry.h']]],
   ['p8est_5finit_5ft',['p8est_init_t',['../p8est_8h.html#ae7ed4b238cb8e79dca139dc50f9147f2',1,'p8est.h']]],
   ['p8est_5fiter_5fcorner_5ft',['p8est_iter_corner_t',['../p8est__iterate_8h.html#a1bed0d45cf9256367cc8f420456fb450',1,'p8est_iterate.h']]],

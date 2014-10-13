@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>This structure can be created by the user, p4est will never change its contents.  
+<p>This structure can be filled or allocated by the user.  
  <a href="structp4est__geometry.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="p4est__geometry_8h_source.html">p4est_geometry.h</a>&gt;</code></p>
@@ -105,10 +105,29 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ac5dcc08d7a6220e7c8980148bd7fb44c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="p4est__geometry_8h.html#a951eef637e8ab11b0f3561c6b912556c">p4est_geometry_X_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structp4est__geometry.html#ac5dcc08d7a6220e7c8980148bd7fb44c">X</a></td></tr>
 <tr class="memdesc:ac5dcc08d7a6220e7c8980148bd7fb44c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coordinate transformation.  <a href="#ac5dcc08d7a6220e7c8980148bd7fb44c">More...</a><br/></td></tr>
 <tr class="separator:ac5dcc08d7a6220e7c8980148bd7fb44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e348f2f7c992c3de4d163631257128"><td class="memItemLeft" align="right" valign="top"><a class="el" href="p4est__geometry_8h.html#a07b54b67653a32e83228686a67106c63">p4est_geometry_destroy_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structp4est__geometry.html#a85e348f2f7c992c3de4d163631257128">destroy</a></td></tr>
+<tr class="memdesc:a85e348f2f7c992c3de4d163631257128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor called by p4est_geometry_destroy.  <a href="#a85e348f2f7c992c3de4d163631257128">More...</a><br/></td></tr>
+<tr class="separator:a85e348f2f7c992c3de4d163631257128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This structure can be created by the user, p4est will never change its contents. </p>
+<div class="textblock"><p>This structure can be filled or allocated by the user. </p>
+<p>p4est will never change its contents. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a85e348f2f7c992c3de4d163631257128"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="p4est__geometry_8h.html#a07b54b67653a32e83228686a67106c63">p4est_geometry_destroy_t</a> p4est_geometry_t::destroy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor called by p4est_geometry_destroy. </p>
+<p>If NULL, P4EST_FREE is called. </p>
+
+</div>
+</div>
 <a class="anchor" id="aa0c92b215e98ac82326efcf52210a9cd"></a>
 <div class="memitem">
 <div class="memproto">

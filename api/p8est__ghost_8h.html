@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -107,9 +107,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a75742119b02a19600d3281e39b228549"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__ghost_8h.html#a75742119b02a19600d3281e39b228549">p8est_ghost_is_valid</a> (<a class="el" href="structp8est__ghost__t.html">p8est_ghost_t</a> *ghost)</td></tr>
-<tr class="memdesc:a75742119b02a19600d3281e39b228549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Examine if a ghost structure is valid as desribed above.  <a href="#a75742119b02a19600d3281e39b228549">More...</a><br/></td></tr>
-<tr class="separator:a75742119b02a19600d3281e39b228549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fec36a9213ada9f0cf5de33de52e3ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__ghost_8h.html#a2fec36a9213ada9f0cf5de33de52e3ad">p8est_ghost_is_valid</a> (<a class="el" href="structp8est__t.html">p8est_t</a> *p8est, <a class="el" href="structp8est__ghost__t.html">p8est_ghost_t</a> *ghost)</td></tr>
+<tr class="memdesc:a2fec36a9213ada9f0cf5de33de52e3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Examine if a ghost structure is valid as desribed above.  <a href="#a2fec36a9213ada9f0cf5de33de52e3ad">More...</a><br/></td></tr>
+<tr class="separator:a2fec36a9213ada9f0cf5de33de52e3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae11ddae4209c44470de8461d23a23ba"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__ghost_8h.html#aae11ddae4209c44470de8461d23a23ba">p8est_ghost_memory_used</a> (<a class="el" href="structp8est__ghost__t.html">p8est_ghost_t</a> *ghost)</td></tr>
 <tr class="memdesc:aae11ddae4209c44470de8461d23a23ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the memory usage of the ghost layer.  <a href="#aae11ddae4209c44470de8461d23a23ba">More...</a><br/></td></tr>
 <tr class="separator:aae11ddae4209c44470de8461d23a23ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -538,16 +538,26 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a75742119b02a19600d3281e39b228549"></a>
+<a class="anchor" id="a2fec36a9213ada9f0cf5de33de52e3ad"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int p8est_ghost_is_valid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structp8est__ghost__t.html">p8est_ghost_t</a> *&#160;</td>
-          <td class="paramname"><em>ghost</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structp8est__t.html">p8est_t</a> *&#160;</td>
+          <td class="paramname"><em>p8est</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structp8est__ghost__t.html">p8est_ghost_t</a> *&#160;</td>
+          <td class="paramname"><em>ghost</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -557,6 +567,7 @@ Functions</h2></td></tr>
 <p>Test if the p4est_locidx_t arrays are in ascending order (for mirror_proc_mirrors ascending within each rank) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p8est</td><td>the forest. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ghost</td><td>Ghost layer structure. </td></tr>
   </table>
   </dd>

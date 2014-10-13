@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Interface routines with extended capabilities.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="p4est_8h_source.html">p4est.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="p4est__mesh_8h_source.html">p4est_mesh.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="p4est__iterate_8h_source.html">p4est_iterate.h</a>&gt;</code><br/>
 </div>
 <p><a href="p4est__extended_8h_source.html">Go to the source code of this file.</a></p>
@@ -118,6 +119,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac11cf572e8ac72c4beb78465f98b63f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structp4est__t.html">p4est_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__extended_8h.html#ac11cf572e8ac72c4beb78465f98b63f3">p4est_new_ext</a> (sc_MPI_Comm mpicomm, <a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *connectivity, <a class="el" href="p4est__base_8h.html#a9f350ee78755ec6e7d25fb1dca474573">p4est_locidx_t</a> min_quadrants, int min_level, int fill_uniform, size_t data_size, <a class="el" href="p4est_8h.html#afa4d681a64c992efa907dfd589eba1ec">p4est_init_t</a> init_fn, void *user_pointer)</td></tr>
 <tr class="memdesc:ac11cf572e8ac72c4beb78465f98b63f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new forest.  <a href="#ac11cf572e8ac72c4beb78465f98b63f3">More...</a><br/></td></tr>
 <tr class="separator:ac11cf572e8ac72c4beb78465f98b63f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8ccb957397b2a568e8a86d29a6ce4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structp4est__mesh__t.html">p4est_mesh_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__extended_8h.html#a8e8ccb957397b2a568e8a86d29a6ce4a">p4est_mesh_new_ext</a> (<a class="el" href="structp4est__t.html">p4est_t</a> *p4est, <a class="el" href="structp4est__ghost__t.html">p4est_ghost_t</a> *ghost, int compute_tree_index, int compute_level_lists, <a class="el" href="p4est__connectivity_8h.html#adc5f6166fc408c325589ce3e620552ca">p4est_connect_type_t</a> btype)</td></tr>
+<tr class="memdesc:a8e8ccb957397b2a568e8a86d29a6ce4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new mesh.  <a href="#a8e8ccb957397b2a568e8a86d29a6ce4a">More...</a><br/></td></tr>
+<tr class="separator:a8e8ccb957397b2a568e8a86d29a6ce4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad32df9df3630b6bac05e7366a5f1e46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__extended_8h.html#aad32df9df3630b6bac05e7366a5f1e46">p4est_refine_ext</a> (<a class="el" href="structp4est__t.html">p4est_t</a> *p4est, int refine_recursive, int maxlevel, <a class="el" href="p4est_8h.html#a0dd63652a79d723377e436074f18e900">p4est_refine_t</a> <a class="el" href="p4est__step4_8c.html#ab8a4eb8e5c710a5bf8405bc29cd65b77">refine_fn</a>, <a class="el" href="p4est_8h.html#afa4d681a64c992efa907dfd589eba1ec">p4est_init_t</a> init_fn, <a class="el" href="p4est__extended_8h.html#ae1e49029e7ba64500482e3959c150a3d">p4est_replace_t</a> replace_fn)</td></tr>
 <tr class="memdesc:aad32df9df3630b6bac05e7366a5f1e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refine a forest with a bounded refinement level and a replace option.  <a href="#aad32df9df3630b6bac05e7366a5f1e46">More...</a><br/></td></tr>
 <tr class="separator:aad32df9df3630b6bac05e7366a5f1e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -425,6 +429,63 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_balance_subtree
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns a valid forest structure. A pointer to a valid connectivity structure is returned through the last argument. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Aborts on file errors or invalid file contents. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e8ccb957397b2a568e8a86d29a6ce4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structp4est__mesh__t.html">p4est_mesh_t</a>* p4est_mesh_new_ext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structp4est__t.html">p4est_t</a> *&#160;</td>
+          <td class="paramname"><em>p4est</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structp4est__ghost__t.html">p4est_ghost_t</a> *&#160;</td>
+          <td class="paramname"><em>ghost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>compute_tree_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>compute_level_lists</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="p4est__connectivity_8h.html#adc5f6166fc408c325589ce3e620552ca">p4est_connect_type_t</a>&#160;</td>
+          <td class="paramname"><em>btype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new mesh. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p4est</td><td>A forest that is fully 2:1 balanced. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ghost</td><td>The ghost layer created from the provided p4est. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compute_tree_index</td><td>Boolean to decide whether to allocate and compute the quad_to_tree list. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compute_level_lists</td><td>Boolean to decide whether to compute the level lists in quad_level. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">btype</td><td>Currently ignored, only face neighbors are stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A fully allocated mesh structure. </dd></dl>
 
 </div>
 </div>

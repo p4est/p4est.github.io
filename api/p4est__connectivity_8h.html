@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -170,6 +170,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2812bedf1c6b08c269bf0145676a9d8c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__connectivity_8h.html#a2812bedf1c6b08c269bf0145676a9d8c">p4est_connectivity_memory_used</a> (<a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *conn)</td></tr>
 <tr class="memdesc:a2812bedf1c6b08c269bf0145676a9d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate memory usage of a connectivity structure.  <a href="#a2812bedf1c6b08c269bf0145676a9d8c">More...</a><br/></td></tr>
 <tr class="separator:a2812bedf1c6b08c269bf0145676a9d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf91ac97a7d0145c4953b0e5744511c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__connectivity_8h.html#aaf91ac97a7d0145c4953b0e5744511c1">p4est_connectivity_face_neighbor_corner_orientation</a> (int c, int f, int nf, int o)</td></tr>
+<tr class="memdesc:aaf91ac97a7d0145c4953b0e5744511c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a corner across one of the adjacent faces into a neighbor tree.  <a href="#aaf91ac97a7d0145c4953b0e5744511c1">More...</a><br/></td></tr>
+<tr class="separator:aaf91ac97a7d0145c4953b0e5744511c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb04eb195bf7aa29b8aeb26ebab07a81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__connectivity_8h.html#abb04eb195bf7aa29b8aeb26ebab07a81">p4est_connectivity_new</a> (<a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> num_vertices, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> num_trees, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> num_corners, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> num_ctt)</td></tr>
 <tr class="memdesc:abb04eb195bf7aa29b8aeb26ebab07a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a connectivity structure.  <a href="#abb04eb195bf7aa29b8aeb26ebab07a81">More...</a><br/></td></tr>
 <tr class="separator:abb04eb195bf7aa29b8aeb26ebab07a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,9 +182,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a208e613cae5e1bd3baffb587387b672c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__connectivity_8h.html#a208e613cae5e1bd3baffb587387b672c">p4est_connectivity_destroy</a> (<a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *connectivity)</td></tr>
 <tr class="memdesc:a208e613cae5e1bd3baffb587387b672c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a connectivity structure.  <a href="#a208e613cae5e1bd3baffb587387b672c">More...</a><br/></td></tr>
 <tr class="separator:a208e613cae5e1bd3baffb587387b672c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3881806d7a0d7d7654614fee09aefb6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__connectivity_8h.html#a3881806d7a0d7d7654614fee09aefb6b">p4est_connectivity_set_attr</a> (<a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *conn, int enable_tree_attr)</td></tr>
-<tr class="memdesc:a3881806d7a0d7d7654614fee09aefb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate or free the attribute fields in a connectivity.  <a href="#a3881806d7a0d7d7654614fee09aefb6b">More...</a><br/></td></tr>
-<tr class="separator:a3881806d7a0d7d7654614fee09aefb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c58ca9bbc3354e8b799d3945b135ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__connectivity_8h.html#a19c58ca9bbc3354e8b799d3945b135ce">p4est_connectivity_set_attr</a> (<a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *conn, size_t bytes_per_tree)</td></tr>
+<tr class="memdesc:a19c58ca9bbc3354e8b799d3945b135ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate or free the attribute fields in a connectivity.  <a href="#a19c58ca9bbc3354e8b799d3945b135ce">More...</a><br/></td></tr>
+<tr class="separator:a19c58ca9bbc3354e8b799d3945b135ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3780b75fcd2a5b578c6dc294c4e77a5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__connectivity_8h.html#a3780b75fcd2a5b578c6dc294c4e77a5e">p4est_connectivity_is_valid</a> (<a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *connectivity)</td></tr>
 <tr class="memdesc:a3780b75fcd2a5b578c6dc294c4e77a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Examine a connectivity structure.  <a href="#a3780b75fcd2a5b578c6dc294c4e77a5e">More...</a><br/></td></tr>
 <tr class="separator:a3780b75fcd2a5b578c6dc294c4e77a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,6 +261,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a179505bcdba35dacfc3a9ffb487ae539"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__connectivity_8h.html#a179505bcdba35dacfc3a9ffb487ae539">p4est_connectivity_complete</a> (<a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *conn)</td></tr>
 <tr class="memdesc:a179505bcdba35dacfc3a9ffb487ae539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internally connect a connectivity based on tree_to_vertex information.  <a href="#a179505bcdba35dacfc3a9ffb487ae539">More...</a><br/></td></tr>
 <tr class="separator:a179505bcdba35dacfc3a9ffb487ae539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709da81912bd413ccd8312009a5d2123"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__connectivity_8h.html#a709da81912bd413ccd8312009a5d2123">p4est_connectivity_reduce</a> (<a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *conn)</td></tr>
+<tr class="memdesc:a709da81912bd413ccd8312009a5d2123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes corner information of a connectivity such that enough information is left to run p4est_connectivity_complete successfully.  <a href="#a709da81912bd413ccd8312009a5d2123">More...</a><br/></td></tr>
+<tr class="separator:a709da81912bd413ccd8312009a5d2123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7f9277c2d93f69e73fafd017b22971e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__connectivity_8h.html#af7f9277c2d93f69e73fafd017b22971e">p4est_connectivity_permute</a> (<a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *conn, <a class="el" href="structsc__array__t.html">sc_array_t</a> *perm, int is_current_to_new)</td></tr>
 <tr class="memdesc:af7f9277c2d93f69e73fafd017b22971e"><td class="mdescLeft">&#160;</td><td class="mdescRight">p4est_connectivity_permute Given a permutation <em>perm</em> of the trees in a connectivity <em>conn</em>, permute the trees of <em>conn</em> in place and update <em>conn</em> to match.  <a href="#af7f9277c2d93f69e73fafd017b22971e">More...</a><br/></td></tr>
 <tr class="separator:af7f9277c2d93f69e73fafd017b22971e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -476,6 +482,56 @@ Variables</h2></td></tr>
 
 <p>Destroy a connectivity structure. </p>
 <p>Also destroy all attributes. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf91ac97a7d0145c4953b0e5744511c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int p4est_connectivity_face_neighbor_corner_orientation </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>o</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transform a corner across one of the adjacent faces into a neighbor tree. </p>
+<p>This version expects the neighbor face and orientation separately. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>A corner number in 0..3. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>A face number that touches the corner <em>c</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nf</td><td>A neighbor face that is on the other side of . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">o</td><td>The orientation between tree boundary faces <em>f</em> and . </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1041,7 +1097,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>an allocated connectivity associated with the mesh in <em>filename</em> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an allocated connectivity associated with the mesh in <em>filename</em> or NULL if an error occurred. </dd></dl>
 
 </div>
 </div>
@@ -1127,18 +1183,43 @@ Variables</h2></td></tr>
 <div class="line">4,  7,  4, 8, 11</div>
 <div class="line">5, 11, 10, 3,  7</div>
 <div class="line">6,  2,  6, 9,  5</div>
-</div><!-- fragment --><p>This code can be called two ways. The first, when <code>vertex==NULL</code> and <code>tree_to_vertex==NULL</code>, is used to count the number of tress and vertices in the connectivity to be generated by the <code></code>.inp mesh in the <em>stream</em>. The second, when <code>vertices!=NULL</code> and <code>tree_to_vertex!=NULL</code>, fill <code>vertices</code> and <code>tree_to_vertex</code>.</p>
+</div><!-- fragment --><p>This code can be called two ways. The first, when <code>vertex==NULL</code> and <code>tree_to_vertex==NULL</code>, is used to count the number of tress and vertices in the connectivity to be generated by the <code></code>.inp mesh in the <em>stream</em>. The second, when <code>vertices!=NULL</code> and <code>tree_to_vertex!=NULL</code>, fill <code>vertices</code> and <code>tree_to_vertex</code>. In this case <code>num_vertices</code> and <code>num_trees</code> need to be set to the maximum number of entries allocated in <code>vertices</code> and <code>tree_to_vertex</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">stream</td><td>file stream to read the connectivity from </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">num_vertices</td><td>the number of vertices in the connectivity </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">num_trees</td><td>the number of trees in the connectivity </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">num_vertices</td><td>the number of vertices in the connectivity </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">num_trees</td><td>the number of trees in the connectivity </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>the list of <code>vertices</code> of the connectivity </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">tree_to_vertex</td><td>the <code>tree_to_vertex</code> map of the connectivity</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if successful and nonzero if not </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a709da81912bd413ccd8312009a5d2123"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void p4est_connectivity_reduce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structp4est__connectivity__t.html">p4est_connectivity_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes corner information of a connectivity such that enough information is left to run p4est_connectivity_complete successfully. </p>
+<p>The reduced connectivity still passes p4est_connectivity_is_valid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">conn</td><td>The connectivity to be reduced. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1178,7 +1259,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3881806d7a0d7d7654614fee09aefb6b"></a>
+<a class="anchor" id="a19c58ca9bbc3354e8b799d3945b135ce"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1191,8 +1272,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>enable_tree_attr</em>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bytes_per_tree</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1206,7 +1287,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">conn</td><td>The conn-&gt;*_to_attr fields must either be NULL or previously be allocated by this function. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable_tree_attr</td><td>If false, tree_to_attr is freed (NULL is ok). If true, it must be NULL and is allocated. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytes_per_tree</td><td>If 0, tree_to_attr is freed (being NULL is ok). If positive, requested space is allocated. </td></tr>
   </table>
   </dd>
 </dl>

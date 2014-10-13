@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -178,6 +178,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a6aef564405c3b9a2aa411eb747c84eee"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#a6aef564405c3b9a2aa411eb747c84eee">p8est_connectivity_memory_used</a> (<a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *conn)</td></tr>
 <tr class="memdesc:a6aef564405c3b9a2aa411eb747c84eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate memory usage of a connectivity structure.  <a href="#a6aef564405c3b9a2aa411eb747c84eee">More...</a><br/></td></tr>
 <tr class="separator:a6aef564405c3b9a2aa411eb747c84eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd71e7639a4d2655734ffa744773fb0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#acd71e7639a4d2655734ffa744773fb0e">p8est_connectivity_face_neighbor_corner_set</a> (int c, int f, int nf, int set)</td></tr>
+<tr class="memdesc:acd71e7639a4d2655734ffa744773fb0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a corner across one of the adjacent faces into a neighbor tree.  <a href="#acd71e7639a4d2655734ffa744773fb0e">More...</a><br/></td></tr>
+<tr class="separator:acd71e7639a4d2655734ffa744773fb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0d9aba5b3a3f6a8168b89ce6225707"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#a2c0d9aba5b3a3f6a8168b89ce6225707">p8est_connectivity_face_neighbor_corner_orientation</a> (int c, int f, int nf, int o)</td></tr>
+<tr class="memdesc:a2c0d9aba5b3a3f6a8168b89ce6225707"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a corner across one of the adjacent faces into a neighbor tree.  <a href="#a2c0d9aba5b3a3f6a8168b89ce6225707">More...</a><br/></td></tr>
+<tr class="separator:a2c0d9aba5b3a3f6a8168b89ce6225707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29aa130498f6c55a028bf0edf5653e50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#a29aa130498f6c55a028bf0edf5653e50">p8est_connectivity_new</a> (<a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> num_vertices, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> num_trees, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> num_edges, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> num_ett, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> num_corners, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> num_ctt)</td></tr>
 <tr class="memdesc:a29aa130498f6c55a028bf0edf5653e50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a connectivity structure.  <a href="#a29aa130498f6c55a028bf0edf5653e50">More...</a><br/></td></tr>
 <tr class="separator:a29aa130498f6c55a028bf0edf5653e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,9 +193,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a83dc515293fe5f7c82eade6e281a62ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#a83dc515293fe5f7c82eade6e281a62ca">p8est_connectivity_destroy</a> (<a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *connectivity)</td></tr>
 <tr class="memdesc:a83dc515293fe5f7c82eade6e281a62ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a connectivity structure.  <a href="#a83dc515293fe5f7c82eade6e281a62ca">More...</a><br/></td></tr>
 <tr class="separator:a83dc515293fe5f7c82eade6e281a62ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad676c4fe3f43a4326a2e92b213856904"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#ad676c4fe3f43a4326a2e92b213856904">p8est_connectivity_set_attr</a> (<a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *conn, int enable_tree_attr)</td></tr>
-<tr class="memdesc:ad676c4fe3f43a4326a2e92b213856904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate or free the attribute fields in a connectivity.  <a href="#ad676c4fe3f43a4326a2e92b213856904">More...</a><br/></td></tr>
-<tr class="separator:ad676c4fe3f43a4326a2e92b213856904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135b60b27c6ba2c54f0981554f65fcc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#a135b60b27c6ba2c54f0981554f65fcc6">p8est_connectivity_set_attr</a> (<a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *conn, size_t bytes_per_tree)</td></tr>
+<tr class="memdesc:a135b60b27c6ba2c54f0981554f65fcc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate or free the attribute fields in a connectivity.  <a href="#a135b60b27c6ba2c54f0981554f65fcc6">More...</a><br/></td></tr>
+<tr class="separator:a135b60b27c6ba2c54f0981554f65fcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace0505a974a213fcc1cd7cc284338dfe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#ace0505a974a213fcc1cd7cc284338dfe">p8est_connectivity_is_valid</a> (<a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *connectivity)</td></tr>
 <tr class="memdesc:ace0505a974a213fcc1cd7cc284338dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Examine a connectivity structure.  <a href="#ace0505a974a213fcc1cd7cc284338dfe">More...</a><br/></td></tr>
 <tr class="separator:ace0505a974a213fcc1cd7cc284338dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +270,9 @@ Functions</h2></td></tr>
 <tr class="memitem:abafc945a940c37b50d8e4e067856a579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#abafc945a940c37b50d8e4e067856a579">p8est_connectivity_complete</a> (<a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *conn)</td></tr>
 <tr class="memdesc:abafc945a940c37b50d8e4e067856a579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internally connect a connectivity based on tree_to_vertex information.  <a href="#abafc945a940c37b50d8e4e067856a579">More...</a><br/></td></tr>
 <tr class="separator:abafc945a940c37b50d8e4e067856a579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e08b33ab47a63184806dcd2e4b5aa32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#a9e08b33ab47a63184806dcd2e4b5aa32">p8est_connectivity_reduce</a> (<a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *conn)</td></tr>
+<tr class="memdesc:a9e08b33ab47a63184806dcd2e4b5aa32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes corner and edge information of a connectivity such that enough information is left to run p8est_connectivity_complete successfully.  <a href="#a9e08b33ab47a63184806dcd2e4b5aa32">More...</a><br/></td></tr>
+<tr class="separator:a9e08b33ab47a63184806dcd2e4b5aa32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a923578dfd19b0a84c3578bd657da06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#a0a923578dfd19b0a84c3578bd657da06">p8est_connectivity_permute</a> (<a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *conn, <a class="el" href="structsc__array__t.html">sc_array_t</a> *perm, int is_current_to_new)</td></tr>
 <tr class="memdesc:a0a923578dfd19b0a84c3578bd657da06"><td class="mdescLeft">&#160;</td><td class="mdescRight">p8est_connectivity_permute Given a permutation <em>perm</em> of the trees in a connectivity <em>conn</em>, permute the trees of <em>conn</em> in place and update <em>conn</em> to match.  <a href="#a0a923578dfd19b0a84c3578bd657da06">More...</a><br/></td></tr>
 <tr class="separator:a0a923578dfd19b0a84c3578bd657da06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,11 +288,11 @@ Functions</h2></td></tr>
 <tr class="memitem:ae96236242695ee6f47c6a90b17da3e7e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structp8est__corner__transform__t.html">p8est_corner_transform_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#ae96236242695ee6f47c6a90b17da3e7e">p8est_corner_array_index</a> (<a class="el" href="structsc__array__t.html">sc_array_t</a> *array, size_t it)</td></tr>
 <tr class="memdesc:ae96236242695ee6f47c6a90b17da3e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to a <a class="el" href="structp8est__corner__transform__t.html">p8est_corner_transform_t</a> array element.  <a href="#ae96236242695ee6f47c6a90b17da3e7e">More...</a><br/></td></tr>
 <tr class="separator:ae96236242695ee6f47c6a90b17da3e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a799075453ef289d1993a7c11f1d2d5d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a799075453ef289d1993a7c11f1d2d5d8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>p8est_connectivity_read_inp_stream</b> (FILE *stream, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> *num_vertices, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> *num_trees, double *vertices, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> *tree_to_vertex)</td></tr>
+<tr class="memitem:a799075453ef289d1993a7c11f1d2d5d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#a799075453ef289d1993a7c11f1d2d5d8">p8est_connectivity_read_inp_stream</a> (FILE *stream, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> *num_vertices, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> *num_trees, double *vertices, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> *tree_to_vertex)</td></tr>
+<tr class="memdesc:a799075453ef289d1993a7c11f1d2d5d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an ABAQUS input file from a file stream.  <a href="#a799075453ef289d1993a7c11f1d2d5d8">More...</a><br/></td></tr>
 <tr class="separator:a799075453ef289d1993a7c11f1d2d5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a323fe9836afb429b60a8b06ff0f6c08c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a323fe9836afb429b60a8b06ff0f6c08c"></a>
-<a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>p8est_connectivity_read_inp</b> (const char *filename)</td></tr>
+<tr class="memitem:a323fe9836afb429b60a8b06ff0f6c08c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__connectivity_8h.html#a323fe9836afb429b60a8b06ff0f6c08c">p8est_connectivity_read_inp</a> (const char *filename)</td></tr>
+<tr class="memdesc:a323fe9836afb429b60a8b06ff0f6c08c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a p4est connectivity from an ABAQUS input file.  <a href="#a323fe9836afb429b60a8b06ff0f6c08c">More...</a><br/></td></tr>
 <tr class="separator:a323fe9836afb429b60a8b06ff0f6c08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -530,6 +539,107 @@ Variables</h2></td></tr>
 
 <p>Destroy a connectivity structure. </p>
 <p>Also destroy all attributes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2c0d9aba5b3a3f6a8168b89ce6225707"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int p8est_connectivity_face_neighbor_corner_orientation </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>o</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transform a corner across one of the adjacent faces into a neighbor tree. </p>
+<p>This version expects the neighbor face and orientation separately. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>A corner number in 0..7. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>A face number that touches the corner <em>c</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nf</td><td>A neighbor face that is on the other side of . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">o</td><td>The orientation between tree boundary faces <em>f</em> and . </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acd71e7639a4d2655734ffa744773fb0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int p8est_connectivity_face_neighbor_corner_set </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transform a corner across one of the adjacent faces into a neighbor tree. </p>
+<p>It expects a face permutation index that has been precomputed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>A corner number in 0..7. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>A face number that touches the corner <em>c</em>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nf</td><td>A neighbor face that is on the other side of . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">set</td><td>A value from <em>p8est_face_permutation_sets</em> that is obtained using <em>f</em>, <em>nf</em>, and a valid orientation: ref = p8est_face_permutation_refs[f][nf]; set = p8est_face_permutation_sets[ref][orientation]; </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The corner number in 0..7 seen from the other face. </dd></dl>
 
 </div>
 </div>
@@ -1099,6 +1209,229 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a323fe9836afb429b60a8b06ff0f6c08c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a>* p8est_connectivity_read_inp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a p4est connectivity from an ABAQUS input file. </p>
+<p>This utility function reads a basic ABAQUS file supporting element type with the prefix C2D4, CPS4, and S4 in 2D and of type C3D8 reading them as bilinear quadrilateral and trilinear hexahedral trees respectively.</p>
+<p>A basic 2D mesh is given below. The <code>*Node</code> section gives the vertex number and x, y, and z components for each vertex. The <code>*Element</code> section gives the 4 vertices in 2D (8 vertices in 3D) of each element in counter clockwise order. So in 2D the nodes are given as:</p>
+<p>4 3 +----------------&mdash;+ </p>
+<table class="doxtable">
+<tr>
+<th></th></tr>
+<tr>
+<td></td></tr>
+<tr>
+<td></td></tr>
+<tr>
+<td></td></tr>
+<tr>
+<td></td></tr>
+</table>
+<p>+----------------&mdash;+ 1 2</p>
+<p>and in 3D they are given as:</p>
+<p>8 7 +------------------&mdash;+ |\ |\ | \ | \ | \ | \ | \ | \ | 5+------------------&mdash;+6 | | | | +-&mdash;|-------------&mdash;+ | 4\ | 3 \ | \ | \ | \ | \ | | | +------------------&mdash;+ 1 2</p>
+<div class="fragment"><div class="line">*Heading</div>
+<div class="line"> box.inp</div>
+<div class="line">*Node</div>
+<div class="line">    1,    5,   -5,    5</div>
+<div class="line">    2,    5,    5,    5</div>
+<div class="line">    3,    5,    0,    5</div>
+<div class="line">    4,   -5,    5,    5</div>
+<div class="line">    5,    0,    5,    5</div>
+<div class="line">    6,   -5,   -5,    5</div>
+<div class="line">    7,   -5,    0,    5</div>
+<div class="line">    8,    0,   -5,    5</div>
+<div class="line">    9,    0,    0,    5</div>
+<div class="line">   10,    5,    5,   -5</div>
+<div class="line">   11,    5,   -5,   -5</div>
+<div class="line">   12,    5,    0,   -5</div>
+<div class="line">   13,   -5,   -5,   -5</div>
+<div class="line">   14,    0,   -5,   -5</div>
+<div class="line">   15,   -5,    5,   -5</div>
+<div class="line">   16,   -5,    0,   -5</div>
+<div class="line">   17,    0,    5,   -5</div>
+<div class="line">   18,    0,    0,   -5</div>
+<div class="line">   19,   -5,   -5,    0</div>
+<div class="line">   20,    5,   -5,    0</div>
+<div class="line">   21,    0,   -5,    0</div>
+<div class="line">   22,   -5,    5,    0</div>
+<div class="line">   23,   -5,    0,    0</div>
+<div class="line">   24,    5,    5,    0</div>
+<div class="line">   25,    0,    5,    0</div>
+<div class="line">   26,    5,    0,    0</div>
+<div class="line">   27,    0,    0,    0</div>
+<div class="line">*Element, type=C3D8, ELSET=EB1</div>
+<div class="line">    1,       6,      19,      23,       7,       8,      21,      27,       9</div>
+<div class="line">    2,      19,      13,      16,      23,      21,      14,      18,      27</div>
+<div class="line">    3,       7,      23,      22,       4,       9,      27,      25,       5</div>
+<div class="line">    4,      23,      16,      15,      22,      27,      18,      17,      25</div>
+<div class="line">    5,       8,      21,      27,       9,       1,      20,      26,       3</div>
+<div class="line">    6,      21,      14,      18,      27,      20,      11,      12,      26</div>
+<div class="line">    7,       9,      27,      25,       5,       3,      26,      24,       2</div>
+<div class="line">    8,      27,      18,      17,      25,      26,      12,      10,      24</div>
+</div><!-- fragment --><p>This function reads a mesh from <em>filename</em> and returns an associated p4est connectivity.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>file to read the connectivity from</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an allocated connectivity associated with the mesh in <em>filename</em> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a799075453ef289d1993a7c11f1d2d5d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int p8est_connectivity_read_inp_stream </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> *&#160;</td>
+          <td class="paramname"><em>num_vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> *&#160;</td>
+          <td class="paramname"><em>num_trees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> *&#160;</td>
+          <td class="paramname"><em>tree_to_vertex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read an ABAQUS input file from a file stream. </p>
+<p>This utility function reads a basic ABAQUS file supporting element type with the prefix C2D4, CPS4, and S4 in 2D and of type C3D8 reading them as bilinear quadrilateral and trilinear hexahedral trees respectively.</p>
+<p>A basic 2D mesh is given below. The <code>*Node</code> section gives the vertex number and x, y, and z components for each vertex. The <code>*Element</code> section gives the 4 vertices in 2D (8 vertices in 3D) of each element in counter clockwise order. So in 2D the nodes are given as:</p>
+<p>4 3 +----------------&mdash;+ </p>
+<table class="doxtable">
+<tr>
+<th></th></tr>
+<tr>
+<td></td></tr>
+<tr>
+<td></td></tr>
+<tr>
+<td></td></tr>
+<tr>
+<td></td></tr>
+</table>
+<p>+----------------&mdash;+ 1 2</p>
+<p>and in 3D they are given as:</p>
+<p>8 7 +------------------&mdash;+ |\ |\ | \ | \ | \ | \ | \ | \ | 5+------------------&mdash;+6 | | | | +-&mdash;|-------------&mdash;+ | 4\ | 3 \ | \ | \ | \ | \ | | | +------------------&mdash;+ 1 2</p>
+<div class="fragment"><div class="line">*Heading</div>
+<div class="line"> box.inp</div>
+<div class="line">*Node</div>
+<div class="line">    1,    5,   -5,    5</div>
+<div class="line">    2,    5,    5,    5</div>
+<div class="line">    3,    5,    0,    5</div>
+<div class="line">    4,   -5,    5,    5</div>
+<div class="line">    5,    0,    5,    5</div>
+<div class="line">    6,   -5,   -5,    5</div>
+<div class="line">    7,   -5,    0,    5</div>
+<div class="line">    8,    0,   -5,    5</div>
+<div class="line">    9,    0,    0,    5</div>
+<div class="line">   10,    5,    5,   -5</div>
+<div class="line">   11,    5,   -5,   -5</div>
+<div class="line">   12,    5,    0,   -5</div>
+<div class="line">   13,   -5,   -5,   -5</div>
+<div class="line">   14,    0,   -5,   -5</div>
+<div class="line">   15,   -5,    5,   -5</div>
+<div class="line">   16,   -5,    0,   -5</div>
+<div class="line">   17,    0,    5,   -5</div>
+<div class="line">   18,    0,    0,   -5</div>
+<div class="line">   19,   -5,   -5,    0</div>
+<div class="line">   20,    5,   -5,    0</div>
+<div class="line">   21,    0,   -5,    0</div>
+<div class="line">   22,   -5,    5,    0</div>
+<div class="line">   23,   -5,    0,    0</div>
+<div class="line">   24,    5,    5,    0</div>
+<div class="line">   25,    0,    5,    0</div>
+<div class="line">   26,    5,    0,    0</div>
+<div class="line">   27,    0,    0,    0</div>
+<div class="line">*Element, type=C3D8, ELSET=EB1</div>
+<div class="line">    1,       6,      19,      23,       7,       8,      21,      27,       9</div>
+<div class="line">    2,      19,      13,      16,      23,      21,      14,      18,      27</div>
+<div class="line">    3,       7,      23,      22,       4,       9,      27,      25,       5</div>
+<div class="line">    4,      23,      16,      15,      22,      27,      18,      17,      25</div>
+<div class="line">    5,       8,      21,      27,       9,       1,      20,      26,       3</div>
+<div class="line">    6,      21,      14,      18,      27,      20,      11,      12,      26</div>
+<div class="line">    7,       9,      27,      25,       5,       3,      26,      24,       2</div>
+<div class="line">    8,      27,      18,      17,      25,      26,      12,      10,      24</div>
+</div><!-- fragment --><p>This code can be called two ways. The first, when <code>vertex==NULL</code> and <code>tree_to_vertex==NULL</code>, is used to count the number of tress and vertices in the connectivity to be generated by the <code></code>.inp mesh in the <em>stream</em>. The second, when <code>vertices!=NULL</code> and <code>tree_to_vertex!=NULL</code>, fill <code>vertices</code> and <code>tree_to_vertex</code>. In this case <code>num_vertices</code> and <code>num_trees</code> need to be set to the maximum number of entries allocated in <code>vertices</code> and <code>tree_to_vertex</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">stream</td><td>file stream to read the connectivity from </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">num_vertices</td><td>the number of vertices in the connectivity </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">num_trees</td><td>the number of trees in the connectivity </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vertices</td><td>the list of <code>vertices</code> of the connectivity </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tree_to_vertex</td><td>the <code>tree_to_vertex</code> map of the connectivity</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successful and nonzero if not </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e08b33ab47a63184806dcd2e4b5aa32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void p8est_connectivity_reduce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes corner and edge information of a connectivity such that enough information is left to run p8est_connectivity_complete successfully. </p>
+<p>The reduced connectivity still passes p8est_connectivity_is_valid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">conn</td><td>The connectivity to be reduced. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="afe63a66d455f83bc317bb1b944e9d5a2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1135,7 +1468,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad676c4fe3f43a4326a2e92b213856904"></a>
+<a class="anchor" id="a135b60b27c6ba2c54f0981554f65fcc6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1148,8 +1481,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>enable_tree_attr</em>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bytes_per_tree</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1163,7 +1496,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">conn</td><td>The conn-&gt;*_to_attr fields must either be NULL or previously be allocated by this function. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable_tree_attr</td><td>If false, tree_to_attr is freed (NULL is ok). If true, it must be NULL and is allocated. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytes_per_tree</td><td>If 0, tree_to_attr is freed (being NULL is ok). If positive, requested space is allocated. </td></tr>
   </table>
   </dd>
 </dl>

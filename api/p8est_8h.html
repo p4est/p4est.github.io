@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -220,9 +220,6 @@ Variables</h2></td></tr>
 <tr class="memitem:a2131296ffb1caa0996a6d4279e97bfd3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2131296ffb1caa0996a6d4279e97bfd3"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>P8EST_DATA_UNINITIALIZED</b></td></tr>
 <tr class="separator:a2131296ffb1caa0996a6d4279e97bfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2194c6d814a9a1454e73e92cdd0eb71c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2194c6d814a9a1454e73e92cdd0eb71c"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>p8est_num_ranges</b></td></tr>
-<tr class="separator:a2194c6d814a9a1454e73e92cdd0eb71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The top-level 3D p8est interface. </p>
@@ -353,7 +350,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>p8est_num_ranges
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">p8est</td><td>The p8est to be worked on. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">btype</td><td>Balance type (face, edge, or corner/full). Examples: Finite volume or discontinous Galerkin methods only require face balance. Continuous finite element methods usually require edge balance. Corner balance is almost never required mathematically; it just produces a smoother mesh grading. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">btype</td><td>Balance type (face, edge, or corner/full). Examples: Finite volume or discontinuous Galerkin methods only require face balance. Continuous finite element methods usually require edge balance. Corner balance is almost never required mathematically; it just produces a smoother mesh grading. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">init_fn</td><td>Callback function to initialize the user_data which is already allocated automatically. </td></tr>
   </table>
   </dd>

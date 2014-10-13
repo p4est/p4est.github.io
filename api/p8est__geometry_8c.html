@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -96,7 +96,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>We provide some geometry transformations for the builtin connectivities.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="p8est__geometry_8h_source.html">p8est_geometry.h</a>&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="el" href="p4est__to__p8est_8h_source.html">p4est_to_p8est.h</a>&gt;</code><br/>
+<code>#include &quot;<a class="el" href="p4est__geometry_8c.html">p4est_geometry.c</a>&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -117,56 +118,36 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a315f72ffc9fc049f4ec4b95443f8e171"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a315f72ffc9fc049f4ec4b95443f8e171"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>p8est_geometry_identity_X</b> (p8est_geometry_t *geom, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> which_tree, const double abc[3], double xyz[3])</td></tr>
-<tr class="separator:a315f72ffc9fc049f4ec4b95443f8e171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3477f02743644743ab84522884cb2d57"><td class="memItemLeft" align="right" valign="top">p8est_geometry_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__geometry_8c.html#a3477f02743644743ab84522884cb2d57">p8est_geometry_new_identity</a> (void)</td></tr>
-<tr class="memdesc:a3477f02743644743ab84522884cb2d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a geometry structure for the identity transformation.  <a href="#a3477f02743644743ab84522884cb2d57">More...</a><br/></td></tr>
-<tr class="separator:a3477f02743644743ab84522884cb2d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04952133030b559598e61c94fbce5ee7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04952133030b559598e61c94fbce5ee7"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>p8est_geometry_shell_X</b> (p8est_geometry_t *geom, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> which_tree, const double abc[3], double xyz[3])</td></tr>
-<tr class="separator:a04952133030b559598e61c94fbce5ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e1bb3ff5b01d6c6e7de6c21e2889cfc"><td class="memItemLeft" align="right" valign="top">p8est_geometry_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__geometry_8c.html#a3e1bb3ff5b01d6c6e7de6c21e2889cfc">p8est_geometry_new_shell</a> (double R2, double R1)</td></tr>
-<tr class="memdesc:a3e1bb3ff5b01d6c6e7de6c21e2889cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a geometry structure for the spherical shell of 24 trees.  <a href="#a3e1bb3ff5b01d6c6e7de6c21e2889cfc">More...</a><br/></td></tr>
-<tr class="separator:a3e1bb3ff5b01d6c6e7de6c21e2889cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf4ca6765d97e7de2e09d03ceda03567"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf4ca6765d97e7de2e09d03ceda03567"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>p8est_geometry_sphere_X</b> (p8est_geometry_t *geom, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> which_tree, const double abc[3], double xyz[3])</td></tr>
-<tr class="separator:acf4ca6765d97e7de2e09d03ceda03567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e3307fedf3d35787130ba414db4dc98"><td class="memItemLeft" align="right" valign="top">p8est_geometry_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__geometry_8c.html#a8e3307fedf3d35787130ba414db4dc98">p8est_geometry_new_sphere</a> (double R2, double R1, double R0)</td></tr>
-<tr class="memdesc:a8e3307fedf3d35787130ba414db4dc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a geometry structure for the solid sphere of 13 trees.  <a href="#a8e3307fedf3d35787130ba414db4dc98">More...</a><br/></td></tr>
-<tr class="separator:a8e3307fedf3d35787130ba414db4dc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710db558f5a35a9ffdbdf46cc761db93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a710db558f5a35a9ffdbdf46cc761db93"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>p8est_geometry_shell_X</b> (p8est_geometry_t *geom, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> which_tree, const double rst[3], double xyz[3])</td></tr>
+<tr class="separator:a710db558f5a35a9ffdbdf46cc761db93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7047c9e6923c9dd69bf77febc49301"><td class="memItemLeft" align="right" valign="top">p8est_geometry_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__geometry_8c.html#acc7047c9e6923c9dd69bf77febc49301">p8est_geometry_new_shell</a> (<a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *conn, double R2, double R1)</td></tr>
+<tr class="memdesc:acc7047c9e6923c9dd69bf77febc49301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a geometry structure for the spherical shell of 24 trees.  <a href="#acc7047c9e6923c9dd69bf77febc49301">More...</a><br/></td></tr>
+<tr class="separator:acc7047c9e6923c9dd69bf77febc49301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad0b61f0f5dce68e9e48cd0820948a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acad0b61f0f5dce68e9e48cd0820948a7"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>p8est_geometry_sphere_X</b> (p8est_geometry_t *geom, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> which_tree, const double rst[3], double xyz[3])</td></tr>
+<tr class="separator:acad0b61f0f5dce68e9e48cd0820948a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbbb83633ccbc82ebb0c66bda3d3cd3e"><td class="memItemLeft" align="right" valign="top">p8est_geometry_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p8est__geometry_8c.html#acbbb83633ccbc82ebb0c66bda3d3cd3e">p8est_geometry_new_sphere</a> (<a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *conn, double R2, double R1, double R0)</td></tr>
+<tr class="memdesc:acbbb83633ccbc82ebb0c66bda3d3cd3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a geometry structure for the solid sphere of 13 trees.  <a href="#acbbb83633ccbc82ebb0c66bda3d3cd3e">More...</a><br/></td></tr>
+<tr class="separator:acbbb83633ccbc82ebb0c66bda3d3cd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>We provide some geometry transformations for the builtin connectivities. </p>
 <p>They are not meant as blueprints for future user code. Please implement p8est_geometry_t as you see fit. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a3477f02743644743ab84522884cb2d57"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">p8est_geometry_t* p8est_geometry_new_identity </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a geometry structure for the identity transformation. </p>
-<p>This function is just for demonstration since a NULL geometry works too. </p>
-<dl class="section return"><dt>Returns</dt><dd>Geometry structure which must be freed with P4EST_FREE. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3e1bb3ff5b01d6c6e7de6c21e2889cfc"></a>
+<a class="anchor" id="acc7047c9e6923c9dd69bf77febc49301"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">p8est_geometry_t* p8est_geometry_new_shell </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>R2</em>, </td>
         </tr>
@@ -185,25 +166,31 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>p8est_geometry
 </div><div class="memdoc">
 
 <p>Create a geometry structure for the spherical shell of 24 trees. </p>
-<p>This is suitable for forests obtained with p8est_connectivity_new_shell. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn</td><td>Result of p8est_connectivity_new_shell or equivalent. We do NOT take ownership and expect it to stay alive. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">R2</td><td>The outer radius of the shell. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">R1</td><td>The inner radius of the shell. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Geometry structure which must be freed with P4EST_FREE. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Geometry structure; use with p4est_geometry_destroy. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a8e3307fedf3d35787130ba414db4dc98"></a>
+<a class="anchor" id="acbbb83633ccbc82ebb0c66bda3d3cd3e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">p8est_geometry_t* p8est_geometry_new_sphere </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="structp8est__connectivity__t.html">p8est_connectivity_t</a> *&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>R2</em>, </td>
         </tr>
@@ -228,16 +215,16 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>p8est_geometry
 </div><div class="memdoc">
 
 <p>Create a geometry structure for the solid sphere of 13 trees. </p>
-<p>This is suitable for forests obtained with p8est_connectivity_new_sphere. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn</td><td>Result of p8est_connectivity_new_sphere or equivalent. We do NOT take ownership and expect it to stay alive. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">R2</td><td>The outer radius of the sphere. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">R1</td><td>The outer radius of the inner shell. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">R0</td><td>The inner radius of the inner shell. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Geometry structure which must be freed with P4EST_FREE. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Geometry structure; use with p4est_geometry_destroy. </dd></dl>
 
 </div>
 </div>

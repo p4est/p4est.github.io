@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a79136238106c3137475069b64c07004e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the coordinates of the midpoint of a quadrant.  <a href="#a79136238106c3137475069b64c07004e">More...</a><br/></td></tr>
 <tr class="separator:a79136238106c3137475069b64c07004e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a554fae21a1b79d208e45c47506a861f9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step3_8c.html#a554fae21a1b79d208e45c47506a861f9">step3_init_initial_condition</a> (<a class="el" href="structp4est__t.html">p4est_t</a> *p4est, <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> which_tree, <a class="el" href="structp4est__quadrant__t.html">p4est_quadrant_t</a> *q)</td></tr>
-<tr class="memdesc:a554fae21a1b79d208e45c47506a861f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the inital condition data of a quadrant.  <a href="#a554fae21a1b79d208e45c47506a861f9">More...</a><br/></td></tr>
+<tr class="memdesc:a554fae21a1b79d208e45c47506a861f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the initial condition data of a quadrant.  <a href="#a554fae21a1b79d208e45c47506a861f9">More...</a><br/></td></tr>
 <tr class="separator:a554fae21a1b79d208e45c47506a861f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a216c78f1f35a9bded7e79a22bbc0f442"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step3_8c.html#a216c78f1f35a9bded7e79a22bbc0f442">step3_error_sqr_estimate</a> (<a class="el" href="structp4est__quadrant__t.html">p4est_quadrant_t</a> *q)</td></tr>
 <tr class="memdesc:a216c78f1f35a9bded7e79a22bbc0f442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the square of the approximation error on a quadrant.  <a href="#a216c78f1f35a9bded7e79a22bbc0f442">More...</a><br/></td></tr>
@@ -151,7 +151,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a0de3caa7cd107b13dfdf9e90b25730ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the new value of the state from the computed time derivative.  <a href="#a0de3caa7cd107b13dfdf9e90b25730ad">More...</a><br/></td></tr>
 <tr class="separator:a0de3caa7cd107b13dfdf9e90b25730ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9ba9559c8ef3c36f82ae6302796cb8f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step3_8c.html#ac9ba9559c8ef3c36f82ae6302796cb8f">step3_reset_derivatives</a> (<a class="el" href="structp4est__iter__volume__info__t.html">p4est_iter_volume_info_t</a> *info, void *user_data)</td></tr>
-<tr class="memdesc:ac9ba9559c8ef3c36f82ae6302796cb8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the approxmate derivatives.  <a href="#ac9ba9559c8ef3c36f82ae6302796cb8f">More...</a><br/></td></tr>
+<tr class="memdesc:ac9ba9559c8ef3c36f82ae6302796cb8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the approximate derivatives.  <a href="#ac9ba9559c8ef3c36f82ae6302796cb8f">More...</a><br/></td></tr>
 <tr class="separator:ac9ba9559c8ef3c36f82ae6302796cb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d3801356a2884d17ce21eb25eefe7cc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="p4est__step3_8c.html#a3d3801356a2884d17ce21eb25eefe7cc">step3_minmod_estimate</a> (<a class="el" href="structp4est__iter__face__info__t.html">p4est_iter_face_info_t</a> *info, void *user_data)</td></tr>
 <tr class="memdesc:a3d3801356a2884d17ce21eb25eefe7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">For two quadrants on either side of a face, estimate the derivative normal to the face.  <a href="#a3d3801356a2884d17ce21eb25eefe7cc">More...</a><br/></td></tr>
@@ -171,7 +171,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This 2D example program uses p4est to solve a simple advection problem. </p>
-<p>It is numerically very simple, and intended to demonstrate several methods of interacting with the p4est data after it has been refined and partitioned. It demonstrates the construction of ghost layers (see <a class="el" href="structp4est__ghost__t.html" title="quadrants that neighbor the local domain ">p4est_ghost_t</a> in <a class="el" href="p4est__ghost_8h.html" title="passing quadrants and data to neighboring processes ">p4est_ghost.h</a>) and communication of ghost-layer data, and it demonstrates iteracting with the quadrants and quadrant boundaries through the <a class="el" href="p4est__iterate_8h.html#aca75de06c7e9f039fa3be925a6ae87b4" title="Execute user supplied callbacks at every volume, face, and corner in the local forest. ">p4est_iterate()</a> routine (see <a class="el" href="p4est__iterate_8h.html" title="Iteration over mesh topology via callbacks. ">p4est_iterate.h</a>). </p>
+<p>It is numerically very simple, and intended to demonstrate several methods of interacting with the p4est data after it has been refined and partitioned. It demonstrates the construction of ghost layers (see <a class="el" href="structp4est__ghost__t.html" title="quadrants that neighbor the local domain ">p4est_ghost_t</a> in <a class="el" href="p4est__ghost_8h.html" title="passing quadrants and data to neighboring processes ">p4est_ghost.h</a>) and communication of ghost-layer data, and it demonstrates interacting with the quadrants and quadrant boundaries through the <a class="el" href="p4est__iterate_8h.html#aca75de06c7e9f039fa3be925a6ae87b4" title="Execute user supplied callbacks at every volume, face, and corner in the local forest. ">p4est_iterate()</a> routine (see <a class="el" href="p4est__iterate_8h.html" title="Iteration over mesh topology via callbacks. ">p4est_iterate.h</a>). </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 <div class="memitem">
@@ -515,7 +515,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize the inital condition data of a quadrant. </p>
+<p>Initialize the initial condition data of a quadrant. </p>
 <p>This function matches the p4est_init_t prototype that is used by <a class="el" href="p4est_8h.html#ac10dc6f325322ad6af793c5b6acbf4c2" title="Create a new forest. ">p4est_new()</a>, <a class="el" href="p4est_8h.html#a1a31375edfa42b5609e7656233c32cca" title="Refine a forest. ">p4est_refine()</a>, <a class="el" href="p4est_8h.html#ad250f4765d9778ec3940e9fabea7c853" title="Coarsen a forest. ">p4est_coarsen()</a>, and <a class="el" href="p4est_8h.html#a6b603736cf5007b14755197a9c179a85" title="2:1 balance the size differences of neighboring elements in a forest. ">p4est_balance()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -823,7 +823,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize the state variables of incoming quadrants from outgoing quadrants. </p>
-<p>The functions <a class="el" href="p4est__extended_8h.html#aad32df9df3630b6bac05e7366a5f1e46" title="Refine a forest with a bounded refinement level and a replace option. ">p4est_refine_ext()</a>, <a class="el" href="p4est__extended_8h.html#a06630b99f70cb85c73452640e8b4d54e" title="Coarsen a forest. ">p4est_coarsen_ext()</a>, and <a class="el" href="p4est__extended_8h.html#a666a197be8d6d83c08cc14bfdc8565ed" title="2:1 balance the size differences of neighboring elements in a forest. ">p4est_balance_ext()</a> take as an argument a p4est_replace_t callback function, which allows one to setup the quadrant data of incoming quadrants from the data of outgoing quadrants, before the outgoing data is destroyed. This function mathces the p4est_replace_t prototype.</p>
+<p>The functions <a class="el" href="p4est__extended_8h.html#aad32df9df3630b6bac05e7366a5f1e46" title="Refine a forest with a bounded refinement level and a replace option. ">p4est_refine_ext()</a>, <a class="el" href="p4est__extended_8h.html#a06630b99f70cb85c73452640e8b4d54e" title="Coarsen a forest. ">p4est_coarsen_ext()</a>, and <a class="el" href="p4est__extended_8h.html#a666a197be8d6d83c08cc14bfdc8565ed" title="2:1 balance the size differences of neighboring elements in a forest. ">p4est_balance_ext()</a> take as an argument a p4est_replace_t callback function, which allows one to setup the quadrant data of incoming quadrants from the data of outgoing quadrants, before the outgoing data is destroyed. This function matches the p4est_replace_t prototype.</p>
 <p>In this example, we linearly interpolate the state variable of a quadrant that is refined to its children, and we average the midpoints of children that are being coarsened to the parent.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -871,7 +871,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reset the approxmate derivatives. </p>
+<p>Reset the approximate derivatives. </p>
 <p><a class="el" href="p4est__iterate_8h.html#aca75de06c7e9f039fa3be925a6ae87b4" title="Execute user supplied callbacks at every volume, face, and corner in the local forest. ">p4est_iterate()</a> has an invariant to the order of callback execution: the p4est_iter_volume_t callback will be executed on a quadrant before the p4est_iter_face_t callbacks are executed on its faces. This function resets the derivative stored in the quadrant's data before <a class="el" href="p4est__step3_8c.html#a3d3801356a2884d17ce21eb25eefe7cc" title="For two quadrants on either side of a face, estimate the derivative normal to the face...">step3_minmod_estimate()</a> updates the derivative based on the face neighbors.</p>
 <p>This function matches the p4est_iter_volume_t prototype used by <a class="el" href="p4est__iterate_8h.html#aca75de06c7e9f039fa3be925a6ae87b4" title="Execute user supplied callbacks at every volume, face, and corner in the local forest. ">p4est_iterate()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -206,7 +206,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p8est</td><td>The p8est to be written. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">geom</td><td>A p8est_geometry_t structure or NULL for identity. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">geom</td><td>A p8est_geometry_t structure or NULL for vertex space. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scale</td><td>Double value between 0 and 1 to scale each quadrant. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">write_tree</td><td>Include the tree id as output field. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">write_level</td><td>Include the tree levels as output field. </td></tr>
@@ -253,11 +253,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This writes out the p8est in VTK format. </p>
-<p>This is a convenience function for the special case of writing out the tree id and MPI rank only. One file is written per MPI rank, and one meta file on rank 0. This function will abort if there is a file error.</p>
+<p>This is a convenience function for the special case of writing out the tree id, quadrant level, and MPI rank only. One file is written per MPI rank, and one meta file on rank 0. This function will abort if there is a file error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">p8est</td><td>The p8est to be written. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">geom</td><td>A p8est_geometry_t structure or NULL for identity. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">geom</td><td>A p8est_geometry_t structure or NULL for vertex space. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>The first part of the file name which will have the MPI rank appended to it: The output file will be filename_procNum.vtu, and the meta file filename.pvtu. </td></tr>
   </table>
   </dd>
@@ -381,7 +381,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p8est</td><td>The p8est to be written. </td></tr>
-    <tr><td class="paramname">geom</td><td>A p8est_geometry_t structure or NULL for identity. </td></tr>
+    <tr><td class="paramname">geom</td><td>A p8est_geometry_t structure or NULL for vertex space. </td></tr>
     <tr><td class="paramname">scale</td><td>The relative length factor of the quadrants. Use 1.0 to fit quadrants exactly, less to create gaps. </td></tr>
     <tr><td class="paramname">write_tree</td><td>Boolean to determine if the tree id should be output. </td></tr>
     <tr><td class="paramname">write_level</td><td>Boolean to determine if the tree levels should be output. </td></tr>
@@ -445,7 +445,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p8est</td><td>The p8est to be written. </td></tr>
-    <tr><td class="paramname">geom</td><td>A p8est_geometry_t structure or NULL for identity. </td></tr>
+    <tr><td class="paramname">geom</td><td>A p8est_geometry_t structure or NULL for vertex space. </td></tr>
     <tr><td class="paramname">filename</td><td>The first part of the name which will have the proc number appended to it (i.e., the output file will be filename_procNum.vtu). </td></tr>
     <tr><td class="paramname">scalar_name</td><td>The name of the scalar field. </td></tr>
     <tr><td class="paramname">values</td><td>The point values that will be written.</td></tr>
@@ -504,7 +504,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p8est</td><td>The p8est to be written. </td></tr>
-    <tr><td class="paramname">geom</td><td>A p8est_geometry_t structure or NULL for identity. </td></tr>
+    <tr><td class="paramname">geom</td><td>A p8est_geometry_t structure or NULL for vertex space. </td></tr>
     <tr><td class="paramname">filename</td><td>The first part of the name which will have the proc number appended to it (i.e., the output file will be filename_procNum.vtu). </td></tr>
     <tr><td class="paramname">vector_name</td><td>The name of the vector field. </td></tr>
     <tr><td class="paramname">values</td><td>The point values that will be written.</td></tr>

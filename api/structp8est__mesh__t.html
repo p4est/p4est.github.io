@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -104,7 +104,7 @@ Data Fields</h2></td></tr>
 <tr class="separator:ac0166374464622d8f39a88f89eb195e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af766d9fff5f6c17491830bfc3b7dd371"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af766d9fff5f6c17491830bfc3b7dd371"></a>
 <a class="el" href="p4est__base_8h.html#a8e849f705b0d4d1702b8f5102823f48c">p4est_topidx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structp8est__mesh__t.html#af766d9fff5f6c17491830bfc3b7dd371">quad_to_tree</a></td></tr>
-<tr class="memdesc:af766d9fff5f6c17491830bfc3b7dd371"><td class="mdescLeft">&#160;</td><td class="mdescRight">tree index for each local quad <br/></td></tr>
+<tr class="memdesc:af766d9fff5f6c17491830bfc3b7dd371"><td class="mdescLeft">&#160;</td><td class="mdescRight">tree index for each local quad, NULL by default <br/></td></tr>
 <tr class="separator:af766d9fff5f6c17491830bfc3b7dd371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3033d3252367fdbe44753db28ab4c7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3033d3252367fdbe44753db28ab4c7d"></a>
 int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structp8est__mesh__t.html#aa3033d3252367fdbe44753db28ab4c7d">ghost_to_proc</a></td></tr>
@@ -122,6 +122,10 @@ int8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <a class="el" href="structsc__array__t.html">sc_array_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structp8est__mesh__t.html#a04bb30b9efc5bb23f21961718aaa71ea">quad_to_half</a></td></tr>
 <tr class="memdesc:a04bb30b9efc5bb23f21961718aaa71ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores half-size neighbors <br/></td></tr>
 <tr class="separator:a04bb30b9efc5bb23f21961718aaa71ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3eb3b86fb58155e2a38837312bca829"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3eb3b86fb58155e2a38837312bca829"></a>
+<a class="el" href="structsc__array__t.html">sc_array_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structp8est__mesh__t.html#ad3eb3b86fb58155e2a38837312bca829">quad_level</a></td></tr>
+<tr class="memdesc:ad3eb3b86fb58155e2a38837312bca829"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores lists of per-level quads, NULL by default <br/></td></tr>
+<tr class="separator:ad3eb3b86fb58155e2a38837312bca829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af157688d319a78011b16b4aadec82344"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af157688d319a78011b16b4aadec82344"></a>
 <a class="el" href="p4est__base_8h.html#a9f350ee78755ec6e7d25fb1dca474573">p4est_locidx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>local_num_corners</b></td></tr>
 <tr class="separator:af157688d319a78011b16b4aadec82344"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,14 +145,16 @@ int8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This structure contains complete mesh information on the forest. </p>
 <p>It stores the locally relevant neighborhood, that is, all locally owned quadrants and one layer of adjacent ghost quadrants and their owners.</p>
-<p>For each local quadrant, its tree number is stored in quad_to_tree. For each ghost quadrant, its owner rank is stored in ghost_to_proc.</p>
+<p>For each local quadrant, its tree number is stored in quad_to_tree. The quad_to_tree array is NULL by default and can be enabled using p8est_mesh_new_ext. For each ghost quadrant, its owner rank is stored in ghost_to_proc. For each level, an array of local quadrant numbers is stored in quad_level. The quad_level array is NULL by default and can be enabled using p8est_mesh_new_ext.</p>
 <p>The quad_to_quad list stores one value for each local quadrant's face. This value is in 0..local_num_quadrants-1 for local quadrants, or in local_num_quadrants + (0..ghost_num_quadrants-1) for ghost quadrants. The quad_to_face list has equally many entries which are either:</p>
 <ol type="1">
 <li>A value of v = 0..23 indicates one same-size neighbor. This value is decoded as v = r * 6 + nf, where nf = 0..5 is the neighbor's connecting face number and r = 0..3 is the relative orientation of the neighbor's face, see <a class="el" href="p8est__connectivity_8h.html" title="The coarse topological description of the forest. ">p8est_connectivity.h</a>.</li>
 <li>A value of v = 24..119 indicates a double-size neighbor. This value is decoded as v = 24 + h * 24 + r * 6 + nf, where r and nf are as above and h = 0..3 is the number of the subface.</li>
 <li>A value of v = -24..-1 indicates four half-size neighbors. In this case the corresponding quad_to_quad index points into the quad_to_half array which stores four quadrant numbers per index, and the orientation of the smaller faces follows from 24 + v. The entries of quad_to_half encode between local and ghost quadrant in the same way as the quad_to_quad values described above. A quadrant on the boundary of the forest sees itself and its face number.</li>
 </ol>
-<p>The quad_to_corner list stores corner neighbors that are not face or edge neighbors. On the inside of a tree or inside an inter-tree face, there is precisely one such neighbor per corner. In this case, its index is encoded as described above for quad_to_quad. On the other hand, if a corner is an inter-tree corner or inside an inter-tree edge, then the number of corner neighbors may be any non-negative number. In this case, the value is in local_num_quadrants + local_num_ghosts + [0 .. num_corners - 1]. It indexes into corner_offset, which encodes a group of corner neighbors. Each group contains the quadrant numbers encoded as usual for quad_to_quad in corner_quad, and the corner number from the neighbor as corner_corner. Inter-tree/tree-edge corners are NOT YET IMPLEMENTED and set to -2. Corners with no diagonal neighbor at all are assigned the value -1. </p>
+<p>The quad_to_corner list stores corner neighbors that are not face or edge neighbors. On the inside of a tree, there is precisely one such neighbor per corner. In this case, its index is encoded as described above for quad_to_quad. The neighbor's matching corner number is always diagonally opposite.</p>
+<p>On the inside of an inter-tree face, we have precisely one corner neighbor. If a corner is across an inter-tree edge or corner, then the number of corner neighbors may be any non-negative number. In all inter-tree cases, the quad_to_corner value is in local_num_quadrants + local_num_ghosts + [0 .. local_num_corners - 1] where the offset by local quadrants and ghosts is implicitly substracted. It indexes into corner_offset, which encodes a group of corner neighbors. Each group contains the quadrant numbers encoded as usual for quad_to_quad in corner_quad, and the corner number from the neighbor as corner_corner.</p>
+<p>Intra-tree corners and corners across an inter-tree face are implemented. Other inter-tree corners are NOT IMPLEMENTED and are assigned the value -2. Corners with no diagonal neighbor at all are assigned the value -1. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="p8est__mesh_8h_source.html">p8est_mesh.h</a></li>
 </ul>

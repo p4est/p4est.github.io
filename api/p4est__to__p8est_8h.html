@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>transforms 2D <a class="el" href="group__p4est.html">p4est</a> routines into 3D <a class="el" href="group__p8est.html">p8est</a> routines  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &lt;<a class="el" href="p4est__base_8h_source.html">p4est_base.h</a>&gt;</code><br/>
+</div>
 <p><a href="p4est__to__p8est_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -186,6 +187,15 @@ Macros</h2></td></tr>
 <tr class="memitem:a1513f587d2a5b65d0ed53093ba303667"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1513f587d2a5b65d0ed53093ba303667"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>P4EST_COMM_GHOST_EXPAND_LOAD</b>&#160;&#160;&#160;P8EST_COMM_GHOST_EXPAND_LOAD</td></tr>
 <tr class="separator:a1513f587d2a5b65d0ed53093ba303667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3279a8821a2371f3a4145d7bf36650b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3279a8821a2371f3a4145d7bf36650b2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>P4EST_COMM_GHOST_SUPPORT_COUNT</b>&#160;&#160;&#160;P8EST_COMM_GHOST_SUPPORT_COUNT</td></tr>
+<tr class="separator:a3279a8821a2371f3a4145d7bf36650b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca43a8a362556d647e68b1b98892fde"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ca43a8a362556d647e68b1b98892fde"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>P4EST_COMM_GHOST_SUPPORT_LOAD</b>&#160;&#160;&#160;P8EST_COMM_GHOST_SUPPORT_LOAD</td></tr>
+<tr class="separator:a2ca43a8a362556d647e68b1b98892fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb8b34dc5e1f29204851eb7b636514b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bb8b34dc5e1f29204851eb7b636514b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>P4EST_COMM_GHOST_CHECKSUM</b>&#160;&#160;&#160;P8EST_COMM_GHOST_CHECKSUM</td></tr>
+<tr class="separator:a2bb8b34dc5e1f29204851eb7b636514b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acacb5c519b884093e23297c33bb328ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acacb5c519b884093e23297c33bb328ef"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>P4EST_COMM_NODES_QUERY</b>&#160;&#160;&#160;P8EST_COMM_NODES_QUERY</td></tr>
 <tr class="separator:acacb5c519b884093e23297c33bb328ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,9 +364,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a514f6579b5c773c25244023bd5c867db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a514f6579b5c773c25244023bd5c867db"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>P4EST_DATA_UNINITIALIZED</b>&#160;&#160;&#160;P8EST_DATA_UNINITIALIZED</td></tr>
 <tr class="separator:a514f6579b5c773c25244023bd5c867db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2173b3675caa69557dcba22013561e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2173b3675caa69557dcba22013561e0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_num_ranges</b>&#160;&#160;&#160;p8est_num_ranges</td></tr>
-<tr class="separator:ab2173b3675caa69557dcba22013561e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7316467b20a6cc31a33afa2bfddb937e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7316467b20a6cc31a33afa2bfddb937e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_face_neighbor_corner_orientation</b>&#160;&#160;&#160;<a class="el" href="p8est__connectivity_8h.html#a2c0d9aba5b3a3f6a8168b89ce6225707">p8est_connectivity_face_neighbor_corner_orientation</a></td></tr>
+<tr class="separator:a7316467b20a6cc31a33afa2bfddb937e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02f0fd670fc56077c783eb0fbe51eab0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02f0fd670fc56077c783eb0fbe51eab0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_memory_used</b>&#160;&#160;&#160;<a class="el" href="p8est__connectivity_8h.html#a6aef564405c3b9a2aa411eb747c84eee">p8est_connectivity_memory_used</a></td></tr>
 <tr class="separator:a02f0fd670fc56077c783eb0fbe51eab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -376,7 +386,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_destroy</b>&#160;&#160;&#160;<a class="el" href="p8est__connectivity_8h.html#a83dc515293fe5f7c82eade6e281a62ca">p8est_connectivity_destroy</a></td></tr>
 <tr class="separator:a48126cc8a42626e76ff6f6e46ba6cdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad23e7c88beda3bdac6895323e43a9666"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad23e7c88beda3bdac6895323e43a9666"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_set_attr</b>&#160;&#160;&#160;<a class="el" href="p8est__connectivity_8h.html#ad676c4fe3f43a4326a2e92b213856904">p8est_connectivity_set_attr</a></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_set_attr</b>&#160;&#160;&#160;<a class="el" href="p8est__connectivity_8h.html#a135b60b27c6ba2c54f0981554f65fcc6">p8est_connectivity_set_attr</a></td></tr>
 <tr class="separator:ad23e7c88beda3bdac6895323e43a9666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62d2ed13792fc739a4b1483b6ef83236"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62d2ed13792fc739a4b1483b6ef83236"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_is_valid</b>&#160;&#160;&#160;<a class="el" href="p8est__connectivity_8h.html#ace0505a974a213fcc1cd7cc284338dfe">p8est_connectivity_is_valid</a></td></tr>
@@ -405,6 +415,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ab25d9798d7f6c702327f62c5e4439ab4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab25d9798d7f6c702327f62c5e4439ab4"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_complete</b>&#160;&#160;&#160;<a class="el" href="p8est__connectivity_8h.html#abafc945a940c37b50d8e4e067856a579">p8est_connectivity_complete</a></td></tr>
 <tr class="separator:ab25d9798d7f6c702327f62c5e4439ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8f45f0b7dcc976c5ba18c0a7fb4168"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c8f45f0b7dcc976c5ba18c0a7fb4168"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_reduce</b>&#160;&#160;&#160;<a class="el" href="p8est__connectivity_8h.html#a9e08b33ab47a63184806dcd2e4b5aa32">p8est_connectivity_reduce</a></td></tr>
+<tr class="separator:a6c8f45f0b7dcc976c5ba18c0a7fb4168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc6bafc9b760124c92540ec06d45c0f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc6bafc9b760124c92540ec06d45c0f9"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_expand_face_transform</b>&#160;&#160;&#160;<a class="el" href="p8est__connectivity_8h.html#a7eec2b0bba8130cd55d633ea63a96d1a">p8est_expand_face_transform</a></td></tr>
 <tr class="separator:afc6bafc9b760124c92540ec06d45c0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,10 +443,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_is_equivalent</b>&#160;&#160;&#160;<a class="el" href="p8est__connectivity_8h.html#ab09131cec14de88edfc9bfe8957a254d">p8est_connectivity_is_equivalent</a></td></tr>
 <tr class="separator:ab6247d34170e0d036df32694b9179627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7af092a03e749df14d1b43883357d679"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7af092a03e749df14d1b43883357d679"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_read_inp_stream</b>&#160;&#160;&#160;p8est_connectivity_read_inp_stream</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_read_inp_stream</b>&#160;&#160;&#160;<a class="el" href="p8est__connectivity_8h.html#a799075453ef289d1993a7c11f1d2d5d8">p8est_connectivity_read_inp_stream</a></td></tr>
 <tr class="separator:a7af092a03e749df14d1b43883357d679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bd75814ccdb3ee58fe93fd8a969d7e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bd75814ccdb3ee58fe93fd8a969d7e9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_read_inp</b>&#160;&#160;&#160;p8est_connectivity_read_inp</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_connectivity_read_inp</b>&#160;&#160;&#160;<a class="el" href="p8est__connectivity_8h.html#a323fe9836afb429b60a8b06ff0f6c08c">p8est_connectivity_read_inp</a></td></tr>
 <tr class="separator:a7bd75814ccdb3ee58fe93fd8a969d7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dd52f73207f9ea4897de50a20b5a3f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dd52f73207f9ea4897de50a20b5a3f5"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_qcoord_to_vertex</b>&#160;&#160;&#160;<a class="el" href="p8est_8h.html#a2abb8855bc9c0e22fa61249cf246d381">p8est_qcoord_to_vertex</a></td></tr>
@@ -501,6 +514,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a53bdc03174395c79c7d622e9741cbf76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53bdc03174395c79c7d622e9741cbf76"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_new_ext</b>&#160;&#160;&#160;<a class="el" href="p8est__extended_8h.html#a93da626bf1a48ce5030e80021b814e25">p8est_new_ext</a></td></tr>
 <tr class="separator:a53bdc03174395c79c7d622e9741cbf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c69531a5376d92002f59caa26304665"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c69531a5376d92002f59caa26304665"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_mesh_new_ext</b>&#160;&#160;&#160;<a class="el" href="p8est__extended_8h.html#acc09e25ce4993401589d3cd0ff761e8a">p8est_mesh_new_ext</a></td></tr>
+<tr class="separator:a2c69531a5376d92002f59caa26304665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a115343ca2a2e0ee966305ee48cfed2b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a115343ca2a2e0ee966305ee48cfed2b2"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_refine_ext</b>&#160;&#160;&#160;<a class="el" href="p8est__extended_8h.html#a2087e62b0206b1f767971e29639d76d2">p8est_refine_ext</a></td></tr>
 <tr class="separator:a115343ca2a2e0ee966305ee48cfed2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -849,6 +865,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a0bf9c050ca7b74ad5edde643931074b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bf9c050ca7b74ad5edde643931074b9"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_inflate</b>&#160;&#160;&#160;p8est_inflate</td></tr>
 <tr class="separator:a0bf9c050ca7b74ad5edde643931074b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad361c55ec83bc98a7743cf2ddbfa58d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad361c55ec83bc98a7743cf2ddbfa58d8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_geometry_destroy</b>&#160;&#160;&#160;<a class="el" href="p8est__geometry_8h.html#a20998de5a5a4a4a3ee3be5808610c24d">p8est_geometry_destroy</a></td></tr>
+<tr class="separator:ad361c55ec83bc98a7743cf2ddbfa58d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8591e82b84836a6bbb62aa1a847bc92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8591e82b84836a6bbb62aa1a847bc92"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_geometry_new_connectivity</b>&#160;&#160;&#160;<a class="el" href="p8est__geometry_8h.html#a358133eb3dada44e4f6868b6bfa93b01">p8est_geometry_new_connectivity</a></td></tr>
+<tr class="separator:ac8591e82b84836a6bbb62aa1a847bc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42777a4e726c7defd75d1f6896747c9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42777a4e726c7defd75d1f6896747c9d"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_vtk_write_file</b>&#160;&#160;&#160;<a class="el" href="p8est__vtk_8h.html#a9a42002957a7ab84276854dfe2eecd7e">p8est_vtk_write_file</a></td></tr>
 <tr class="separator:a42777a4e726c7defd75d1f6896747c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -895,7 +917,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_ghost_contains</b>&#160;&#160;&#160;p8est_ghost_contains</td></tr>
 <tr class="separator:a0c4a41d9b1318635864c379241878bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aeb2b6cdf1c9584ce847075d86c85b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7aeb2b6cdf1c9584ce847075d86c85b3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_ghost_is_valid</b>&#160;&#160;&#160;<a class="el" href="p8est__ghost_8h.html#a75742119b02a19600d3281e39b228549">p8est_ghost_is_valid</a></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_ghost_is_valid</b>&#160;&#160;&#160;<a class="el" href="p8est__ghost_8h.html#a2fec36a9213ada9f0cf5de33de52e3ad">p8est_ghost_is_valid</a></td></tr>
 <tr class="separator:a7aeb2b6cdf1c9584ce847075d86c85b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9616f283bc19088800efaa2269431d3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9616f283bc19088800efaa2269431d3b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_face_quadrant_exists</b>&#160;&#160;&#160;<a class="el" href="p8est__ghost_8h.html#aa172c1de8c5e8a85aee53f262ae97b46">p8est_face_quadrant_exists</a></td></tr>
@@ -927,6 +949,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a9e72bb9014a58819655c5ecfb2e50101"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e72bb9014a58819655c5ecfb2e50101"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_lnodes_destroy</b>&#160;&#160;&#160;p8est_lnodes_destroy</td></tr>
 <tr class="separator:a9e72bb9014a58819655c5ecfb2e50101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf228f89cd88e84ab421e18e89d3c07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbf228f89cd88e84ab421e18e89d3c07"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_ghost_support_lnodes</b>&#160;&#160;&#160;p8est_ghost_support_lnodes</td></tr>
+<tr class="separator:adbf228f89cd88e84ab421e18e89d3c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04325970e5ff761643c11377d905fb58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04325970e5ff761643c11377d905fb58"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_ghost_expand_by_lnodes</b>&#160;&#160;&#160;p8est_ghost_expand_by_lnodes</td></tr>
+<tr class="separator:a04325970e5ff761643c11377d905fb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd1f42c7b613b58e7e5fa06c1f700749"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd1f42c7b613b58e7e5fa06c1f700749"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_lnodes_decode</b>&#160;&#160;&#160;p8est_lnodes_decode</td></tr>
 <tr class="separator:abd1f42c7b613b58e7e5fa06c1f700749"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1029,6 +1057,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a652ceeb6379f15f28069dcc854601534"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a652ceeb6379f15f28069dcc854601534"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_wrap_leaf_first</b>&#160;&#160;&#160;p8est_wrap_leaf_first</td></tr>
 <tr class="separator:a652ceeb6379f15f28069dcc854601534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12f91f400b775b7a622a9ab9fda9164"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab12f91f400b775b7a622a9ab9fda9164"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>p4est_get_plex_data</b>&#160;&#160;&#160;p8est_get_plex_data</td></tr>
+<tr class="separator:ab12f91f400b775b7a622a9ab9fda9164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>transforms 2D <a class="el" href="group__p4est.html">p4est</a> routines into 3D <a class="el" href="group__p8est.html">p8est</a> routines </p>

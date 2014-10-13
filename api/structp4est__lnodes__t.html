@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">p4est
-   &#160;<span id="projectnumber">1.0.25-ff1e</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -135,7 +135,10 @@ p4est_lnodes_code_t *&#160;</td><td class="memItemRight" valign="bottom"><b>face
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Store a parallel numbering of Lobatto points of a given degree &gt; 0. </p>
-<p>Each element has degree+1 nodes per face and vnodes = (degree+1)^2 nodes per volume. num_local_elements is the number of local quadrants in the p4est. element_nodes is of dimension vnodes * num_local_elements and indexes into the set of local nodes layed out as follows: local nodes = [&lt;--&mdash;owned_count--&mdash;&gt;|&lt;--&mdash;nonlocal_nodes--&mdash;&gt;] = [&lt;-------------&mdash;num_local_nodes--------------&mdash;&gt;] nonlocal_nodes contains the globally unique numbers for independent nodes that are owned by other processes; for local nodes, the globally unique numbers are given by i + global_offset, where i is the local number. Hanging nodes are always local and don't have a global number. They index the geometrically corresponding independent nodes of a neighbor.</p>
+<p>Each element has degree+1 nodes per face and vnodes = (degree+1)^2 nodes per volume. num_local_elements is the number of local quadrants in the p4est. element_nodes is of dimension vnodes * num_local_elements and lists the nodes of each element in lexicographic yx-order (x varies fastest); so for degree == 2, this is the layout of nodes: </p>
+<pre class="fragment">    f_3
+</pre><p> c_2 c_3 6&mdash;7&mdash;8 | | f_0 3 4 5 f_1 | | 0&mdash;1&mdash;2 c_0 c_1 f_2</p>
+<p>element_nodes indexes into the set of local nodes, layed out as follows: local nodes = [&lt;--&mdash;owned_count--&mdash;&gt;|&lt;--&mdash;nonlocal_nodes--&mdash;&gt;] = [&lt;-------------&mdash;num_local_nodes--------------&mdash;&gt;] nonlocal_nodes contains the globally unique numbers for independent nodes that are owned by other processes; for local nodes, the globally unique numbers are given by i + global_offset, where i is the local number. Hanging nodes are always local and don't have a global number. They index the geometrically corresponding independent nodes of a neighbor.</p>
 <p>Whether nodes are hanging or not is decided based on the element faces. This information is encoded in face_code with one int8_t per element. If no faces are hanging, the value is zero, otherwise the face_code is interpreted by p4est_lnodes_decode.</p>
 <p>Independent nodes can be shared by multiple MPI ranks. The owner rank of a node is the one from the lowest numbered element on the lowest numbered octree <em>touching</em> the node.</p>
 <p>What is meant by <em>touching</em>? A quadrant is said to touch all faces/corners that are incident on it, and by extension all nodes that are contained in those faces/corners. </p>
@@ -145,7 +148,14 @@ p4est_lnodes_code_t *&#160;</td><td class="memItemRight" valign="bottom"><b>face
 </pre><p> +--&mdash;+ o | p | | q | o | | | | o | | +--&mdash;+ O +--------&mdash;+</p>
 <p>In this example degree = 6. There are 5 nodes that live on the face between q and p, and one at each corner of that face. The face is incident on q, so q owns the nodes on the face (provided q is from a lower tree or has a lower index than p). The lower corner is incident on q, so q owns it as well. The upper corner is not incident on q, so q cannot own it.</p>
 <p>global_owned_count contains the number of independent nodes owned by each process.</p>
-<p>The sharers array contains items of type <a class="el" href="structp4est__lnodes__rank__t.html" title="The structure stored in the sharers array. ">p4est_lnodes_rank_t</a> that hold the ranks that own or share independent local nodes. If there are no shared nodes on this processor, it is empty. Otherwise, it is sorted by rank and the current process is included. </p>
+<p>The sharers array contains items of type <a class="el" href="structp4est__lnodes__rank__t.html" title="The structure stored in the sharers array. ">p4est_lnodes_rank_t</a> that hold the ranks that own or share independent local nodes. If there are no shared nodes on this processor, it is empty. Otherwise, it is sorted by rank and the current process is included.</p>
+<p>degree &lt; 0 indicates that the lnodes data structure is being used to number the quadrant boundary object (faces and corners) rather than the $C^0$ Lobatto nodes:</p>
+<p>if degree == -1, then one node is assigned per face, and no nodes are assigned per volume or per corner: this numbering can be used for low-order Raviart-Thomas elements. In this case, vnodes == 4, and the nodes are listed in face-order: </p>
+<pre class="fragment">    f_3
+</pre><p> c_2 c_3 +&mdash;3&mdash;+ | | f_0 0 1 f_1 | | +&mdash;2&mdash;+ c_0 c_1 f_2</p>
+<p>if degree == -2, then one node is assigned per face and per corner and no nodes are assigned per volume. In this case, vnodes == 8, and the nodes are listed in face-order, followed by corner-order: </p>
+<pre class="fragment">    f_3
+</pre><p> c_2 c_3 6&mdash;3&mdash;7 | | f_0 0 1 f_1 | | 4&mdash;2&mdash;5 c_0 c_1 f_2 </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="p4est__lnodes_8h_source.html">p4est_lnodes.h</a></li>
 </ul>
