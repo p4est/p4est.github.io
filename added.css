@@ -1,4 +1,8 @@
 
+main {
+  display: block;
+}
+
 .nav-container {
   display: flex;
   flex-wrap: wrap;
