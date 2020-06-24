@@ -10,7 +10,7 @@ main {
   max-width: 100%;
 }
 
-.nav-item {
+.nav-item, .nav-item-self {
   text-align: center;
   flex: 0 1 17%;
   /* color: #006633; */
@@ -19,6 +19,10 @@ main {
   border-style: dashed;
   border-width: thin;
   padding: 1ex;
+}
+
+.nav-item-self {
+  border-style: solid;
 }
 
 .tut-container {
