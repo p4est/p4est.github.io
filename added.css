@@ -8,10 +8,17 @@
 
 .nav-item {
   text-align: center;
-  flex: 0 1 15%;
+  flex: 0 1 17%;
+  /* color: #006633; */
 
   background-color: #E0F0E8;
   border-style: dashed;
   border-width: thin;
   padding: 1ex;
 }
+
+/*
+h2.nav-item a {
+  color: #006633;
+}
+*/
