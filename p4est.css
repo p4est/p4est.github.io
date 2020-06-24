@@ -11,23 +11,7 @@ tt {
         font-weight: bold;
 }
 
-p.text {
-        margin-top: 0;
-        margin-bottom: 0;
-}
-
-p.cite {
-        text-indent: -1em;
-        margin-left: 1em;
-        margin-top: 1ex;
-        margin-bottom: 0;
-}
-
-pre.bibtex {
-        margin-bottom: 1em;
-}
-
-div.citation {
+.citation {
         background-color: #E0F0E8;
         border-style: dashed;
         border-width: thin;
@@ -38,4 +22,19 @@ div.citation {
 
 div.citation h3 {
 	margin-top: 0em;
+}
+
+div.citation p {
+        margin-top: 1em;
+        margin-bottom: 0;
+}
+
+p.cite {
+        text-indent: -1em;
+        margin-left: 1em;
+}
+
+pre.bibtex {
+        margin-top: 1em;
+        margin-bottom: 0;
 }
