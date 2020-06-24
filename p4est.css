@@ -19,6 +19,11 @@ div.citation h3 {
 	margin-top: 0em;
 }
 
+p.textm {
+        margin-top: 0;
+        margin-bottom: 1ex;
+}
+
 p.text {
         margin-top: 0;
         margin-bottom: 0;
@@ -32,7 +37,7 @@ p.cite {
 }
 
 pre.bibtex {
-        margin-bottom: 0;
+        margin-bottom: 1em;
 }
 
 div.citation {
@@ -40,6 +45,8 @@ div.citation {
         border-style: dashed;
         border-width: thin;
         padding: 1ex;
+        margin-top: 1em;
+        margin-bottom: 1em;
 }
 
 table.text {
