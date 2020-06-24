@@ -59,6 +59,8 @@ The reference [1b] is for people specifically using the topology iterator, the
 high-order node numbering, or the top-down search.
 [1c] is for people interested in the 2:1 balance details, the strong scaling
 limit and/or memory footprint.
+Recent algorithms for searching remote objects in the partition and
+partition-independent load and save are in press [1d].
 </p>
 
 <p class="cite">
@@ -119,6 +121,23 @@ In Algorithm 7, line 3 reads
 \(\text{for all}\ o\in R\ \text{do}\);
 it should read
 \(\text{for all}\ o\in R\cup R^{\text{new}}\ \text{do}\).
+</p>
+
+<p class="cite">
+[1d]
+Carsten Burstedde.
+<em>Parallel tree algorithms for AMR and non-standard data access</em>.
+Accepted for publication in ACM Transactions on Mathematical Software
+<a href="https://arxiv.org/abs/1803.08432">(preprint)</a>.
+<!--
+@MISC{Burstedde18,
+  author = {Carsten Burstedde},
+  title = {Parallel tree algorithms for {AMR} and non-standard data access},
+  year = {2018},
+  note = {http://arxiv.org/abs/1803.08432.  Accepted for publication
+          in ACM Transactions on Mathematical Software}
+}
+//-->
 </p>
 </div>
 
