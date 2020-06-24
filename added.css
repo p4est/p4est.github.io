@@ -41,6 +41,30 @@ main {
   border-style: dashed;
   border-width: thin;
   padding: 1ex;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.sched-container {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr;
+  max-width: 100%;
+  margin: 0;
+}
+
+.sched-container p {
+  text-align: center;
+  background-color: #E0F0E8;
+  border-style: dashed;
+  border-width: thin;
+  padding: 1ex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p.sched-title {
+  border-style: solid;
 }
 
 div.announce {
