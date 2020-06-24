@@ -1,0 +1,17 @@
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.nav-item {
+  text-align: center;
+  flex: 0 1 15%;
+
+  background-color: #E0F0E8;
+  border-style: dashed;
+  border-width: thin;
+  padding: 1ex;
+}
