@@ -21,6 +21,24 @@ main {
   padding: 1ex;
 }
 
+.tut-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.tut-item {
+  text-align: center;
+  flex: 0 1 13%;
+  /* color: #006633; */
+
+  background-color: #E0F0E8;
+  border-style: dashed;
+  border-width: thin;
+  padding: 1ex;
+}
+
 div.announce {
   background-color: #E0F0E8;
   border-style: dashed;
