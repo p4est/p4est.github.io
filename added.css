@@ -21,8 +21,12 @@ main {
   padding: 1ex;
 }
 
-/*
-h2.nav-item a {
-  color: #006633;
+div.announce {
+  background-color: #E0F0E8;
+  border-style: dashed;
+  border-width: thin;
+  padding: 1ex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
 }
-*/

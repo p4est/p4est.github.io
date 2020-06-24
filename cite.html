@@ -60,6 +60,7 @@ high-order node numbering, or the top-down search.
 [1c] is for people interested in the 2:1 balance details, the strong scaling
 limit and/or memory footprint.
 </p>
+
 <p class="cite">
 [1a]
 Carsten Burstedde, Lucas C. Wilcox, and Omar Ghattas,<br>
@@ -113,8 +114,7 @@ Tobin Isaac, Carsten Burstedde, and Omar Ghattas,<br>
 Published in Proceedings of the 26th IEEE International Parallel &amp;
 Distributed Processing Symposium, 2012
 (<a href="https://p4est.github.io/papers/IsaacBursteddeGhattas12.pdf">download</a>).
-<br>
-<em>Errata:</em>
+<em>Erratum:</em>
 In Algorithm 7, line 3 reads
 \(\text{for all}\ o\in R\ \text{do}\);
 it should read
@@ -122,12 +122,41 @@ it should read
 </p>
 </div>
 
+<div class="citation">
+<h3>ForestClaw</h3>
+
 <p>
 The <a href="http://www.forestclaw.org/">ForestClaw</a> project is an
 ongoing collaboration with
 <a href="https://math.boisestate.edu/~calhoun/www_personal/">Donna Calhoun</a>
 to solve hyperpolic PDEs.
+Please cite the initial article below; an updated paper is in preparation
+with initial versions <a href="https://arxiv.org/abs/1703.03116">on the
+arxiv</a>.
 </p>
+
+<pre class="bibtex">
+@INPROCEEDINGS{BursteddeCalhounMandliEtAl14,
+  author = {Carsten Burstedde and Donna Calhoun
+            and Kyle T. Mandli and Andy R. Terrel},
+  title = {ForestClaw: Hybrid forest-of-octrees {AMR}
+           for hyperbolic conservation laws},
+  booktitle = {Parallel Computing: Accelerating Computational Science
+               and Engineering (CSE)},
+  year = {2014},
+  editor = {Michael Bader and Arndt Bode and Hans-Joachim Bungartz
+            and Michael Gerndt and Gerhard R. Joubert and Frans Peters},
+  volume = {25},
+  series = {Advances in Parallel Computing},
+  pages = {253-262},
+  publisher = {IOS Press},
+  doi = {10.3233/978-1-61499-381-0-253}
+}
+</pre>
+</div>
+
+<div class="citation">
+<h3>deal.II</h3>
 
 <p>
 The generic adaptive finite element software <a
@@ -139,7 +168,6 @@ href="https://p4est.github.io/papers/BangerthBursteddeHeisterEtAl11.pdf"
 publications, please cite it as:
 </p>
 
-<div class="citation">
 <p class="cite">
 [2]
 Wolfgang Bangerth, Carsten Burstedde, Timo Heister, and Martin
@@ -166,8 +194,11 @@ pages 14:1-14:28
 </pre>
 </div>
 
+<div class="citation">
+<h3>PETSc</h3>
+
 <p>
-The <tt>p4est</tt> library is now used to implement AMR in <a
+The <tt>p4est</tt> library is being extended to implement AMR in <a
   href="https://www.mcs.anl.gov/petsc/">PETSc</a>, the Portable Extensible
 Toolkit for Scientific Computation. The interface and design decisions are
 described in this <a href="https://arxiv.org/abs/1508.02470">article</a>.  If
@@ -175,7 +206,6 @@ you use the <tt>p4est</tt> backend for <tt>PETSc</tt> for your publications,
 please cite it as:
 </p>
 
-<div class="citation">
 <p class="cite">
 [3]
 Tobin Isaac, Matthew G. Knepley,<br>
