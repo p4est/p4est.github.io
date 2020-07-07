@@ -1,5 +1,5 @@
 The repository p4est.github.io contains data for the p4est webpage.
 
 p4est is a software for parallel adaptive mesh refinement.
-The code is maintained under https://github.com/cburstedde/p4est
-Its homepage is http://www.p4est.org/
+The code is maintained under https://github.com/cburstedde/p4est.git.
+Its homepage is https://www.p4est.org/.
