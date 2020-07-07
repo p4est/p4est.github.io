@@ -76,3 +76,12 @@ div.announce {
   margin-bottom: 1em;
   text-align: center;
 }
+
+p.book {
+	font-family: serif;
+        text-indent: 2ex;
+        background: #F4F4F4;
+        padding: 1ex;
+        margin-top: 1ex;
+        margin-bottom: 1ex;
+}
