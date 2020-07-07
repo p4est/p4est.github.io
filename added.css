@@ -78,9 +78,9 @@ div.announce {
 }
 
 
-.book {
+.book, .cont {
         font-family: serif;
-        background: #F4F4F4;
+        background-color: #F4F4F4;
         margin-top: 1ex;
         margin-bottom: 1ex;
         padding-top: 1ex;
@@ -93,11 +93,23 @@ p.book {
         padding-left: 1ex;
 }
 
+p.cont {
+        padding-left: 1ex;
+}
+
 dl.book {
         padding-left: 1ex;
 }
 
+pre.book {
+        padding: 1ex;
+        padding-left: 3ex;
+        font-family: monospace;
+        background-color: #FFFFFF;
+}
+
 code {
-        padding: .5ex;
-        background: #FFFFFF;
+        padding: .3ex;
+        background-color: #FFFFFF;
+        font-family: monospace;
 }
