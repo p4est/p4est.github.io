@@ -39,7 +39,7 @@ page and application forms</a>.
 </p>
 
 <article>
-<h2>Building the Library</h2>
+<h2>Building the Library and a New Example</h2>
 <p class="book">
 We distribute <tt>p4est</tt> as source code.
 The usual way to work with it is to download it in one of severaly
@@ -51,6 +51,28 @@ which let you get away without compiling <tt>p4est</tt> yourself.
 In this tutorial, we talk about the most common ways to build the software
 and to write your own hello-world example program.
 </p>
+<dl class="spec">
+<dt>Required skills</dt><dd>Programming in C!
+Furthermore, know how to work with a command shell, how to extract a
+tar file or how to git clone, and know how to run a compiler and
+<a href="https://www.gnu.org/software/make/">make</a> in general.
+In case you did not know, <code>make</code> is a command line utility to help
+building projects consisting of many files, rebuilding only files that have changed.
+It reads its configuration from a file called <code>Makefile</code>.
+</dd>
+<dt>Skills acquired</dt><dd>Brushing up on calling a <code>configure</code> script,
+creating one's own example program that compiles with <tt>p4est</tt>.
+</dd>
+<dt>Additional material</dt>
+<dd>See also the
+<a href="https://github.com/cburstedde/p4est/blob/prev3-develop/INSTALL">installation
+document</a> in the source, and any documentation on configure scripts.
+To me, autoconf is ok but the real winner is automake.  I have linked to the
+documentation below.</dd>
+<dt>Next steps</dt><dd>
+Extend your hello-world program with a typical <tt>p4est</tt> workflow
+as described in Tutorial 1.</dd>
+</dl>
 <p class="book">
 If you are working with a Debian Linux distribution, you may install
 <a href="https://packages.debian.org/search?keywords=libp4est-dev&searchon=names&suite=all&section=all">libp4est-dev</a>
@@ -100,6 +122,7 @@ Suppose now that we have a local <tt>p4est</tt> source code directory
 with an existing configure file.
 If it is missing or other things are funny with the autoconf system, calling
 bootstrap should fix it.
+In general, however, calling bootstrap repeatedly is not required.
 You may build <tt>p4est</tt> with MPI or without it.
 My personal recommendation is to use <a href="https://www.mpich.org/">MPICH</a>,
 either from a binary package or manually compiled.
@@ -109,14 +132,19 @@ We recommend the following procedure to build <tt>p4est</tt>.
 </p>
 <ol class="book">
 <li><code>configure --help</code> prints a list of available options to configure.
-When working with the branch prev3-develop, defaults are usually ok.</li>
+When working with the branch prev3-develop, defaults are usually ok.
+To get the tarballs working quickly, add <code>--without-blas</code> below.</li>
 <li>Create a directory parallel to the <tt>p4est</tt> source, enter it, and
 decide on a directory for installation (the latter not necessary for general
 hacking).</li>
 <li>Make a relative call such as <code>MPICC=mpicc ../path-to-source/configure
-CFLAGS="-Wall -Wuninitialized -O0 -g"
---prefix=absolute-path-to-install</code>.</li> <li>Call <code>make -j8
-V=0</code> to build the software.
+CFLAGS="-Wall -Wuninitialized -O0 -g" --enable-debug --enable-mpi
+--prefix=absolute-path-to-install</code>.
+The debug option enables assertions that we recommend highly to add also
+in your own programs.  Omit the debug option only if you really must have the
+fastest running code.
+</li>
+<li>Call <code>make -j8 V=0</code> to build the software.
 The <code>-j</code> switch allows for parallel make processes, speeding up the
 build noticeably, and <code>V=0</code> disables echoing the compile command
 lines.</li>
@@ -173,28 +201,6 @@ Take a look at this file to see which variables it provides.
 When creating an independent project like this,
 there is no need to mess with the <tt>p4est</tt> source tree.
 </p>
-<dl class="book">
-<dt>Required skills</dt><dd>Programming in C!
-Furthermore, know how to work with a command shell, how to extract a
-tar file or how to git clone, and know how to run a compiler and
-<a href="https://www.gnu.org/software/make/">make</a> in general.
-In case you did not know, <code>make</code> is a command line utility to help
-building projects consisting of many files, rebuilding only files that have changed.
-It reads its configuration from a file called <code>Makefile</code>.
-</dd>
-<dt>Skills acquired</dt><dd>Brushing up on calling a <code>configure</code> script,
-creating one's own example program that compiles with <tt>p4est</tt>.
-</dd>
-<dt>Additional material</dt>
-<dd>See also the
-<a href="https://github.com/cburstedde/p4est/blob/prev3-develop/INSTALL">installation
-document</a> in the source, and any documentation on configure scripts.
-To me, autoconf is ok but the real winner is automake.  I have linked to the
-documentation above.</dd>
-<dt>Next steps</dt><dd>
-Extend your hello-world program with a typical <tt>p4est</tt> workflow
-as described in T1.</dd>
-</dl>
 </article>
 </main>
 

@@ -77,8 +77,7 @@ div.announce {
   text-align: center;
 }
 
-
-.book, .cont {
+.book, .cont, .spec {
         font-family: serif;
         background-color: #F4F4F4;
         margin-top: 1ex;
@@ -99,6 +98,11 @@ p.cont {
 
 dl.book {
         padding-left: 1ex;
+}
+
+dl.spec {
+        padding-left: 1ex;
+        background-color: #FFFFFF;
 }
 
 pre.book {
