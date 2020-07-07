@@ -90,9 +90,14 @@ div.announce {
 
 p.book {
         text-indent: 2ex;
-        padding: 1ex;
+        padding-left: 1ex;
 }
 
 dl.book {
-        padding: 1ex;
+        padding-left: 1ex;
+}
+
+code {
+        padding: .5ex;
+        background: #FFFFFF;
 }
