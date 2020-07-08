@@ -145,7 +145,74 @@ Don't forget to deallocate the array after writing.
 <section>
 <h3>Partition-independent file I/O</h3>
 <p class="book">
-File I/O!
+The <tt>p4est</tt> object stores the topology of the parallel adapted mesh
+and optionally some fixed amount of data per quadrant, the size of which is
+specified with <code>p4est_new</code> or <code>p4est_copy</code>.
+This data is preserved on repartitioning.
+It is also visible to the replace callbacks in <code>p4est_refine_ext</code>,
+<code>p4est_coarsen_ext</code> and <code>p4est_balance_ext</code>,
+which allows the user to process it appropriately on any local mesh change.
+It is convenient and generally not harmful to use this data for numerical state,
+however, for anything more than a couple variables we recommend to store
+numerical data in application memory.
+In that case, use your own interpolation/projection logic on adaptation and the
+<code>p4est_transfer</code> functions on repartition.
+</p>
+<p class="book">
+Both the mesh and the quadrant-local data can be written to one large MPI file
+using the collective call
+</p>
+<pre class="book">
+p4est_save_ext ("filename", p4est, save_data, save_partition);
+</pre>
+<p class="cont">
+The boolean parameter <code>save_data</code> enables or disables storing
+per-quadrant data in the file.
+The boolean parameter <code>save_partition</code> enables or disables storing
+the exact partition.  If we do not store the partition, the code on loading will
+equi-partition the quadrants in the file among the processes used for reading.
+This is fast; there is no need to worry about partitioning in <tt>p4est</tt>.
+It will then not be possible to recreate the parallel ownership of each
+quadrant prior to saving, but then such is rarely required.
+If, on the other hand, the partition is saved, the header of the file is
+prepended with this information.  The volume of this information is small,
+but there is the caveat that the file size written, for the same global mesh,
+will differ between different MPI sizes.
+Such is not acceptable for strictly partition-independent storage.
+</p>
+<p class="book">
+On loading the mesh, you may use the call
+</p>
+<pre class="book">
+p4est_load_ext ("filename", mpicomm, data_size, load_data,
+                autopartition, 1, NULL, NULL);
+</pre>
+<p class="cont">
+This function allocates a new <tt>p4est</tt> object and reads it from disk.
+If loading data is enabled, the data size provided must be equal to the
+data size in the file.  If loading data is false, the new <tt>p4est</tt> object
+will have zero data size.
+If autopartition is true, we discard any saved partition and read the
+quadrants from the file equi-partitioned.
+If it is false, the call will crash if no saved partition is present.
+</p>
+<p class="exer">
+Exercise:
+Write a function <code>p4est_can_load</code> that determines without crashing
+whether the file on disk exists and will be acceptable to load for a given set
+of parameters.
+Such a function shall only read the header on rank zero and broadcast the
+result to all other processes.
+It may optionally populate a structure passed by reference with some statistics
+and information from the file.
+</p>
+<p class="exer">
+Exercise:
+Extend your favorite program example to save and load a <tt>p4est</tt>.
+Create a partition-independent mesh refinement and write the same mesh
+using different MPI sizes (and file names).  Check under which conditions the
+files are identical, and if this matches with the documentation.  Verify that
+the function indeed crashes if used out of specification.
 </p>
 </section>
 
