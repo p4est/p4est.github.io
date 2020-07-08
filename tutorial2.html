@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>p4est 2020 HCM Summer School: Tutorial 2</title>
+<meta name="author" content="Carsten Burstedde">
+<link type="text/css" rel="stylesheet" href="p4est.css">
+<link type="text/css" rel="stylesheet" href="added.css">
+<!-- mathjax !-->
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+
+<header>
+<h1><tt>p4est</tt> 2020 HCM Summer School: Tutorial 2</h1>
+<nav>
+<div class="nav-container">
+<h2 class="nav-item"><a href="index.html" alt="p4est main page">Main</a></h2>
+<h2 class="nav-item">
+<a href="gallery.html" alt="p4est Galery of Research Results">Gallery</a></h2>
+<h2 class="nav-item">
+<a href="cite.html" alt="p4est Citations and Bibliography">Cite</a></h2>
+<h2 class="nav-item">
+<a href="school.html" alt="p4est 2020 HCM Summer School">School</a></h2>
+</div>
+</nav>
+</header>
+
+<main>
+<p>
+We are organizing a <tt>p4est</tt> summer school
+sponsored by the
+<a href="https://www.hcm.uni-bonn.de">Hausdorff Center for Mathematics</a>
+at the <a href="https://www.uni-bonn.de/">University of Bonn</a>, Germany.
+Please see also the school's <a
+href="https://www.hcm.uni-bonn.de/events/eventpages/hausdorff-school/hausdoff-school-2020/the-p4est-software-for-parallel-amr/">home
+page and application forms</a>.
+</p>
+<article>
+
+<section>
+<h2>Graphics output and mesh load and save</h2>
+<p class="book">
+This tutorial is about file (networked/hard disk) I/O.
+The first topic is writing specially formatted text files in the
+<a href="https://www.vtk.org/VTK/img/file-formats.pdf">VTK format</a>.
+The second topic is about writing the current state of the mesh to disk,
+and about reading it back in, with the same or a different number of MPI ranks.
+To this end, we use the MPI I/O interface standard.
+</p>
+<dl class="spec">
+<dt>Dependencies</dt><dd>
+Tutorial 0; roughly understanding <code>example/simple</code>
+</dd>
+<dt>Required skills</dt><dd>
+Interactive visualization of VTK files using e.g.
+<a href="https://www.paraview.org/">Paraview</a> or
+<a href="https://wci.llnl.gov/simulation/computer-codes/visit/">Visit</a>;
+reading up on the
+<a href="https://www.mpi-forum.org/docs/mpi-2.2/mpi22-report.pdf">MPI I/O
+interface</a></dd>
+<dt>Skills acquired</dt><dd>
+You will have written cell- and corner-based numerical data to graphics files
+and looked at them in third-party visualization software.
+We also cover saving and loading the <tt>p4est</tt> mesh in a parallel
+partition-independent format, which is great for flexible checkpointing
+and overall reproducibility.
+</dd>
+<dt>Next steps</dt><dd>
+Extend your hello-world program by adding a nonlinear, smooth geometry
+transformation that is passed to the VTK output routine.
+Extend the VTK output routine to write one big MPI file in the binary appended
+VTK format (instead of many VTU files and one PVTU file as we do currently).
+</dd>
+</dl>
+</section>
+
+<section>
+<h3>VTK graphics output</h3>
+<p class="book">
+Graphics!
+</p>
+</section>
+
+<section>
+<h3>Partition-independent file I/O</h3>
+<p class="book">
+File I/O!
+</p>
+</section>
+
+</article>
+</main>
+</body>
+</html>
