@@ -94,6 +94,9 @@ We take a valid <tt>p4est</tt> object, query its communicator for metadata,
 and write the local quadrants using a filename that is postfixed with
 <code>_rank.vtu</code>, where the rank is zero-padded to four digits.
 For each quadrant, we write its MPI rank, tree number and level.
+These are available as input fields within the visualization program.
+</p>
+<p class="book">
 While the call is not strictly MPI-collective, the output is only complete
 if every process calls it with the same filename.
 Rank zero in addition writes a meta file ending in <code>.pvtu</code>
@@ -110,7 +113,7 @@ parameter.
 Exercise: Add some calls to <code>p4est_vtk_write_file</code>
 to your favorite example program, using a different file name on each occasion,
 and examine the results.
-Visualize the tree number, MPI rank, and quadrant level.
+Verify the tree number, MPI rank, and quadrant level interactively.
 </p>
 <p class="book">
 A more powerful interface to writing VTK files works as follows:
@@ -124,14 +127,14 @@ This interface allows to add custom data to the output.
 The data may be provided per corner or per cell (quadrant).
 Writing per corner requires a consistent corner numbering,
 which will be discussed in a later tutorial.
-The number of local quadrants is available from the <tt>p4est</tt> object,
-and the input data array must match in length.
+The number of local quadrants, on the other hand, is easily available from the
+<tt>p4est</tt> object, and the input data array must match in length.
 </p>
 <p class="exer">
 Exercise: Create an <code>sc_array</code> (see the files
-<code>sc/sc_containers.{c,h}</code> for details) of correct length.
+<code>sc/src/sc_containers.{c,h}</code> for details) of correct length.
 Populate some per-quadrant data: Write a loop over the process-local trees,
-inside over the tree-local quadrants, access each quadrant and invent the
+inside over the tree-local quadrants, access each quadrant and define the
 data written for it as some function of its coordinates, level,
 tree or sequence number or anything else.
 Look at it to make sure everything is right.
