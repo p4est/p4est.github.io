@@ -89,11 +89,31 @@ to give a brief overview of our schedule and the nature of our tutorials.
 How does this whole thing work!
 </p>
 <p class="book">
+C code: there is no separate boolean datatype.  We use int,
+as recommended by the standard, with 0 meaning false and everything else
+meaning true.
+Thus, the only safe way of testing for truth is <code>if (var)</code>
+(or, if you insist, <code>if (var != 0)</code>).
+You may technically use <code>if (var == 0)</code> to test for falseness
+but we recommend <code>if (!var)</code>.
+The <code>NULL</code> pointer always evaluates to false, but we try to
+use the explicit test <code>if (pointer == NULL)</code> throughout.
+</p>
+<p class="book">
 Use the source: inline doxygen comments, example programs.
+Grep is your friend.
+When writing code, use GNU indent via the <code>p4estindent</code> script,
+disabling it by inline comments only in rare and obnoxious cases.
+</p>
+<p class="book">
+What is a quadrant?  Refer to video lectures.
 </p>
 <p class="book">
 The very basics of working with the code: <code>p4est</code> and
 <code>p4est_connectivity</code> objects, loops over local trees and quadrants.
+</p>
+<p class="book">
+Discuss partitioning and partition-independent checksum.
 </p>
 <p class="book">
 If you find missing or incorrect documentation, specifically concerning the
