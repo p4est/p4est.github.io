@@ -77,7 +77,7 @@ div.announce {
   text-align: center;
 }
 
-.book, .cont, .spec {
+.book, .cont, .exer, .spec {
         font-family: serif;
         background-color: #F4F4F4;
         margin-top: 1ex;
@@ -94,6 +94,11 @@ p.book {
 
 p.cont {
         padding-left: 1ex;
+}
+
+p.exer {
+        padding-left: 1ex;
+        background-color: #E0F0E8;
 }
 
 dl.book {
