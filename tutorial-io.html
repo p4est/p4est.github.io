@@ -189,8 +189,8 @@ Such is not acceptable for strictly partition-independent storage.
 On loading the mesh, you may use the call
 </p>
 <pre class="book">
-p4est_load_ext ("filename", mpicomm, data_size, load_data,
-                autopartition, 1, NULL, NULL);
+p4est = p4est_load_ext ("filename", mpicomm, data_size, load_data,
+                        autopartition, 1, NULL, NULL);
 </pre>
 <p class="cont">
 This function allocates a new <tt>p4est</tt> object and reads it from disk.

@@ -43,7 +43,7 @@ page and application forms</a>.
 <h2>Create and manipulate a forest of octrees</h2>
 <p class="book">
 <tt>p4est</tt> represents a mesh topology as a forest of octrees. This
-forest can be created by <tt>p4est</tt> given a 
+forest can be created by <tt>p4est</tt> given a
 <a href="tutorial-connectivity.html">connectivity</a>. In this tutorial,
 we talk about the typical workflow in <tt>p4est</tt> to create and manipulate
 a forest of quadtrees (2D) or octrees (3D) to represent a mesh topology.
@@ -52,7 +52,7 @@ a forest of quadtrees (2D) or octrees (3D) to represent a mesh topology.
 </p>
 <dl class="spec">
 <dt>Required skills</dt><dd><a href="tutorial-build.html">Build</a>,
-<a href="tutorial-connectivity.html">Connectivity</a> and optional 
+<a href="tutorial-connectivity.html">Connectivity</a> and optional
 VTK graphics output in <a href="tutorial-io.html">IO</a></dd>
 <dt>Skills acquired</dt><dd>Create a forest of quadtrees and change the
 refinement structure of the created forest.</dd>
@@ -67,26 +67,46 @@ of this tutorial see <a href="https://github.com/cburstedde/p4est/blob/prev3-dev
 <p class="book">
 The first step of the typical workflow of <tt>p4est</tt> is to create a forest
 of octrees or quadtrees. The <tt>p4est</tt> libary offers the function
-<code>p4est_new</code> and <code>p4est_new_ext</code> (a version with more parameters) 
+<code>p4est_new</code> and <code>p4est_new_ext</code> (a version with more parameters)
 to create such a forest.
 </p>
 <pre class="book">
-p4est* p4est_new_ext (mpi->mpicomm, connectivity, min_quadrants, min_level,
-               fill_uniform, sizeof (user_data_t), init_fn, user_pointer);
+typedef my_user_data {
+  int foo;
+} my_user_data_t;
+static void my_quadrant_init (p4est, which_tree, quadrant) {
+  ((my_user_data_t *) quadrant->p.user_data)->foo = 17948;
+}
+void *user_pointer = NULL;
+p4est = p4est_new_ext (mpicomm, connectivity, 0, level, 1,
+                       sizeof (my_user_data_t), my_quadrant_init, user_pointer);
 </pre>
 <p class="book">
-<code>mpi->comm</code> is a mpi communicator (see the <a href="https://github.com/cburstedde/p4est/blob/prev3-develop/example/simple/simple2.c">example simple</a> for a usage example).
+<code>mpicomm</code> is an MPI communicator (see the <a
+href="https://github.com/cburstedde/p4est/blob/prev3-develop/example/simple/simple2.c">example
+simple</a> for a usage example).
+<!--
 By <code>min_quadtrants</code> the user can prescribe the minimal intial number of quadrants per
-processor. The <code>min_level</code> is minimum level of refinement, which may be 0 or negative.
-In this case <code>min_level</code> has no effect. The quasi Boolean value <code>fill_uniform</code> determines if the forest
+processor.
+//-->
+The minimum <code>level</code> of refinement is specified.
+If it is zero or negative, there will be no refinement beyond the coarse
+mesh connectivity at this point.
+<!--
+The quasi Boolean value <code>fill_uniform</code> determines if the forest
 is filled with a uniform mesh for <code>fill_uniform</code> true or the
 coarstest possible mesh is created for <code>fill_uniform</code> false.
-<code>init_fn</code> is a callback function that initializes the already
-allocated user_data. The <code>user_pointer</code> is assigned to the
-user_pointer member of the created <code>p4est</code> before <code>init_fn</code> is
-called the first time. For more details see 
+//-->
+We provide an optional callback mechanism to initialize the
+user data that we allocate inside any forest leaf.
+The <code>user_pointer</code> is assigned to the
+member of the same name in the <code>p4est</code> created (before the init
+callback function is called the first time).
+This is a way to keep application state referenced in a <tt>p4est</tt> object.
+For more details see
 <code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L253-L276">p4est.h</a></code> and
-<code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est_extended.h#L113-L131">p4est_extended.h</a></code>.
+<code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est_extended.h#L113-L131">p4est_extended.h</a></code>
+(as always, the 3D equivalents are prefixed with <code>p8est_</code>).
 </p>
 <p class="exer">
 Exercise F1:
@@ -125,7 +145,7 @@ For the declaration and documentation of the above functions you can use the lin
 </p>
 <p class="exer">
 Exercise F2:
-Use <code>p4est_refine</code> to refine the boundary 
+Use <code>p4est_refine</code> to refine the boundary
 (choose a boundary thickness) of a circle until a the quadrants reached
 the refinement level six and redistribute the quadrants between the processes
 using <code>p4est_partition</code>.

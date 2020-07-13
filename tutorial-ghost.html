@@ -45,7 +45,15 @@ page and application forms</a>.
 This tutorial is about collecting so-called ghost or halo elements
 and what you can do with them.
 The ghost layer is defined as a set of remote elements adjacent
-to the local partition.
+to the process-local ones.
+It is a fundamental data structure to establish the communication pattern
+between mesh-adjacent parallel processes.
+The ghost layer contains all information required to determine all
+sender-receiver pairs without additional MPI communication.
+The pattern is necessarily symmetric: Each sender of a pair is also a
+receiver and vice versa.
+</p>
+<p class="book">
 <tt>p4est</tt> provides dedicated functions
 <a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est_ghost.h#L120-L132">p4est_ghost_new</a> (2D),
 <a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p8est_ghost.h#L119-L131">p8est_ghost_new</a> (3D) and further methods to find individual elements
@@ -64,16 +72,32 @@ Assembling the ghost aka. halo layer of an adaptive mesh.
 </dd>
 <dt>Next steps</dt><dd>
 Extend your hello-world program by adding a call to ghost creation and destruction.
-In between, you may use our provided binary search functions
+In between, you may use the provided binary search functions
 to find individual elements in it.
 You may also call the ghost exchange functions with some per-element
 data that you define freely and verify that it is communicatied correctly.
+Furthermore, the ghost layer is one input to the <code>p4est_iterate</code>
+algorithm, which traverses all interface entities relevant to the local process.
 </dd>
 </dl>
 </section>
 
 <section>
 <h3>Constructing the ghost layer</h3>
+<p class="book">
+The ghost layer can be constructed from any valid <tt>p4est</tt> object.
+This forest does not need to be 2:1 balanced.
+The ghost layer is a read-only immutable object and must be destroyed when no
+longer needed.
+</p>
+<pre class="book">
+ghost = p4est_ghost_new (p4est, btype);
+</pre>
+<p class="cont">
+The <code>btype</code> parameter.
+</p>
+<p class="book">
+</p>
 </section>
 
 <section>

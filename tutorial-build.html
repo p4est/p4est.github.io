@@ -188,12 +188,24 @@ and place there a minimal C file with a main function:
 <pre class="book">
 #include &lt;p4est.h&gt;
 int main (int argc, char ** argv) {
+  sc_MPI_Comm mpicomm = sc_MPI_COMM_WORLD;
+  sc_init (mpicomm, 1, 1, NULL, SC_LP_DEFAULT);
   p4est_init (NULL, SC_LP_DEFAULT);
   return 0;
 }
 </pre>
 <p class="cont">
-Then, copy a <code>Makefile.am</code> from a parallel example directory
+The two init functions are optional, strictly speaking.
+<tt>p4est</tt> will work fine without them.
+The MPI communicator <code>mpicomm</code> is remembered to determine the ranks
+for logging messages.
+This communicator does <em>not</em> need to be the same as the one later passed
+to <code>p4est_new</code> and friends, but we recommand the later ones to be at
+least subsets with identical rank zero such that the prefixes of log messages
+make sense.
+</p>
+<p class="book">
+Now, copy a <code>Makefile.am</code> from a parallel example directory
 and adapt it, doing a careful manual search-and-replace and if necessary
 consulting the automake documentation.
 Finally, edit the Makefile.am in the toplevel source directory.
