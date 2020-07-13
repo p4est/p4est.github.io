@@ -106,13 +106,15 @@ that contains a directory of all <code>.vtu</code> files written.
 You may now use a visualization program to read these files and display them.
 </p>
 <p class="exer">
-Exercise: to visualize a connectivity structure, create a minimal <tt>p4est</tt>
+Exercise I1:
+to visualize a connectivity structure, create a minimal <tt>p4est</tt>
 at level zero and visualize that.
 Experiment with varying MPI sizes and play with the <code>wrap_rank</code>
 parameter.
 </p>
 <p class="exer">
-Exercise: Add some calls to <code>p4est_vtk_write_file</code>
+Exercise I2:
+Add some calls to <code>p4est_vtk_write_file</code>
 to your favorite example program, using a different file name on each occasion,
 and examine the results.
 Verify the tree number, MPI rank, and quadrant level interactively.
@@ -133,7 +135,8 @@ The number of local quadrants, on the other hand, is easily available from the
 <tt>p4est</tt> object, and the input data array must match in length.
 </p>
 <p class="exer">
-Exercise: Create an <code>sc_array</code> (see the files
+Exercise I3:
+Create an <code>sc_array</code> (see the files
 <code>sc/src/sc_containers.{c,h}</code> for details) of correct length.
 Populate some per-quadrant data: Write a loop over the process-local trees,
 inside over the tree-local quadrants, access each quadrant and define the
@@ -199,7 +202,7 @@ quadrants from the file equi-partitioned.
 If it is false, the call will crash if no saved partition is present.
 </p>
 <p class="exer">
-Exercise:
+Exercise I4:
 Write a function <code>p4est_can_load</code> that determines without crashing
 whether the file on disk exists and will be acceptable to load for a given set
 of parameters.
@@ -209,7 +212,7 @@ It may optionally populate a structure passed by reference with some statistics
 and information from the file.
 </p>
 <p class="exer">
-Exercise:
+Exercise I5:
 Extend your favorite program example to save and load a <tt>p4est</tt>.
 Create a partition-independent mesh refinement and write the same mesh
 using different MPI sizes (and file names).  Check under which conditions the

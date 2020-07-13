@@ -144,7 +144,7 @@ destroy it definitely.
 It is advised to use the <code>valgrind</code> tool to check for proper deallocation.
 </p>
 <p class="exer">
-Exercise:
+Exercise C1:
 On one MPI rank, call <code>p4est_connectivity_save</code>,
 <code>p4est_connectivity_load</code> and
 <code>p4est_connectivity_is_equal</code> to verify that
@@ -158,7 +158,7 @@ Destroy the connectivities on all ranks.
 Use <code>valgrind</code> to make sure no memory is leaked.
 </p>
 <p class="exer">
-Exercise:
+Exercise C2:
 Write a converter to load your favorite conforming hexahedral mesh format from
 disk and populate a <tt>p4est</tt> connectivity structure in memory.
 Use <code>p4est_connectivity_new</code> to allocate the required memory

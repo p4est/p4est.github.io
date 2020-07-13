@@ -89,7 +89,7 @@ called the first time. For more details see
 <code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est_extended.h#L113-L131">p4est_extended.h</a></code>.
 </p>
 <p class="exer">
-Exercise 1.1:
+Exercise F1:
 Choose in
 <code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est_connectivity.h#L360-L436">p4est_connectivity.h</a></code>
 a connectivity that you like and create a forest of quadtrees.
@@ -124,19 +124,19 @@ neigboring elements in a forest by refining quadrants.</dd>
 For the declaration and documentation of the above functions you can use the links in the box above.
 </p>
 <p class="exer">
-Exercise 1.2:
+Exercise F2:
 Use <code>p4est_refine</code> to refine the boundary 
 (choose a boundary thickness) of a circle until a the quadrants reached
 the refinement level six and redistribute the quadrants between the processes
 using <code>p4est_partition</code>.
 </p>
 <p class="exer">
-Exercise 1.3:
+Exercise F3:
 Coarsen all families of quadrants that have a level greater than four and
 call <code>p4est_balance</code> on the forest.
 </p>
 <p class="exer">
-Exercise 1.4:
+Exercise F4:
 Use the function <code>p4est_vtk_write_file</code> to create a VTK file
 for the created forest.
 </p>
