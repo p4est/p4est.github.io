@@ -52,32 +52,34 @@ a forest of quadtrees (2D) or octrees (3D) to represent a mesh topology.
 </p>
 <dl class="spec">
 <dt>Required skills</dt><dd><a href="tutorial-build.html">Build</a>,
-<a href="tutorial-connectivity.html">Connectivity</a> and optional
-VTK graphics output in <a href="tutorial-io.html">IO</a></dd>
+<a href="tutorial-connectivity.html">connectivity</a> and optional
+the <a href="tutorial-io.html">VTK graphics tutorial</a>.</dd>
 <dt>Skills acquired</dt><dd>Create a forest of quadtrees and change the
 refinement structure of the created forest.</dd>
 <dt>Additional material</dt><dd>For an example that covers the content
 of this tutorial see <a href="https://github.com/cburstedde/p4est/blob/prev3-develop/example/simple/simple2.c">simple2.c</a>.</dd>
-<dt>Next steps (with links?)</dt><dd> Reference to more advanced tutorials if they exist.</dd>
+<dt>Next steps (with links?)</dt><dd>
+Reference to more advanced tutorials when they exist.</dd>
 </dl>
 </section>
 
 <section id="create">
 <h3>Create a forest of octrees</h3>
 <p class="book">
-The first step of the typical workflow of <tt>p4est</tt> is to create a forest
-of octrees or quadtrees. The <tt>p4est</tt> libary offers the function
-<code>p4est_new</code> and <code>p4est_new_ext</code> (a version with more parameters)
-to create such a forest.
+A fundamental step of a typical workflow with <tt>p4est</tt> is to create a forest
+of octrees or quadtrees. The <tt>p4est</tt> libary offers the functions
+<code>p4est_new</code> and <code>p4est_new_ext</code> (a version with more
+parameters) to create such a forest.
 </p>
 <pre class="book">
 typedef my_user_data {
   int foo;
 } my_user_data_t;
 static void my_quadrant_init (p4est, which_tree, quadrant) {
-  ((my_user_data_t *) quadrant->p.user_data)->foo = 17948;
+  ((my_user_data_t *) quadrant->p.user_data)->foo = *(int *) p4est->user_pointer;
 }
-void *user_pointer = NULL;
+static int foo = 17489;
+void *user_pointer = &amp;foo;
 p4est = p4est_new_ext (mpicomm, connectivity, 0, level, 1,
                        sizeof (my_user_data_t), my_quadrant_init, user_pointer);
 </pre>
@@ -89,7 +91,7 @@ simple</a> for a usage example).
 By <code>min_quadtrants</code> the user can prescribe the minimal intial number of quadrants per
 processor.
 //-->
-The minimum <code>level</code> of refinement is specified.
+The highest occurring <code>level</code> of refinement is specified.
 If it is zero or negative, there will be no refinement beyond the coarse
 mesh connectivity at this point.
 <!--
@@ -106,7 +108,7 @@ This is a way to keep application state referenced in a <tt>p4est</tt> object.
 For more details see
 <code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L253-L276">p4est.h</a></code> and
 <code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est_extended.h#L113-L131">p4est_extended.h</a></code>
-(as always, the 3D equivalents are prefixed with <code>p8est_</code>).
+(as always, the 3D equivalents are prefixed with <code>p8est</code>).
 </p>
 <p class="exer">
 Exercise F1:
@@ -119,46 +121,51 @@ a connectivity that you like and create a forest of quadtrees.
 <section>
 <h3>Manipulate the refinement structure and the partition</h3>
 <p class="book">
-The hypercubes for the dimensions two and three are called quadrants (for three dimensions also octants).
+The hypercubic elements for the dimensions two and three are called quadrants
+(the code uses this term also for three dimensional octants).
 In <code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L68-L109">p4est.h</a></code>
-the struct <code>p4est_quadrant_t</code> is defined and documented.
+the <code>struct p4est_quadrant</code> is declared and documented.
 </p>
 <p class="book">
 Our next step in the workflow is to manipulate the refinement structure. The <tt>p4est</tt> libary offers the
 following functions to manipulate the forest of quadtrees (2D) or octrees (3D).
+They are collective over the MPI communicator passed to <code>p4est_new</code>.
 </p>
-<ol class="book">
-<dl>
+<dl class="book">
 <dt><code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L316-L335">p4est_refine</a></code></dt>
-<dd>Refinement of specific hypercubes given a refinement criterion, i.e a callback function.</dd>
+<dd>Refinement of specific hypercubes given a refinement criterion, i.e. a
+user-defined callback function.
+While it is possible (and fun) to turn on recursive refinement, in practice
+we set it to non-recursive and loop around the function.
+This has the advantage that we can repartition in parallel after every iteration.
+</dd>
 <dt><code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L337-L348">p4est_coarsen</a></code></dt>
-<dd>Coarsen a family of hypercubes given a coarsening criterion, i.e a callback funtion.</dd>
+<dd>Coarsen a family of hypercubes given a coarsening criterion, i.e. a
+user-defined callback function.</dd>
 <dt><code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L350-L360">p4est_balance</a></code></dt>
 <dd>This function ensures a 2:1 balance of the size differences of
-neigboring elements in a forest by refining quadrants.</dd>
+neigboring elements in a forest by refining quadrants.
+This is accomplished by adding some more refinement where needed.
+</dd>
 <dt><code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L362-L382">p4est_partition</a></code></dt>
-<dd>Partition the forest equally or according to a given user-defined weight.</dd>
+<dd>Partition the forest in parallel, equally or according to a given
+user-defined weight per quadrant.</dd>
 </dl>
-</ol>
-<p class="book">
-For the declaration and documentation of the above functions you can use the links in the box above.
-</p>
 <p class="exer">
 Exercise F2:
-Use <code>p4est_refine</code> to refine the boundary
-(choose a boundary thickness) of a circle until a the quadrants reached
-the refinement level six and redistribute the quadrants between the processes
+Use <code>p4est_refine</code> in a loop to refine at the boundary
+(choose a boundary thickness) of a circle until the quadrants there reach
+the refinement level six, and then redistribute the quadrants between the processes
 using <code>p4est_partition</code>.
+Verify your program using the VTK output.
 </p>
 <p class="exer">
 Exercise F3:
 Coarsen all families of quadrants that have a level greater than four and
 call <code>p4est_balance</code> on the forest.
-</p>
-<p class="exer">
-Exercise F4:
-Use the function <code>p4est_vtk_write_file</code> to create a VTK file
-for the created forest.
+In parallel, examine the difference between standard partition and
+<code>partition_ext (p4est, 1, NULL)</code>.
+Verify your program using the VTK output.
 </p>
 </section>
 
