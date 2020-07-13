@@ -60,8 +60,8 @@ components, holes, tunnels, etc.).</li>
 ratio of each cube.</li>
 <li>Invest some more cubes if the distortion in any single mapped octree
 appears too large.</li>
-<li>Reduce the number of octrees if for some reason the coarse mesh must be
-limited.</li>
+<li>Reduce the number of octrees if the coarse mesh must be
+limited for numerical reasons.</li>
 </ol>
 <p class="book">
 We have successfully connected millions of octrees.  Below 100k, there is no
@@ -85,7 +85,7 @@ Saving them to a file and loading them later.
 <dt>Next steps</dt><dd>
 Construct several connectivities by builtin constructor functions.
 Construct a connectivity by hard-coding its members yourself.
-Use them one after the other to construct a <tt>p4est</tt> and visualize it via
+Use each connectivity to construct a coarse <tt>p4est</tt> and visualize it via
 the <a href="tutorial-io.html">VTK output</a>.
 </dd>
 </dl>
@@ -99,12 +99,43 @@ The convention for the connectivity's members is documented separately for the
 <a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p8est_connectivity.h#L117-L165">3D connectivity</a>.
 Note that we prefix 2D functions and objects with <code>p4est</code> and their
 3D cousins with <code>p8est</code>.
-In principle, there is nothing wrong with allocating and populating it yourself.
+</p>
+<div class="image-container">
+<div class="image">
+<img src="images/moebius_partitioned.png">
+<p class="cont">
+The
+<a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est_connectivity.h#L391-L393">
+Moebius strip</a>
+is an example of a 2D connectivity embedded into 3D space.
+We construct it from five trees, where an odd number of face connections has
+a non-standard relative orientation.
+Note that we do not need to add corner connections to the connectivity data
+structure for this mesh, since there is no corner connection that is not
+already a face connection.
+</p>
+</div>
+<div class="image">
+<img src="images/numbering3d.png">
+<p class="cont">
+The z-order convention for all boundary entities of a mesh hypercube.
+This picture shows the 3D case; the 2D case is contained in the x-y-plane.
+When writing all numbers in binary format, each bit corresponds
+to a coordinate/normal direction.
+This convention facilitates dimension-independent programming:
+All entities relevant to 2D are bitwise reductions of 3D entities.
+</p>
+</div>
+</div>
+<p class="book">
+In principle, there is nothing wrong with allocating and populating the
+connectivity yourself.
 This is, in fact, a great way to learn the meaning of its members.
 However, there are other ways, too.
-The easiest is to look through the
-<a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p8est_connectivity.h">connectivity header</a> and call one of our provided
-<code>p4est_connectivity_new_*</code> functions.
+The easiest is to look through say the
+<a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p8est_connectivity.h">3D connectivity header</a> and call one of our predefined
+<code>p8est_connectivity_new_*</code> functions.
+We also offer a function to read the connectivity from an Abaqus .inp file.
 </p>
 <p class="book">
 You may  build any numbers of forests with one connectivity, but

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>p4est 2020 HCM Summer School: Ghost</title>
+<meta name="author" content="Carsten Burstedde">
+<link type="text/css" rel="stylesheet" href="p4est.css">
+<link type="text/css" rel="stylesheet" href="added.css">
+<!-- mathjax !-->
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+
+<header>
+<h1><tt>p4est</tt> 2020 HCM Summer School: Ghost</h1>
+<nav>
+<div class="nav-container">
+<h2 class="nav-item"><a href="index.html" alt="p4est main page">Main</a></h2>
+<h2 class="nav-item">
+<a href="gallery.html" alt="p4est Galery of Research Results">Gallery</a></h2>
+<h2 class="nav-item">
+<a href="cite.html" alt="p4est Citations and Bibliography">Cite</a></h2>
+<h2 class="nav-item">
+<a href="school.html" alt="p4est 2020 HCM Summer School">School</a></h2>
+</div>
+</nav>
+</header>
+
+<main>
+<p>
+We are organizing a <tt>p4est</tt> summer school
+sponsored by the
+<a href="https://www.hcm.uni-bonn.de">Hausdorff Center for Mathematics</a>
+at the <a href="https://www.uni-bonn.de/">University of Bonn</a>, Germany.
+Please see also the school's <a
+href="https://www.hcm.uni-bonn.de/events/eventpages/hausdorff-school/hausdoff-school-2020/the-p4est-software-for-parallel-amr/">home
+page and application forms</a>.
+</p>
+<article>
+
+<section>
+<h2>The ghost layer aka. halo</h2>
+<p class="book">
+This tutorial is about collecting so-called ghost or halo elements
+and what you can do with them.
+The ghost layer is defined as a set of remote elements adjacent
+to the local partition.
+<tt>p4est</tt> provides dedicated functions
+<a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est_ghost.h#L120-L132">p4est_ghost_new</a> (2D),
+<a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p8est_ghost.h#L119-L131">p8est_ghost_new</a> (3D) and further methods to find individual elements
+in the ghost layer and to communicate associated data with remote processes.
+</p>
+<dl class="spec">
+<dt>Dependencies</dt><dd>
+<a href="tutorial-build.html">Build</a>;
+roughly understanding <code><a
+href="https://github.com/cburstedde/p4est/blob/prev3-develop/example/simple/">example/simple/</a></code>
+</dd>
+<dt>Required skills</dt><dd>
+Some idea about parallel computing</a></dd>
+<dt>Skills acquired</dt><dd>
+Assembling the ghost aka. halo layer of an adaptive mesh.
+</dd>
+<dt>Next steps</dt><dd>
+Extend your hello-world program by adding a call to ghost creation and destruction.
+In between, you may use our provided binary search functions
+to find individual elements in it.
+You may also call the ghost exchange functions with some per-element
+data that you define freely and verify that it is communicatied correctly.
+</dd>
+</dl>
+</section>
+
+<section>
+<h3>Constructing the ghost layer</h3>
+</section>
+
+<section>
+<h3>Accessing and searching the ghost layer</h3>
+<p class="exer">
+Exercise: write a routine to save the ghost layer to disk in the VTK
+format suitable for visualization.
+Proceed along the lines of <code>p4est_vtk_write_file</code>.
+See our <a href="tutorial-io.html">graphics tutorial</a> for details.
+</p>
+</section>
+
+<section>
+<h3>Calling parallel ghost data exchange</h3>
+</section>
+
+</article>
+</main>
+</body>
+</html>
