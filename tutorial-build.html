@@ -67,13 +67,14 @@ creating one's own example program that compiles with <tt>p4est</tt>.
 <dt>Additional material</dt>
 <dd>See also the
 <a href="https://github.com/cburstedde/p4est/blob/prev3-develop/INSTALL">installation
-document</a> in the source, and any documentation on configure scripts.
+document</a> in the source tree and any documentation on <code>configure</code> scripts.
 To me, autoconf is ok but the real winner is automake.  I have linked to the
 documentation below.</dd>
 <dt>Next steps</dt><dd>
 Extend your hello-world program with a typical <tt>p4est</tt> workflow
-as described in the Basics tutorial,
-and write some graphics output with <a href="tutorial-io.html">I/O tutorial</a>.
+as described in the <a href="tutorial-forest.html">forest tutorial</a>,
+and write some graphics output along the lines of the
+<a href="tutorial-io.html">I/O tutorial</a>.
 </dd>
 </dl>
 </section>
@@ -99,8 +100,7 @@ From here on, you may include the <tt>p4est</tt> header files in your own
 source code and link your program to the library.
 This method is fine to get going, or to provide a <tt>p4est</tt> installation
 to other software that requires it to compile.
-As with the binary package, you get a frozen and stable but relatively old
-version of the code.
+As with the binary package, you get a frozen and stable version of the code.
 </p>
 <p class="book">
 A more active way of getting involved is to clone the
@@ -144,11 +144,11 @@ We recommend the following procedure to build <tt>p4est</tt>.
 <ol class="book">
 <li><code>configure --help</code> prints a list of available options to configure.
 When working with the branch prev3-develop, defaults are usually ok.
-To get the tarballs working quickly, add <code>--without-blas</code> below.</li>
-<li>Create a directory parallel to the <tt>p4est</tt> source, enter it, and
-decide on a directory for installation (the latter not necessary for general
-hacking).</li>
-<li>Make a relative call such as <code>MPICC=mpicc ../path-to-source/configure
+To get the tarballs working quickly, add <code>--without-blas</code>.</li>
+<li>Create a build directory parallel to the <tt>p4est</tt> source, enter it, and
+decide on yet another directory for installation (the latter not necessary for
+general hacking).</li>
+<li>Make a relative call such as <code>../path-to-source/configure
 CFLAGS="-Wall -Wuninitialized -O0 -g" --enable-debug --enable-mpi
 --prefix=absolute-path-to-install</code>.
 The debug option enables assertions that we recommend highly to add also
@@ -164,12 +164,12 @@ This will compile and execute our complimentary test programs.</li>
 <li>If you have specified an installation prefix, you can run
 <code>make -j10 install V=0</code>.
 This call will neatly arrange all exported header files, library files,
-binaries, and some configuration files in mostly standard-conforming
-directories.</li>
+example binaries, some configuration files and documentation in mostly
+standard-conforming directories.</li>
 <li>If you're preparing a code version that shall be clean enough to
-create a tarball from it in the future, run
-<code>make distcheck</code>.
-If all goes well and after all warnings have been eliminated,
+create a tarball from it in the future, or clean enough for us to merge
+into upstream <tt>p4est</tt>, run <code>make distcheck</code>.
+If all goes well and after all warnings and errors have been eliminated,
 you will be presented with a brandnew <code>.tar.gz</code> including your
 contributions.</li>
 </ol>
@@ -205,6 +205,12 @@ least subsets with identical rank zero such that the prefixes of log messages
 make sense.
 </p>
 <p class="book">
+If you are not writing your <code>main</code> function but rather use
+<tt>p4est</tt> from library code, replace the two <code>1</code> arguments
+with <code>0</code>, which disables some sytem-level error hooks, and possibly
+bump the log level to <code>SC_LP_ERROR</code> to make the library quiet.
+</p>
+<p class="book">
 Now, copy a <code>Makefile.am</code> from a parallel example directory
 and adapt it, doing a careful manual search-and-replace and if necessary
 consulting the automake documentation.
@@ -219,12 +225,13 @@ required files.
 You may do this manually, adding <code>-I</code> and <code>-L</code> paths
 to the compile and link lines, respectively, and specify <code>-lp4est -lsc
 -lz</code> when linking.
-Make sure to use the same compiler as for compiling <tt>p4est</tt>.
+Make sure to use the same compiler and MPI installation as for compiling
+<tt>p4est</tt>.
 This method works most reliably when referring to an installed <tt>p4est</tt>
 compile.
-A shortcut is to include <code>etc/Makefile.p4est.mk</code> from our
-installation in your project Makefile.
-Take a look at this file to see which variables it provides.
+A shortcut is to include <code>etc/Makefile.p4est.mk</code> from the
+<tt>p4est</tt> installation in your project Makefile.
+Take a look at this file to see which variables it defines.
 When creating an independent project like this,
 there is no need to mess with the <tt>p4est</tt> source tree.
 </p>
