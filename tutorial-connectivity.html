@@ -44,7 +44,7 @@ page and application forms</a>.
 <p class="book">
 The mesh topology of <tt>p4est</tt> is a general forest of octrees.
 Each octree is a logical hypercube.
-To represent a non-cubic domain \(\Omega\),
+To represent a general and possibly non-cubic domain \(\Omega\),
 we begin by covering it with a conforming mesh of (potentially mapped)
 squares (2D) or cubes (3D).
 This coarsest possible mesh or <emph>connectivity</emph> cannot be changed
@@ -86,7 +86,7 @@ Saving them to a file and loading them later.
 Construct several connectivities by builtin constructor functions.
 Construct a connectivity by hard-coding its members yourself.
 Use each connectivity to construct a coarse <tt>p4est</tt> and visualize it via
-the <a href="tutorial-io.html">VTK output</a>.
+the <a href="tutorial-io.html#vtk">VTK output</a>.
 </dd>
 </dl>
 </section>
@@ -138,10 +138,12 @@ The easiest is to look through say the
 We also offer a function to read the connectivity from an Abaqus .inp file.
 </p>
 <p class="book">
-You may  build any numbers of forests with one connectivity, but
+You may  build any numbers of forests with the same connectivity object, but
 please (a) destroy it only after the last of the forests has been freed and (b)
-destroy it definitely.
-It is advised to use the <code>valgrind</code> tool to check for proper deallocation.
+definitely destroy it.
+It is advised to use the <a
+href="https://valgrind.org/docs/manual/quick-start.html">valgrind tool</a>
+to check for proper deallocation.
 </p>
 <p class="exer">
 Exercise C1:
@@ -161,10 +163,10 @@ Use <code>valgrind</code> to make sure no memory is leaked.
 Exercise C2:
 Write a converter to load your favorite conforming hexahedral mesh format from
 disk and populate a <tt>p4est</tt> connectivity structure in memory.
-Use <code>p4est_connectivity_new</code> to allocate the required memory
-once the numbers of trees and corner connections have been determined,
+Use <code>p{4,8}est_connectivity_new</code> to allocate the required memory
+once the numbers of trees and edge/corner connections have been determined,
 then hand-code a bunch of loops to fill all data fields with values.
-Finally, check the object with <code>p4est_connectivity_is_valid</code>.
+Finally, check the object with <code>p{4,8}est_connectivity_is_valid</code>.
 </p>
 </section>
 
