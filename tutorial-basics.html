@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>p4est 2020 HCM Summer School: Basics</title>
+<meta name="author" content="Carsten Burstedde">
+<link type="text/css" rel="stylesheet" href="p4est.css">
+<link type="text/css" rel="stylesheet" href="added.css">
+<!-- mathjax !-->
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+
+<header>
+<h1><tt>p4est</tt> 2020 HCM Summer School: Basics</h1>
+<nav>
+<div class="nav-container">
+<h2 class="nav-item"><a href="index.html" alt="p4est main page">Main</a></h2>
+<h2 class="nav-item">
+<a href="gallery.html" alt="p4est Galery of Research Results">Gallery</a></h2>
+<h2 class="nav-item">
+<a href="cite.html" alt="p4est Citations and Bibliography">Cite</a></h2>
+<h2 class="nav-item">
+<a href="school.html" alt="p4est 2020 HCM Summer School">School</a></h2>
+</div>
+</nav>
+</header>
+
+<main>
+<p>
+We are organizing a <tt>p4est</tt> summer school
+sponsored by the
+<a href="https://www.hcm.uni-bonn.de">Hausdorff Center for Mathematics</a>
+at the <a href="https://www.uni-bonn.de/">University of Bonn</a>, Germany.
+Please see also the school's <a
+href="https://www.hcm.uni-bonn.de/events/eventpages/hausdorff-school/hausdoff-school-2020/the-p4est-software-for-parallel-amr/">home
+page and application forms</a>.
+</p>
+<article>
+
+<section>
+<h2>Create and manipulate a forest of octrees</h2>
+<p class="book">
+<tt>p4est</tt> represents a mesh topology as a forest of octrees. This
+forest can be created by <tt>p4est</tt> given a 
+<a href="tutorial-connectivity.html">connectivity</a>. In this tutorial,
+we talk about the typical workflow in <tt>p4est</tt> to create and manipulate
+a forest of quadtrees (2D) or octrees (3D) to represent a mesh topology.
+
+</p>
+</p>
+<dl class="spec">
+<dt>Required skills</dt><dd><a href="tutorial-build.html">Build</a>,
+<a href="tutorial-connectivity.html">Connectivity</a> and optional 
+VTK graphics output in <a href="tutorial-io.html">IO</a></dd>
+<dt>Skills acquired</dt><dd>Create a forest of quadtrees and change the
+refinement structure of the created forest.</dd>
+<dt>Additional material</dt><dd>For an example that covers the content
+of this tutorial see <a href="https://github.com/cburstedde/p4est/blob/prev3-develop/example/simple/simple2.c">simple2.c</a>.</dd>
+<dt>Next steps (with links?)</dt><dd> Reference to more advanced tutorials if they exist.</dd>
+</dl>
+</section>
+
+<section>
+<h3>Create a forest of octrees</h3>
+<p class="book">
+The first step of the typical workflow of <tt>p4est</tt> is to create a forest
+of octrees or quadtrees. The <tt>p4est</tt> libary offers the function
+<code>p4est_new</code> and <code>p4est_new_ext</code> (a version with more parameters) 
+to create such a forest.
+</p>
+<pre class="book">
+p4est* p4est_new_ext (mpi->mpicomm, connectivity, min_quadrants, min_level,
+               fill_uniform, sizeof (user_data_t), init_fn, user_pointer);
+</pre>
+<p class="book">
+<code>mpi->comm</code> is a mpi communicator (see the <a href="https://github.com/cburstedde/p4est/blob/prev3-develop/example/simple/simple2.c">example simple</a> for a usage example).
+By <code>min_quadtrants</code> the user can prescribe the minimal intial number of quadrants per
+processor. The <code>min_level</code> is minimum level of refinement, which may be 0 or negative.
+In this case <code>min_level</code> has no effect. The quasi Boolean value <code>fill_uniform</code> determines if the forest
+is filled with a uniform mesh for <code>fill_uniform</code> true or the
+coarstest possible mesh is created for <code>fill_uniform</code> false.
+<code>init_fn</code> is a callback function that initializes the already
+allocated user_data. The <code>user_pointer</code> is assigned to the
+user_pointer member of the created <code>p4est</code> before <code>init_fn</code> is
+called the first time. For more details see 
+<code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L253-L276">p4est.h</a></code> and
+<code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est_extended.h#L113-L131">p4est_extended.h</a></code>.
+</p>
+<p class="exer">
+Exercise 1.1:
+Choose in
+<code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est_connectivity.h#L360-L436">p4est_connectivity.h</a></code>
+a connectivity that you like and create a forest of quadtrees.
+</p>
+</section>
+
+<section>
+<h3>Manipulate the refinement structure and the partition</h3>
+<p class="book">
+The hypercubes for the dimensions two and three are called quadrants (for three dimensions also octants).
+In <code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L68-L109">p4est.h</a></code>
+the struct <code>p4est_quadrant_t</code> is defined and documented.
+</p>
+<p class="book">
+Our next step in the workflow is to manipulate the refinement structure. The <tt>p4est</tt> libary offers the
+following functions to manipulate the forest of quadtrees (2D) or octrees (3D).
+</p>
+<ol class="book">
+<dl>
+<dt><code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L316-L335">p4est_refine</a></code></dt>
+<dd>Refinement of specific hypercubes given a refinement criterion, i.e a callback function.</dd>
+<dt><code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L337-L348">p4est_coarsen</a></code></dt>
+<dd>Coarsen a family of hypercubes given a coarsening criterion, i.e a callback funtion.</dd>
+<dt><code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L350-L360">p4est_balance</a></code></dt>
+<dd>This function ensures a 2:1 balance of the size differences of
+neigboring elements in a forest by refining quadrants.</dd>
+<dt><code><a href="https://github.com/cburstedde/p4est/blob/prev3-develop/src/p4est.h#L362-L382">p4est_partition</a></code></dt>
+<dd>Partition the forest equally or according to a given user-defined weight.</dd>
+</dl>
+</ol>
+<p class="book">
+For the declaration and documentation of the above functions you can use the links in the box above.
+</p>
+<p class="exer">
+Exercise 1.2:
+Use <code>p4est_refine</code> to refine the boundary 
+(choose a boundary thickness) of a circle until a the quadrants reached
+the refinement level six and redistribute the quadrants between the processes
+using <code>p4est_partition</code>.
+</p>
+<p class="exer">
+Exercise 1.3:
+Coarsen all families of quadrants that have a level greater than four and
+call <code>p4est_balance</code> on the forest.
+</p>
+<p class="exer">
+Exercise 1.4:
+Use the function <code>p4est_vtk_write_file</code> to create a VTK file
+for the created forest.
+</p>
+</section>
+
+</article>
+</main>
+</body>
+</html>
