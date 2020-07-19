@@ -167,6 +167,13 @@ In parallel, examine the difference between standard partition and
 <code>partition_ext (p4est, 1, NULL)</code>.
 Verify your program using the VTK output.
 </p>
+<p class="exer">
+Exercise F4:
+Formulate a weight function for <code>p4est_partition_ext</code>.
+Tweak it in such a way that you can have from 0 to 15 elements on process zero
+chosen by command line argument, and the rest of them partitioned evenly acress
+the other processes.
+</p>
 </section>
 
 </article>
