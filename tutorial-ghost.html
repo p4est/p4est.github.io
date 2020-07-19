@@ -42,7 +42,7 @@ page and application forms</a>.
 <section>
 <h2>The ghost layer aka. halo</h2>
 <p class="book">
-This tutorial is about collecting so-called ghost or halo elements
+This tutorial is about collecting so-called <em>ghost</em> or halo elements
 and what you can do with them.
 The ghost layer is defined as a set of remote elements adjacent
 to the process-local ones.
@@ -111,11 +111,50 @@ when the structure is no longer needed.
 
 <section>
 <h3>Accessing and searching the ghost layer</h3>
+<p class="book">
+The ghost layer is a public struct with documented entries, most of them arrays.
+The
+<a
+href="https://github.com/cburstedde/p4est/blob/master/src/p4est_ghost.h#L39-L79">2D</a> and <a
+href="https://github.com/cburstedde/p4est/blob/master/src/p8est_ghost.h#L39-L78">3D</a>
+declarations are structurally identical: Linear tree storage is dimension
+independent, and ghost elements are ordered ascending just as mesh elements.
+We may index into the element storage by window start and offset indices.
+We may also use binary search in the linear order to find ghost elements.
+</p>
+<p class="book">
+A closer look at the data structure reveals that the ghost array is windowed
+once by tree and once by process offsets.
+Naturally, some trees or processes may have zero ghost elements for a given process,
+in which case the window has length zero.
+</p>
+<p class="book">
+A second set of arrays is called <em>mirrors</em>.
+These are local elements that are ghosts to remote processes,
+sometimes called the (inside) parallel boundary elements.
+Ghosts would be the outside parallel boundary elements.
+One mirror may be ghost to more than one remote process.
+Thus, the indexing structure is slightly less direct than for ghosts:
+We have an array <code>mirror_proc_mirrors</code> that contains
+one set of indices into the mirrors for each remote process.
+The array <code>mirror_proc_offsets</code> indexes into these sets,
+which vary in length by remote process.
+</p>
 <p class="exer">
-Exercise: write a routine to save the ghost layer to disk in the VTK
+Exercise G1:
+Write a routine to save the ghost layer to disk in the VTK
 format suitable for visualization.
 Proceed along the lines of <code>p4est_vtk_write_file</code>.
 See our <a href="tutorial-io.html">graphics tutorial</a> for details.
+</p>
+<p class="exer">
+Exercise G2:
+Read the source code of <code>p4est_ghost_bsearch</code>.
+Write an example program where you construct a uniform mesh in parallel, then
+construct some random quadrants on the chosen refinement level using
+<code>p4est_quadrant_set_morton</code> and look for them in the ghost layer
+with this binary search function.
+Print hits and misses.
 </p>
 </section>
 
