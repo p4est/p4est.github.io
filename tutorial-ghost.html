@@ -160,6 +160,52 @@ Print hits and misses.
 
 <section>
 <h3>Calling parallel ghost data exchange</h3>
+<p class="book">
+Only rarely will a programmer use the binary search function mentioned above.
+For example, to exchange face-neighbor data in a finite volume method, we
+would rather recommend using <code>p4est_iterate</code> as done in the
+<a
+href="https://github.com/cburstedde/p4est/blob/master/example/steps/p4est_step3.c">step3 example program</a>.
+</p>
+<p class="book">
+Alternatively, the provided <tt>p4est</tt> ghost exchange functions may be
+of interest.
+They encapsulate all MPI messaging and are framed as begin and end pairs
+that internally use non-blocking point-to-point communication, thus allowing
+for overlapping computation and communication.
+The sequence of usage is the following:
+</p>
+<ol class="book">
+<li>Choose to either communicate the convenient per-quadrant user data
+allocated by <tt>p4est</tt> or a block of data allocated by you for the mirror
+elements.
+<li>
+Call the <tt>p4est</tt> ghost exchange begin functions appropriate for your
+data choice.
+</li>
+<li>
+Do something else if you like, but do not touch the data in the mirror or ghost
+buffers.
+</li>
+<li>
+Call the matching ghost exchange end function.
+This will internally wait for all pending MPI messages.
+When it returns, the mirror storage may be freed and the ghost storage
+is ready to be read.
+</li>
+<li>
+Repeat as needed (usually once per time step).  As long as the mesh is not
+refined, coarsened, 2:1 balanced or repartitioned, the ghost layer
+structure and the data buffers can be kept around.
+</li>
+</ol>
+<p class="exer">
+Exercise G3:
+Expand on exercise G1.
+Collectively produce some data for the mirror elements, communicate it with
+<code>p4est_ghost_exchange_custom</code> and visualize it after receiving as an
+extra data field in the ghost VTK output.
+</p>
 </section>
 
 </article>
