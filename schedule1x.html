@@ -73,13 +73,31 @@ schedule and the nature of our tutorials.
 <dl class="spec">
 <dt>CB</dt>
 </dl>
+<p class="book">
+<tt>p4est</tt> is a software library that implements parallel algorithms and
+data structures that are efficient and convenient to enable dynamic tree-based
+adaptive mesh refinement (AMR).
+</p>
+<p class="book">
+This session highlights some core concepts, design choices and functionalities.
+Using some of our builtin algorithms, new users can quickly learn to create
+adaptive meshes and to manipulate them in parallel.
+</p>
+<p class="book">
+We will also hint at some basic logical concepts and further material for
+self study.
+We close with pointing at exercises that we encourage to work on until
+the Tuesday lectures.
+The <a href="schedule2x.html#s22">next lecture of this set</a>
+will focus more on theory and in-depth discussion.
+</p>
 </article>
 
 <article id="s13">
 <h2>Slot 13: TBD</h2>
 <dl class="spec">
-<dt>DC</dt>
-<dt>ToI</dt>
+<dt>ToI (planned): <tt>p4est</tt> and PETSc part I</dt>
+<dt>DC (backup): Introduction to ForestClaw</dt>
 </dl>
 </article>
 
@@ -89,28 +107,15 @@ schedule and the nature of our tutorials.
 How does this whole thing work!
 </p>
 <p class="book">
-C code: there is no separate boolean datatype.  We use int,
-as recommended by the standard, with 0 meaning false and everything else
-meaning true.
-Thus, the only safe way of testing for truth is <code>if (var)</code>
-(or, if you insist, <code>if (var != 0)</code>).
-You may technically use <code>if (var == 0)</code> to test for falseness
-but we recommend <code>if (!var)</code>.
-The <code>NULL</code> pointer always evaluates to false, but we try to
-use the explicit test <code>if (pointer == NULL)</code> throughout.
-</p>
-<p class="book">
 Terminology: element vs. quadrant.
 Clarify that only leaves are stored.
+What is a quadrant?  Refer to video lectures.
 </p>
 <p class="book">
 Use the source: inline doxygen comments, example programs.
 Grep is your friend.
 When writing code, use GNU indent via the <code>p4estindent</code> script,
 disabling it by inline comments only in rare and obnoxious cases.
-</p>
-<p class="book">
-What is a quadrant?  Refer to video lectures.
 </p>
 <p class="book">
 The very basics of working with the code: <code>p4est</code> and
@@ -123,6 +128,17 @@ Discuss partitioning and partition-independent checksum.
 If you find missing or incorrect documentation, specifically concerning the
 inline doxygen-style comments, please correct them and write pull requests to
 the <code>develop</code> branch.
+</p>
+<p class="book">
+C code: there is no separate boolean datatype.  We use int,
+as recommended by the standard, with 0 meaning false and everything else
+meaning true.
+Thus, the only safe way of testing for truth is <code>if (var)</code>
+(or, if you insist, <code>if (var != 0)</code>).
+You may technically use <code>if (var == 0)</code> to test for falseness
+but we recommend <code>if (!var)</code>.
+The <code>NULL</code> pointer always evaluates to false, but we try to
+use the explicit test <code>if (pointer == NULL)</code> throughout.
 </p>
 </article>
 
