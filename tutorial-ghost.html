@@ -46,7 +46,7 @@ This tutorial is about collecting so-called ghost or halo elements
 and what you can do with them.
 The ghost layer is defined as a set of remote elements adjacent
 to the process-local ones.
-It is a fundamental data structure to establish the communication pattern
+This data structure is ideally suited to establish the communication pattern
 between mesh-adjacent parallel processes.
 The ghost layer contains all information required to determine all
 sender-receiver pairs without additional MPI communication.
@@ -94,9 +94,18 @@ longer needed.
 ghost = p4est_ghost_new (p4est, btype);
 </pre>
 <p class="cont">
-The <code>btype</code> parameter.
+The <tt>p4est</tt> object is used as input to this algorithm.
+The result can be queried and searched without accessing the original input.
+The <code>btype</code> parameter determines if the ghost layer should collect
+face adjacency, face and edge adjacency in 3D, or full adjacency including
+corner neighbors.  Please see the
+<a
+href="https://github.com/cburstedde/p4est/blob/master/src/p4est_connectivity.h#L72-L88">2D</a> and <a
+href="https://github.com/cburstedde/p4est/blob/master/src/p8est_connectivity.h#L73-L91">3D</a> declarations.
 </p>
 <p class="book">
+As with any <tt>p4est</tt> object, call <code>p4est_ghost_destroy</code>
+when the structure is no longer needed.
 </p>
 </section>
 
