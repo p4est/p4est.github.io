@@ -39,11 +39,19 @@ page and application forms</a>.
 </p>
 
 <article id="s21">
-<h2>Slot 21: TBD</h2>
+<h2>Slot 21: Introduction to ForestClaw</h2>
 <dl class="spec">
-<dt>DC (planned): Introduction to ForestClaw</dt>
-<dt>ToI (backup): <tt>p4est</tt> and PETSc part I</dt>
+<dt>DC</dt><dd>Donna Calhoun (speaker)</dd>
 </dl>
+<p class="book">
+Donna will present ForestClaw, a software library and simulation framework
+for solving conservation laws on mappped multiblock grids.
+ForestClaw uses <tt>p4est</tt> for all mesh handling and MPI communication.
+It leverages the scalability  of <tt>p4est</tt> for dynamic adaptive
+regridding and fast, effective load balancing.
+ForestClaw is used and adopted by various third-party simuation efforts.
+This is the first lecture out of three on the topic.
+</p>
 </article>
 
 <article id="s22">
@@ -54,12 +62,15 @@ Burstedde</a> (local chair, organizer, speaker)</dd>
 </dl>
 <p class="book">
 <tt>p4est</tt> is a particular lean implementation of linear octree storage,
-implemented for a flexible forest of octrees (see the
+based on a flexible forest of octrees logical structure (see the
 <a href="tutorial-connectivity.html">connectivity tutorial</a> for the precise
 encoding conventions).
 The theory behind all algorithms is based on the mathematical equivalence of
 a tree refinement and a space filling curve.
 All operations are reduced to a one-dimensional total order between the elements.
+This allows to store local and ghost elements in simple arrays and to index
+ranges of them with offset and length information.
+Pointers are not needed for single-element access.
 </p>
 <p class="book">
 <tt>p4est</tt> provides several high-level algorithms that are implemented
@@ -75,6 +86,17 @@ exploited to realize several interesting and useful AMR algorithms.
 <dl class="spec">
 <dt>TiH</dt><dd>Timo Heister (speaker)</dd>
 </dl>
+<p class="book">
+Timo is one of the maintainers and developers of the deal.II finite element
+software.
+Since roughly 2010, deal.II interfaces to <tt>p4est</tt> for scalable mesh
+storage and modification.
+The link to <tt>p4est</tt> is well hidden to the user of the library.
+Thus, this connection is a minimally invasive example to upgrade the mesh
+storage of an adaptive simulation software without touching the
+discretization and solver code at all.
+This is the first out of three lectures on this topic.
+</p>
 </article>
 
 </main>
