@@ -187,10 +187,16 @@ and place there a minimal C file with a main function:
 </p>
 <pre class="book">
 #include &lt;p4est.h&gt;
+
 int main (int argc, char ** argv) {
   sc_MPI_Comm mpicomm = sc_MPI_COMM_WORLD;
+  int mpiret = sc_MPI_Init (&amp;argc, &amp;argv);
+  SC_CHECK_MPI (mpiret);
   sc_init (mpicomm, 1, 1, NULL, SC_LP_DEFAULT);
   p4est_init (NULL, SC_LP_DEFAULT);
+
+  mpiret = sc_MPI_Finalize ();
+  SC_CHECK_MPI (mpiret);
   return 0;
 }
 </pre>
