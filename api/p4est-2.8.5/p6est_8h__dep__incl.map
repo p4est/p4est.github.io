@@ -1,0 +1,9 @@
+<map id="src/p6est.h" name="src/p6est.h">
+<area shape="rect" id="node1" title="A hybrid 2D+1D AMR extension." alt="" coords="435,5,529,32"/>
+<area shape="rect" id="node2" href="$p6est__communication_8h.html" title="MPI_Comm management." alt="" coords="5,80,207,107"/>
+<area shape="rect" id="node3" href="$p6est__extended_8h.html" title="Interface routines with extended capabilities." alt="" coords="231,80,392,107"/>
+<area shape="rect" id="node4" href="$p6est__ghost_8h.html" title="passing columns of layers and data to neighboring processes" alt="" coords="467,80,603,107"/>
+<area shape="rect" id="node5" href="$p6est__lnodes_8h_source.html" title=" " alt="" coords="384,155,527,181"/>
+<area shape="rect" id="node6" href="$p6est__profile_8h_source.html" title=" " alt="" coords="493,229,636,256"/>
+<area shape="rect" id="node7" href="$p6est__vtk_8h_source.html" title=" " alt="" coords="679,80,800,107"/>
+</map>
