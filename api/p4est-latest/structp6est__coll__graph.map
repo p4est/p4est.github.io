@@ -1,0 +1,9 @@
+<map id="p6est" name="p6est">
+<area shape="rect" id="node1" title="The p6est forest datatype." alt="" coords="127,288,186,315"/>
+<area shape="rect" id="node2" href="$structp6est__connectivity.html" title="This structure holds the 2D+1D inter&#45;tree connectivity information." alt="" coords="21,199,167,225"/>
+<area shape="rect" id="node3" href="$structp4est__connectivity.html" title="This structure holds the 2D inter&#45;tree connectivity information." alt="" coords="5,109,151,136"/>
+<area shape="rect" id="node4" href="$structp4est.html" title="The p4est forest datatype." alt="" coords="207,199,266,225"/>
+<area shape="rect" id="node5" href="$structp4est__quadrant.html" title="The 2D quadrant datatype." alt="" coords="191,109,314,136"/>
+<area shape="rect" id="node6" href="$unionp4est__quadrant_1_1p4est__quadrant__data.html" title=" " alt="" coords="169,5,336,47"/>
+<area shape="rect" id="node7" href="$structp4est__inspect.html" title="Data pertaining to selecting, inspecting, and profiling algorithms." alt="" coords="365,109,477,136"/>
+</map>
