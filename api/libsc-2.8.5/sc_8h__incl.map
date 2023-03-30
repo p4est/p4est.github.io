@@ -1,0 +1,13 @@
+<map id="src/sc.h" name="src/sc.h">
+<area shape="rect" id="node1" title="Support for process management (memory allocation, logging, etc.)" alt="" coords="300,5,370,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="573,229,668,256"/>
+<area shape="rect" id="node3" title=" " alt="" coords="24,80,92,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="116,80,186,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="211,80,275,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="300,80,370,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="395,80,470,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="494,80,568,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="592,80,659,107"/>
+<area shape="rect" id="node10" href="$sc__mpi_8h.html" title="Provide a consistent MPI interface with and without MPI configured." alt="" coords="683,80,763,107"/>
+<area shape="rect" id="node11" href="$sc3__mpi__types_8h.html" title="We provide MPI replacement data types for configuring without MPI." alt="" coords="658,155,788,181"/>
+</map>

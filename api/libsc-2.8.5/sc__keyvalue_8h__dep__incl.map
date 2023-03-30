@@ -1,0 +1,7 @@
+<map id="src/sc_keyvalue.h" name="src/sc_keyvalue.h">
+<area shape="rect" id="node1" title="This file provides a lookup structure for key&#45;value pairs." alt="" coords="77,5,215,32"/>
+<area shape="rect" id="node2" href="$sc__options_8h.html" title="Register and parse command line options and read/write configuration files." alt="" coords="5,80,132,107"/>
+<area shape="rect" id="node3" href="$sc__statistics_8h.html" title="Computation of average and mean values etc." alt="" coords="156,80,293,107"/>
+<area shape="rect" id="node4" href="$sc__amr_8h_source.html" title=" " alt="" coords="106,155,210,181"/>
+<area shape="rect" id="node5" href="$sc__notify_8h.html" title="We provide various algorithms to invert the communication pattern." alt="" coords="234,155,349,181"/>
+</map>
