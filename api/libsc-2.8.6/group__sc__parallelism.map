@@ -1,0 +1,4 @@
+<map id="Parallelism" name="Parallelism">
+<area shape="rect" id="node1" href="$group__sc.html" title="The SC Library provides support for parallel scientific applications." alt="" coords="5,5,119,31"/>
+<area shape="rect" id="node2" title="The sc library provides several mechanisms to work with MPI." alt="" coords="167,5,261,31"/>
+</map>

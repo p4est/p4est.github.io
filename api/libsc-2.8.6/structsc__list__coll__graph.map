@@ -1,0 +1,7 @@
+<map id="sc_list" name="sc_list">
+<area shape="rect" id="node1" title="The sc_list object provides a linked list." alt="" coords="91,288,154,315"/>
+<area shape="rect" id="node2" href="$structsc__link.html" title="The sc_link structure is one link of a linked list." alt="" coords="5,184,72,211"/>
+<area shape="rect" id="node3" href="$structsc__mempool.html" title="The sc_mempool object provides a large pool of equal&#45;size elements." alt="" coords="154,184,259,211"/>
+<area shape="rect" id="node4" href="$structsc__mstamp.html" title="A data container to create memory items of the same size." alt="" coords="231,95,329,121"/>
+<area shape="rect" id="node5" href="$structsc__array.html" title="The sc_array object provides a dynamic array of equal&#45;size elements." alt="" coords="151,5,228,32"/>
+</map>

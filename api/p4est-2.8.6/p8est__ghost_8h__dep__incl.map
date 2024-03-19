@@ -1,0 +1,12 @@
+<map id="src/p8est_ghost.h" name="src/p8est_ghost.h">
+<area shape="rect" id="node1" title="passing quadrants and data to neighboring processes" alt="" coords="279,5,415,32"/>
+<area shape="rect" id="node2" href="$p8est__iterate_8h.html" title="Iteration over mesh topology via callbacks." alt="" coords="30,80,173,107"/>
+<area shape="rect" id="node6" href="$p8est__lnodes_8h_source.html" title=" " alt="" coords="358,80,501,107"/>
+<area shape="rect" id="node9" href="$p8est__mesh_8h.html" title="Forest topology in a conventional mesh format." alt="" coords="197,80,333,107"/>
+<area shape="rect" id="node10" href="$p8est__nodes_8h_source.html" title=" " alt="" coords="525,80,664,107"/>
+<area shape="rect" id="node3" href="$p8est__extended_8h.html" title="Interface routines with extended capabilities." alt="" coords="178,155,339,181"/>
+<area shape="rect" id="node4" href="$p8est__algorithms_8h.html" title="Routines for managing quadrants as elements of trees and subtrees." alt="" coords="5,229,176,256"/>
+<area shape="rect" id="node5" href="$p8est__wrap_8h.html" title="The logic in p8est_wrap encapsulates core p4est data structures and provides functions that clarify t..." alt="" coords="201,229,333,256"/>
+<area shape="rect" id="node7" href="$p6est__lnodes_8h_source.html" title=" " alt="" coords="363,155,506,181"/>
+<area shape="rect" id="node8" href="$p6est__profile_8h_source.html" title=" " alt="" coords="363,229,506,256"/>
+</map>

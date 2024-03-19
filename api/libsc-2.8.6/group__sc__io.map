@@ -1,0 +1,4 @@
+<map id="I/O support" name="I/O support">
+<area shape="rect" id="node1" title="Functionality specific to file/data input/output." alt="" coords="167,5,260,31"/>
+<area shape="rect" id="node2" href="$group__sc.html" title="The SC Library provides support for parallel scientific applications." alt="" coords="5,5,119,31"/>
+</map>

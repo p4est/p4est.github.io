@@ -1,0 +1,8 @@
+<map id="The sc Library" name="The sc Library">
+<area shape="rect" id="node1" href="$group__io.html" title="Functionality specific to file/data input/output." alt="" coords="202,5,242,31"/>
+<area shape="rect" id="node2" title="The SC Library provides support for parallel scientific applications." alt="" coords="5,104,119,129"/>
+<area shape="rect" id="node3" href="$group__sc__containers.html" title="The library provides dynamic containers such as lists, arrays, and hash tables." alt="" coords="176,55,268,80"/>
+<area shape="rect" id="node4" href="$group__sc__logprios.html" title="The log level is a number designating the priority of a log action." alt="" coords="169,104,275,129"/>
+<area shape="rect" id="node5" href="$group__sc__options.html" title="The option parser reads the command line as well as configuration files." alt="" coords="167,153,277,179"/>
+<area shape="rect" id="node6" href="$group__sc__parallelism.html" title="The sc library provides several mechanisms to work with MPI." alt="" coords="175,203,269,228"/>
+</map>
