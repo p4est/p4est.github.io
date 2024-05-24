@@ -1,0 +1,28 @@
+var structp4est__wrap =
+[
+    [ "btype", "structp4est__wrap.html#a99eb6d30b72f2ce3f98ee94e3cd96d27", null ],
+    [ "coarsen_affect", "structp4est__wrap.html#a91d3fffcd2d0cb0215a82f4ca397dad7", null ],
+    [ "coarsen_delay", "structp4est__wrap.html#a59d9346d08cc18fb52e476f54a501c4d", null ],
+    [ "conn", "structp4est__wrap.html#a0c34a225dc52393ca49718a27c9c921d", null ],
+    [ "conn_owner", "structp4est__wrap.html#a5a531c714edfd6617e20a9b01027a343", null ],
+    [ "conn_rc", "structp4est__wrap.html#af121c937d418eacafcd5c366191c43aa", null ],
+    [ "flags", "structp4est__wrap.html#a7e6e963be622297daec975fb34b8414e", null ],
+    [ "ghost", "structp4est__wrap.html#a45ff37f26ee7e151da0ee096db2c1318", null ],
+    [ "ghost_aux", "structp4est__wrap.html#a4449a9b629ff6c3e4d69156b3a983b99", null ],
+    [ "hollow", "structp4est__wrap.html#aceabcd75db4e5facae38cf96bba2c653", null ],
+    [ "inside_counter", "structp4est__wrap.html#a9626d880f8dc8fbf51cbe464cde5f5a9", null ],
+    [ "match_aux", "structp4est__wrap.html#aa35324a4c9461a476bcca98778cb2686", null ],
+    [ "mesh", "structp4est__wrap.html#a448ed92737a923a0cf584dd01f087d65", null ],
+    [ "mesh_aux", "structp4est__wrap.html#a45d654611b060e0860be2e3bfd41e812", null ],
+    [ "num_refine_flags", "structp4est__wrap.html#af425765a12f1b05e40524983b52b94bc", null ],
+    [ "num_replaced", "structp4est__wrap.html#ade44d81e4f7118acefb52d2460a212ad", null ],
+    [ "p4est", "structp4est__wrap.html#a02d9ff8ae77472617f1d27141f755469", null ],
+    [ "p4est_children", "structp4est__wrap.html#a662ffb91ec228703b27ebd1c0e6d42fa", null ],
+    [ "p4est_dim", "structp4est__wrap.html#ab66ef7ab7563e5b22f3a37b242887b6b", null ],
+    [ "p4est_faces", "structp4est__wrap.html#a3252f81557549e668a2019b05d59b536", null ],
+    [ "p4est_half", "structp4est__wrap.html#a62101906a10977025881d6682dc62a63", null ],
+    [ "replace_fn", "structp4est__wrap.html#a12dc4d2cef7b90cbc68c93ab1332f2fd", null ],
+    [ "temp_flags", "structp4est__wrap.html#ad1d05738f0a8cd9ea315c3efa4fcdd9c", null ],
+    [ "user_pointer", "structp4est__wrap.html#afaaa3c89a1272aadbe631b8e92ff7920", null ],
+    [ "weight_exponent", "structp4est__wrap.html#ac7c34f05d1a32f98f5266bc5ecf20eb8", null ]
+];

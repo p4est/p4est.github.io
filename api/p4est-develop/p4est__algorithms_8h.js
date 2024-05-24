@@ -1,0 +1,28 @@
+var p4est__algorithms_8h =
+[
+    [ "p4est_balance_border", "p4est__algorithms_8h.html#a0dd58e30f854b5d7f555a282ca37f990", null ],
+    [ "p4est_balance_subtree", "p4est__algorithms_8h.html#ac30f23d1167c91106f3a7641462101b8", null ],
+    [ "p4est_complete_region", "p4est__algorithms_8h.html#a72505b01dac28fd956de06010b01c569", null ],
+    [ "p4est_complete_subtree", "p4est__algorithms_8h.html#afb52307e6065a8c216da6a95262661ae", null ],
+    [ "p4est_is_equal", "p4est__algorithms_8h.html#a26609a5b5e9920497f704851d6551401", null ],
+    [ "p4est_is_valid", "p4est__algorithms_8h.html#a1f8490aec3259f0f537cdf6b0473cf8c", null ],
+    [ "p4est_linearize_tree", "p4est__algorithms_8h.html#a15bbbd406aad72380f47ac4ef5862fe0", null ],
+    [ "p4est_next_nonempty_process", "p4est__algorithms_8h.html#a5522bdf647d47e3236a79d6eefcf4998", null ],
+    [ "p4est_partition_correction", "p4est__algorithms_8h.html#aa550de39569e06cb6e9b6804020b78db", null ],
+    [ "p4est_partition_for_coarsening", "p4est__algorithms_8h.html#ad5c73a218e322d6f7aba814aa3e8f9c9", null ],
+    [ "p4est_partition_given", "p4est__algorithms_8h.html#a85ebc40fdba570a0e97c982b490e0858", null ],
+    [ "p4est_quadrant_checksum", "p4est__algorithms_8h.html#a4928e8bf3b9577f52800a39f52bd5d58", null ],
+    [ "p4est_quadrant_free_data", "p4est__algorithms_8h.html#aada8ef40a0ca4aa82e7b10ac520e58e6", null ],
+    [ "p4est_quadrant_in_range", "p4est__algorithms_8h.html#a14bfe24e2e440202d44c20a802d6acdf", null ],
+    [ "p4est_quadrant_init_data", "p4est__algorithms_8h.html#a676f6c46832315298db16389d26783e2", null ],
+    [ "p4est_quadrant_mempool_new", "p4est__algorithms_8h.html#ae94de1b48729a97f7294ad0dc7b74979", null ],
+    [ "p4est_quadrant_on_face_boundary", "p4est__algorithms_8h.html#affe59220ee4ae4eca5d10096050cf372", null ],
+    [ "p4est_tree_compute_overlap", "p4est__algorithms_8h.html#ae72af53f701a4cabc21b1e383de28022", null ],
+    [ "p4est_tree_is_almost_sorted", "p4est__algorithms_8h.html#a54ba5ae237da81552713748a5540b8fc", null ],
+    [ "p4est_tree_is_complete", "p4est__algorithms_8h.html#ad45e6a0d8ecf8984cbb6a16bbb8f7426", null ],
+    [ "p4est_tree_is_linear", "p4est__algorithms_8h.html#a5497d83ec9cf844aba37d43f4ff69913", null ],
+    [ "p4est_tree_is_sorted", "p4est__algorithms_8h.html#aa46180f50aef51d7b66393fc067aabc3", null ],
+    [ "p4est_tree_print", "p4est__algorithms_8h.html#a24f1fac9437c20e099988b83f3c82479", null ],
+    [ "p4est_tree_remove_nonowned", "p4est__algorithms_8h.html#af13051544ee47e09df1d157684ba99f3", null ],
+    [ "p4est_tree_uniqify_overlap", "p4est__algorithms_8h.html#a55a873dd77bfa196c61f59b484315ec4", null ]
+];
