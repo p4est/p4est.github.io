@@ -1,0 +1,10 @@
+<map id="src/p4est_lnodes.h" name="src/p4est_lnodes.h">
+<area shape="rect" id="node1" title="Generate Lobatto node numbers for any degree." alt="" coords="363,5,506,32"/>
+<area shape="rect" id="node2" href="$p4est__extended_8h.html" title="Interface routines with extended capabilities." alt="" coords="169,80,330,107"/>
+<area shape="rect" id="node5" href="$p4est__geometry_8h.html" title="Transform from tree&#45;local &quot;reference&quot; coordinate system to global &quot;physical space&quot; coordinates." alt="" coords="354,80,515,107"/>
+<area shape="rect" id="node7" href="$p6est__lnodes_8h_source.html" title=" " alt="" coords="539,80,682,107"/>
+<area shape="rect" id="node3" href="$p4est__algorithms_8h.html" title="Routines for managing quadrants as elements of trees and subtrees." alt="" coords="5,155,176,181"/>
+<area shape="rect" id="node4" href="$p4est__wrap_8h.html" title="This wrapper API encapsulates core p4est data structures and provides functions that clarify the mark..." alt="" coords="201,155,333,181"/>
+<area shape="rect" id="node6" href="$p4est__vtk_8h.html" title="Routines for printing a forest and associated fields to VTK format." alt="" coords="374,155,495,181"/>
+<area shape="rect" id="node8" href="$p6est__profile_8h_source.html" title=" " alt="" coords="539,155,682,181"/>
+</map>

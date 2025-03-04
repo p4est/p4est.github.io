@@ -1,0 +1,14 @@
+<map id="src/p8est_ghost.h" name="src/p8est_ghost.h">
+<area shape="rect" id="node1" title="Passing quadrants and data to neighboring processes." alt="" coords="284,5,420,32"/>
+<area shape="rect" id="node2" href="$p8est__iterate_8h.html" title="Iteration over mesh topology via callbacks." alt="" coords="35,80,178,107"/>
+<area shape="rect" id="node6" href="$p8est__lnodes_8h.html" title="Generate Lobatto node numbers for any degree." alt="" coords="363,80,506,107"/>
+<area shape="rect" id="node11" href="$p8est__mesh_8h.html" title="Forest topology in a conventional mesh format." alt="" coords="203,80,339,107"/>
+<area shape="rect" id="node12" href="$p8est__nodes_8h_source.html" title=" " alt="" coords="531,80,669,107"/>
+<area shape="rect" id="node3" href="$p8est__extended_8h.html" title="Interface routines with extended capabilities." alt="" coords="178,155,339,181"/>
+<area shape="rect" id="node4" href="$p8est__algorithms_8h.html" title="Routines for managing quadrants as elements of trees and subtrees." alt="" coords="5,229,176,256"/>
+<area shape="rect" id="node5" href="$p8est__wrap_8h.html" title="This wrapper API encapsulates core p4est data structures and provides functions that clarify the mark..." alt="" coords="201,229,333,256"/>
+<area shape="rect" id="node7" href="$p6est__lnodes_8h_source.html" title=" " alt="" coords="363,155,506,181"/>
+<area shape="rect" id="node9" href="$p8est__geometry_8h.html" title="Transform from tree&#45;local &quot;reference&quot; coordinate system to global &quot;physical space&quot; coordinates." alt="" coords="530,155,691,181"/>
+<area shape="rect" id="node8" href="$p6est__profile_8h_source.html" title=" " alt="" coords="363,229,506,256"/>
+<area shape="rect" id="node10" href="$p8est__vtk_8h.html" title="Routines for printing a forest and associated fields to VTK format." alt="" coords="550,229,671,256"/>
+</map>

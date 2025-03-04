@@ -1,0 +1,8 @@
+<map id="p4est_iter_face_side" name="p4est_iter_face_side">
+<area shape="rect" id="node1" title="Information about one side of a face in the forest." alt="" coords="117,407,273,433"/>
+<area shape="rect" id="node2" href="$unionp4est__iter__face__side_1_1p4est__iter__face__side__data.html" title=" " alt="" coords="95,303,295,344"/>
+<area shape="rect" id="node3" href="$structp4est__iter__face__side__full.html" title="Shortcut to access full face information." alt="" coords="5,206,189,233"/>
+<area shape="rect" id="node4" href="$structp4est__quadrant.html" title="The 2D quadrant datatype." alt="" coords="132,109,255,136"/>
+<area shape="rect" id="node6" href="$structp4est__iter__face__side__hanging.html" title="Shortcut to access hanging face information." alt="" coords="214,199,370,240"/>
+<area shape="rect" id="node5" href="$unionp4est__quadrant_1_1p4est__quadrant__data.html" title="Union for quadrant data." alt="" coords="110,5,277,47"/>
+</map>

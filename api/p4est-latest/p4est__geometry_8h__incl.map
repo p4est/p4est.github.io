@@ -1,0 +1,12 @@
+<map id="src/p4est_geometry.h" name="src/p4est_geometry.h">
+<area shape="rect" id="node1" title="Transform from tree&#45;local &quot;reference&quot; coordinate system to global &quot;physical space&quot; coordinates." alt="" coords="58,5,219,32"/>
+<area shape="rect" id="node2" href="$p4est__lnodes_8h.html" title="Generate Lobatto node numbers for any degree." alt="" coords="79,80,199,107"/>
+<area shape="rect" id="node3" href="$p4est__ghost_8h.html" title="Passing quadrants and data to neighboring processes." alt="" coords="82,155,195,181"/>
+<area shape="rect" id="node4" href="$p4est_8h.html" title="The top&#45;level 2D p4est interface." alt="" coords="103,229,174,256"/>
+<area shape="rect" id="node5" href="$p4est__connectivity_8h.html" title="The connectivity defines the coarse topology of the forest." alt="" coords="61,304,216,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="49,379,116,405"/>
+<area shape="rect" id="node7" href="$p4est__base_8h.html" title="General support types and functions." alt="" coords="141,379,249,405"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,453,123,480"/>
+<area shape="rect" id="node9" title=" " alt="" coords="147,453,242,480"/>
+<area shape="rect" id="node10" title=" " alt="" coords="267,453,389,480"/>
+</map>
