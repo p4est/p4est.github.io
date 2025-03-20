@@ -1,7 +1,0 @@
-<map id="p4est" name="p4est">
-<area shape="rect" id="node1" title="The p4est forest datatype." alt="" coords="227,199,286,225"/>
-<area shape="rect" id="node2" href="$structp4est__quadrant.html" title="The 2D quadrant datatype." alt="" coords="27,109,150,136"/>
-<area shape="rect" id="node3" href="$unionp4est__quadrant_1_1p4est__quadrant__data.html" title=" " alt="" coords="5,5,172,47"/>
-<area shape="rect" id="node4" href="$structp4est__inspect.html" title="Data pertaining to selecting, inspecting, and profiling algorithms." alt="" coords="201,109,313,136"/>
-<area shape="rect" id="node5" href="$structp4est__connectivity.html" title="This structure holds the 2D inter&#45;tree connectivity information." alt="" coords="337,109,483,136"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="p8est_mesh_t" name="p8est_mesh_t">
-<area shape="rect" id="node1" title="This structure contains complete mesh information on a 2:1 balanced forest." alt="" coords="33,95,147,121"/>
-<area shape="rect" id="node2" href="$structp8est__mesh__params__t.html" title="This structure contains the different parameters of mesh creation." alt="" coords="5,5,175,32"/>
-</map>

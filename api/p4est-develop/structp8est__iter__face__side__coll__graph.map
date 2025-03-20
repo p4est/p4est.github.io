@@ -1,6 +1,0 @@
-<map id="p8est_iter_face_side" name="p8est_iter_face_side">
-<area shape="rect" id="node1" title="Information about one side of a face in the forest." alt="" coords="27,303,183,329"/>
-<area shape="rect" id="node2" href="$unionp8est__iter__face__side_1_1p8est__iter__face__side__data.html" title=" " alt="" coords="5,199,205,240"/>
-<area shape="rect" id="node3" href="$structp8est__quadrant.html" title="The 3D quadrant (i.e., octant) datatype." alt="" coords="44,109,167,136"/>
-<area shape="rect" id="node4" href="$unionp8est__quadrant_1_1p8est__quadrant__data.html" title=" " alt="" coords="22,5,189,47"/>
-</map>
