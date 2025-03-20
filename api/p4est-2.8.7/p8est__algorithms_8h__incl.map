@@ -1,0 +1,17 @@
+<map id="src/p8est_algorithms.h" name="src/p8est_algorithms.h">
+<area shape="rect" id="node1" title="Routines for managing quadrants as elements of trees and subtrees." alt="" coords="247,5,417,32"/>
+<area shape="rect" id="node2" href="$p8est__extended_8h.html" title="Interface routines with extended capabilities." alt="" coords="263,80,401,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,109,181"/>
+<area shape="rect" id="node4" href="$p8est__mesh_8h.html" title="Forest topology in a conventional mesh format." alt="" coords="134,155,247,181"/>
+<area shape="rect" id="node13" href="$p8est__iterate_8h.html" title="Iteration over mesh topology via callbacks." alt="" coords="272,155,392,181"/>
+<area shape="rect" id="node14" href="$p8est__lnodes_8h.html" title="Generate Lobatto node numbers for any degree." alt="" coords="416,155,536,181"/>
+<area shape="rect" id="node15" href="$p8est__io_8h.html" title="Provide functions to serialize/deserialize a forest." alt="" coords="499,229,589,256"/>
+<area shape="rect" id="node5" href="$p8est__ghost_8h.html" title="Passing quadrants and data to neighboring processes." alt="" coords="333,229,446,256"/>
+<area shape="rect" id="node6" href="$p8est_8h.html" title="The top&#45;level 3D p8est interface." alt="" coords="417,304,487,331"/>
+<area shape="rect" id="node7" href="$p8est__connectivity_8h.html" title="The connectivity defines the coarse topology of the forest." alt="" coords="375,379,529,405"/>
+<area shape="rect" id="node8" title=" " alt="" coords="363,453,429,480"/>
+<area shape="rect" id="node9" href="$p4est__base_8h.html" title="General support types and functions." alt="" coords="454,453,562,480"/>
+<area shape="rect" id="node10" title=" " alt="" coords="319,528,436,555"/>
+<area shape="rect" id="node11" title=" " alt="" coords="461,528,555,555"/>
+<area shape="rect" id="node12" title=" " alt="" coords="580,528,703,555"/>
+</map>

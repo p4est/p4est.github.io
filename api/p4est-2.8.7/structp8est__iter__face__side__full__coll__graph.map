@@ -1,0 +1,5 @@
+<map id="p8est_iter_face_side_full" name="p8est_iter_face_side_full">
+<area shape="rect" id="node1" title="Shortcut to access full face information." alt="" coords="5,199,189,225"/>
+<area shape="rect" id="node2" href="$structp8est__quadrant.html" title="The 3D quadrant (i.e., octant) datatype." alt="" coords="36,109,159,136"/>
+<area shape="rect" id="node3" href="$unionp8est__quadrant_1_1p8est__quadrant__data.html" title="Union for quadrant data." alt="" coords="14,5,181,47"/>
+</map>
