@@ -1,0 +1,6 @@
+<map id="sc_unique_counter" name="sc_unique_counter">
+<area shape="rect" id="node1" title=" " alt="" coords="5,273,148,300"/>
+<area shape="rect" id="node2" href="$structsc__mempool.html" title="The sc_mempool object provides a large pool of equal&#45;size elements." alt="" coords="24,184,129,211"/>
+<area shape="rect" id="node3" href="$structsc__mstamp.html" title="A data container to create memory items of the same size." alt="" coords="101,95,199,121"/>
+<area shape="rect" id="node4" href="$structsc__array.html" title="The sc_array object provides a dynamic array of equal&#45;size elements." alt="" coords="21,5,98,32"/>
+</map>
