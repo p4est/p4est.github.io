@@ -1,0 +1,8 @@
+<map id="src/sc_mpi.h" name="src/sc_mpi.h">
+<area shape="rect" id="Node000001" title="Provide a consistent MPI interface with and without MPI configured." alt="" coords="5,5,108,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="9,152,104,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,32,42,53,34,79,35,110,46,139,41,141,30,111,29,78,37,51,48,30"/>
+<area shape="rect" id="Node000003" href="$sc3__mpi__types_8h.html" title="We provide MPI replacement data types for configuring without MPI." alt="" coords="43,79,174,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="67,29,94,66,90,69,63,33"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="102,106,75,142,71,139,98,103"/>
+</map>

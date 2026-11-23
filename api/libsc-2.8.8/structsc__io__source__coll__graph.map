@@ -1,0 +1,8 @@
+<map id="sc_io_source" name="sc_io_source">
+<area shape="rect" id="Node000001" title="A generic data source." alt="" coords="5,185,111,211"/>
+<area shape="rect" id="Node000002" href="$structsc__array.html" title="The sc_array object provides a dynamic array of equal&#45;size elements." alt="" coords="19,5,97,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,44,53,81,53,123,59,185,54,185,47,123,48,81,52,44"/>
+<area shape="rect" id="Node000003" href="$structsc__io__sink.html" title="A generic data sink." alt="" coords="148,95,237,121"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="88,36,177,93,174,97,85,40"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,130,77,187,74,183,162,126"/>
+</map>

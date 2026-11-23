@@ -1,0 +1,33 @@
+<map id="src/sc_notify.h" name="src/sc_notify.h">
+<area shape="rect" id="Node000001" title="We provide various algorithms to invert the communication pattern." alt="" coords="277,5,392,31"/>
+<area shape="rect" id="Node000002" href="$sc__statistics_8h.html" title="Computation of average and mean values etc." alt="" coords="277,79,392,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="337,31,337,65,332,65,332,31"/>
+<area shape="rect" id="Node000003" href="$sc__keyvalue_8h.html" title="This file provides a lookup structure for key&#45;value pairs." alt="" coords="277,152,392,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="337,104,337,138,332,138,332,104"/>
+<area shape="rect" id="Node000004" href="$sc__containers_8h.html" title="Dynamic containers such as lists, arrays, and hash tables." alt="" coords="273,225,396,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="337,178,337,212,332,212,332,178"/>
+<area shape="rect" id="Node000005" href="$sc_8h.html" title="Support for process management (memory allocation, logging, etc.)" alt="" coords="311,299,359,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="337,251,337,285,332,285,332,251"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="573,519,667,544"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="310,316,240,320,150,329,65,346,33,359,13,374,8,385,13,396,28,411,49,425,107,449,178,470,259,487,424,511,560,523,559,529,424,516,258,492,177,475,105,454,47,429,25,415,9,399,3,385,9,370,30,354,63,341,149,324,240,314,310,311"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="23,372,91,397"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="311,321,105,374,104,369,310,316"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="115,372,186,397"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="312,324,194,370,192,365,310,319"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="211,372,275,397"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="322,326,270,366,267,361,318,322"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="299,372,370,397"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="337,324,337,358,332,358,332,324"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="395,372,469,397"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="352,322,406,361,403,366,349,326"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="493,372,568,397"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="360,319,487,365,485,370,358,324"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="592,372,659,397"/>
+<area shape="poly" id="edge12_Node000005_Node000013" title=" " alt="" coords="359,316,579,369,578,374,358,321"/>
+<area shape="rect" id="Node000014" href="$sc__mpi_8h.html" title="Provide a consistent MPI interface with and without MPI configured." alt="" coords="683,372,763,397"/>
+<area shape="poly" id="edge13_Node000005_Node000014" title=" " alt="" coords="359,314,670,369,669,374,358,319"/>
+<area shape="poly" id="edge14_Node000014_Node000006" title=" " alt="" coords="703,400,674,419,648,447,633,476,626,506,621,505,628,474,643,444,670,415,700,395"/>
+<area shape="rect" id="Node000015" href="$sc3__mpi__types_8h.html" title="We provide MPI replacement data types for configuring without MPI." alt="" coords="657,445,788,471"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="725,398,725,432,720,432,720,398"/>
+<area shape="poly" id="edge16_Node000015_Node000006" title=" " alt="" coords="708,473,650,513,647,508,705,468"/>
+</map>

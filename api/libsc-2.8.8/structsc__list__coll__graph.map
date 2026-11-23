@@ -1,0 +1,13 @@
+<map id="sc_list" name="sc_list">
+<area shape="rect" id="Node000001" title="The sc_list object provides a linked list." alt="" coords="91,284,154,309"/>
+<area shape="rect" id="Node000002" href="$structsc__link.html" title="The sc_link structure is one link of a linked list." alt="" coords="5,181,72,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,215,115,282,111,286,55,219"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="87,184,95,188,99,194,90,203,73,205,72,199,88,198,93,194,92,192,85,189"/>
+<area shape="rect" id="Node000003" href="$structsc__mempool.html" title="The sc_mempool object provides a large pool of equal&#45;size elements." alt="" coords="154,181,259,207"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="190,219,134,286,130,282,186,215"/>
+<area shape="rect" id="Node000004" href="$structsc__mstamp.html" title="A data container to create memory items of the same size." alt="" coords="231,93,329,119"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="263,131,219,183,215,179,259,127"/>
+<area shape="rect" id="Node000005" href="$structsc__array.html" title="The sc_array object provides a dynamic array of equal&#45;size elements." alt="" coords="151,5,228,31"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="187,45,182,80,184,118,193,152,204,180,199,182,188,154,179,119,177,80,181,44"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="213,38,269,91,266,95,210,42"/>
+</map>

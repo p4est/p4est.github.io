@@ -1,0 +1,4 @@
+<map id="Camera" name="Camera">
+<area shape="rect" id="Node000002" href="$group__sc.html" title="The SC Library provides support for parallel scientific applications." alt="" coords="5,5,119,31"/>
+<area shape="rect" id="Node000001" title="A camera data structure for maintaining the position, orientation and view frustum of the camera." alt="" coords="167,5,240,31"/>
+</map>

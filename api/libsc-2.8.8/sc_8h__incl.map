@@ -1,0 +1,25 @@
+<map id="src/sc.h" name="src/sc.h">
+<area shape="rect" id="Node000001" title="Support for process management (memory allocation, logging, etc.)" alt="" coords="299,5,370,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="573,225,667,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="299,23,227,27,140,37,61,54,32,66,13,80,8,91,13,102,28,117,49,131,107,156,178,177,259,194,424,218,560,230,559,235,424,223,258,199,177,182,105,161,47,136,25,121,9,106,3,91,9,77,29,61,60,49,139,32,227,22,299,18"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="23,79,91,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="300,31,105,80,104,75,298,26"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="115,79,186,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="306,33,195,76,193,71,304,28"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="211,79,275,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="322,33,270,72,267,68,318,29"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="299,79,370,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="337,31,337,65,332,65,332,31"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="395,79,469,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="352,29,406,68,403,72,349,33"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="493,79,568,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="367,28,487,71,485,76,365,33"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="592,79,659,104"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="371,25,579,76,578,81,369,30"/>
+<area shape="rect" id="Node000010" href="$sc__mpi_8h.html" title="Provide a consistent MPI interface with and without MPI configured." alt="" coords="683,79,763,104"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="371,22,670,76,669,81,370,28"/>
+<area shape="poly" id="edge10_Node000010_Node000002" title=" " alt="" coords="703,106,674,126,648,154,633,183,626,213,621,211,628,181,643,150,670,122,700,102"/>
+<area shape="rect" id="Node000011" href="$sc3__mpi__types_8h.html" title="We provide MPI replacement data types for configuring without MPI." alt="" coords="657,152,788,177"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="725,104,725,138,720,138,720,104"/>
+<area shape="poly" id="edge12_Node000011_Node000002" title=" " alt="" coords="708,180,650,219,647,215,705,175"/>
+</map>

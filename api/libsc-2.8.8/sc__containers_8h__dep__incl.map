@@ -1,0 +1,21 @@
+<map id="src/sc_containers.h" name="src/sc_containers.h">
+<area shape="rect" id="Node000001" title="Dynamic containers such as lists, arrays, and hash tables." alt="" coords="267,5,414,31"/>
+<area shape="rect" id="Node000002" href="$sc__camera_8h.html" title="Camera data structure for computer graphic applications." alt="" coords="5,79,132,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="285,37,113,81,112,76,283,32"/>
+<area shape="rect" id="Node000003" href="$sc__io_8h.html" title="Helper routines for general and parallel I/O." alt="" coords="157,79,247,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="308,39,226,81,223,76,305,34"/>
+<area shape="rect" id="Node000004" href="$sc__keyvalue_8h.html" title="This file provides a lookup structure for key&#45;value pairs." alt="" coords="272,79,409,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="343,44,343,79,338,79,338,44"/>
+<area shape="rect" id="Node000009" href="$sc__scda_8h.html" title="Routines for parallel I/O with the scda format." alt="" coords="433,79,541,104"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="377,34,464,76,462,81,375,39"/>
+<area shape="rect" id="Node000010" href="$sc__unique__counter_8h_source.html" title=" " alt="" coords="566,79,745,104"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="405,31,605,76,604,81,404,36"/>
+<area shape="rect" id="Node000005" href="$sc__options_8h.html" title="Register and parse command line options and read/write configuration files." alt="" coords="199,152,325,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="320,115,277,154,273,150,316,111"/>
+<area shape="rect" id="Node000006" href="$sc__statistics_8h.html" title="Computation of average and mean values etc." alt="" coords="349,152,487,177"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="365,111,407,150,404,154,361,115"/>
+<area shape="rect" id="Node000007" href="$sc__amr_8h_source.html" title=" " alt="" coords="299,225,403,251"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="399,190,364,227,360,223,396,186"/>
+<area shape="rect" id="Node000008" href="$sc__notify_8h.html" title="We provide various algorithms to invert the communication pattern." alt="" coords="427,225,542,251"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="440,186,476,223,472,227,437,190"/>
+</map>
