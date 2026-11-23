@@ -1,0 +1,35 @@
+<map id="src/p4est_ghost.h" name="src/p4est_ghost.h">
+<area shape="rect" id="Node000001" title="Passing quadrants and data to neighboring processes." alt="" coords="363,5,499,31"/>
+<area shape="rect" id="Node000002" href="$p4est__iterate_8h.html" title="Iteration over mesh topology via callbacks." alt="" coords="32,79,175,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="366,36,157,81,156,76,365,31"/>
+<area shape="rect" id="Node000007" href="$p4est__lnodes_8h.html" title="Generate Lobatto node numbers for any degree." alt="" coords="360,79,503,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="434,44,434,79,429,79,429,44"/>
+<area shape="rect" id="Node000013" href="$p4est__mesh_8h.html" title="Forest topology in a conventional mesh format." alt="" coords="199,79,335,104"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="393,39,295,81,293,76,391,34"/>
+<area shape="rect" id="Node000014" href="$p4est__nodes_8h_source.html" title=" " alt="" coords="527,79,666,104"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="471,34,571,76,569,81,469,38"/>
+<area shape="rect" id="Node000015" href="$p6est__ghost_8h.html" title="passing columns of layers and data to neighboring processes" alt="" coords="699,79,835,104"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="499,31,713,76,712,81,498,36"/>
+<area shape="rect" id="Node000003" href="$p4est__dune_8h.html" title="Provide various functions to interface dune to a p4est mesh." alt="" coords="5,152,137,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,118,79,153,74,151,90,116"/>
+<area shape="rect" id="Node000004" href="$p4est__extended_8h.html" title="Interface routines with extended capabilities." alt="" coords="161,152,323,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="139,108,221,149,218,154,136,113"/>
+<area shape="rect" id="Node000005" href="$p4est__algorithms_8h.html" title="Routines for managing quadrants as elements of trees and subtrees." alt="" coords="69,225,239,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="219,188,170,227,167,223,216,184"/>
+<area shape="rect" id="Node000006" href="$p4est__wrap_8h.html" title="This wrapper API encapsulates core p4est data structures and provides functions that clarify the mark..." alt="" coords="264,225,396,251"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="268,184,317,223,314,227,265,188"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="389,111,274,154,272,149,387,106"/>
+<area shape="rect" id="Node000008" href="$p4est__geometry_8h.html" title="Transform from tree&#45;local &quot;reference&quot; coordinate system to global &quot;physical space&quot; coordinates." alt="" coords="347,152,508,177"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="433,118,431,152,425,152,427,118"/>
+<area shape="rect" id="Node000010" href="$p4est__tnodes_8h.html" title="Generate a conforming triangle mesh from a 2:1 balanced p4est." alt="" coords="533,152,677,177"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="473,107,577,149,575,154,471,112"/>
+<area shape="rect" id="Node000011" href="$p6est__lnodes_8h_source.html" title=" " alt="" coords="701,152,844,177"/>
+<area shape="poly" id="edge12_Node000007_Node000011" title=" " alt="" coords="500,104,718,149,717,155,499,109"/>
+<area shape="rect" id="Node000009" href="$p4est__vtk_8h.html" title="Routines for printing a forest and associated fields to VTK format." alt="" coords="527,225,648,251"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="466,180,562,223,560,228,464,185"/>
+<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="601,191,593,226,588,225,596,190"/>
+<area shape="rect" id="Node000012" href="$p6est__profile_8h_source.html" title=" " alt="" coords="701,225,844,251"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="775,191,775,225,770,225,770,191"/>
+<area shape="poly" id="edge15_Node000013_Node000004" title=" " alt="" coords="261,118,249,153,244,151,256,116"/>
+<area shape="poly" id="edge18_Node000015_Node000011" title=" " alt="" coords="772,118,774,152,769,152,767,118"/>
+</map>

@@ -1,0 +1,26 @@
+<map id="src/p6est_ghost.h" name="src/p6est_ghost.h">
+<area shape="rect" id="Node000001" title="passing columns of layers and data to neighboring processes" alt="" coords="103,5,239,31"/>
+<area shape="rect" id="Node000002" href="$p6est_8h.html" title="A hybrid 2D+1D AMR extension." alt="" coords="194,79,265,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,29,213,67,209,70,178,33"/>
+<area shape="rect" id="Node000011" href="$p4est__ghost_8h.html" title="Passing quadrants and data to neighboring processes." alt="" coords="57,79,170,104"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="163,33,133,70,129,66,159,29"/>
+<area shape="rect" id="Node000003" href="$p4est_8h.html" title="The top&#45;level 2D p4est interface." alt="" coords="78,152,149,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="212,106,145,147,143,142,209,102"/>
+<area shape="rect" id="Node000010" href="$p8est__connectivity_8h.html" title="The connectivity defines the coarse topology of the forest." alt="" coords="184,225,339,251"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="235,104,258,211,253,213,229,105"/>
+<area shape="rect" id="Node000004" href="$p4est__connectivity_8h.html" title="The connectivity defines the coarse topology of the forest." alt="" coords="5,225,160,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="111,179,95,214,91,212,106,177"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="83,299,149,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="91,250,107,285,102,287,86,252"/>
+<area shape="rect" id="Node000006" href="$p4est__base_8h.html" title="General support types and functions." alt="" coords="190,299,298,324"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="110,248,206,291,204,295,108,253"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="55,372,172,397"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="224,326,148,368,145,363,222,322"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="197,372,291,397"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="247,324,247,358,241,358,241,324"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="316,372,439,397"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="267,322,345,363,342,368,264,326"/>
+<area shape="poly" id="edge10_Node000010_Node000005" title=" " alt="" coords="239,253,153,295,151,290,237,248"/>
+<area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="261,252,253,286,247,285,256,250"/>
+<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="116,104,116,138,111,138,111,104"/>
+</map>

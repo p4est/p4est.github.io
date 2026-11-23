@@ -1,0 +1,7 @@
+<map id="src/p8est_extended.h" name="src/p8est_extended.h">
+<area shape="rect" id="Node000001" title="Interface routines with extended capabilities." alt="" coords="98,5,259,31"/>
+<area shape="rect" id="Node000002" href="$p8est__algorithms_8h.html" title="Routines for managing quadrants as elements of trees and subtrees." alt="" coords="5,79,176,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,41,107,81,103,76,152,37"/>
+<area shape="rect" id="Node000003" href="$p8est__wrap_8h.html" title="This wrapper API encapsulates core p4est data structures and provides functions that clarify the mark..." alt="" coords="201,79,333,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,37,254,76,251,81,202,41"/>
+</map>

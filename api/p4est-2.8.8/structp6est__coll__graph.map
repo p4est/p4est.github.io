@@ -1,0 +1,16 @@
+<map id="p6est" name="p6est">
+<area shape="rect" id="Node000001" title="The p6est forest datatype." alt="" coords="127,284,186,309"/>
+<area shape="rect" id="Node000002" href="$structp6est__connectivity.html" title="This structure holds the 2D+1D inter&#45;tree connectivity information." alt="" coords="21,196,167,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,234,113,258,139,282,136,286,109,262,97,236"/>
+<area shape="rect" id="Node000003" href="$structp4est__connectivity.html" title="This structure holds the 2D inter&#45;tree connectivity information." alt="" coords="5,108,151,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="67,147,64,159,66,171,82,194,78,197,61,173,59,159,62,146"/>
+<area shape="rect" id="Node000004" href="$structp4est.html" title="The p4est forest datatype." alt="" coords="207,196,266,221"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="106,139,155,170,208,194,206,199,153,174,103,144"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="222,234,199,262,173,286,169,282,195,258,218,231"/>
+<area shape="rect" id="Node000005" href="$structp4est__quadrant.html" title="The 2D quadrant datatype." alt="" coords="191,108,314,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="251,147,242,196,236,195,245,146"/>
+<area shape="rect" id="Node000006" href="$unionp4est__quadrant_1_1p4est__quadrant__data.html" title="Union for quadrant data." alt="" coords="169,5,336,45"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="255,59,255,108,250,108,250,59"/>
+<area shape="rect" id="Node000007" href="$structp4est__inspect.html" title="Data pertaining to selecting, inspecting, and profiling algorithms." alt="" coords="365,108,477,133"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="413,147,403,162,390,174,360,191,327,201,267,210,266,204,325,196,358,186,387,170,399,158,408,144"/>
+</map>

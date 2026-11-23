@@ -1,0 +1,15 @@
+<map id="src/p6est.h" name="src/p6est.h">
+<area shape="rect" id="Node000001" title="A hybrid 2D+1D AMR extension." alt="" coords="351,5,445,31"/>
+<area shape="rect" id="Node000002" href="$p6est__communication_8h.html" title="Parallel messaging and support code." alt="" coords="5,79,207,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="339,36,154,81,153,76,337,31"/>
+<area shape="rect" id="Node000003" href="$p6est__extended_8h.html" title="Interface routines with extended capabilities." alt="" coords="231,79,392,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="375,41,327,81,324,76,372,37"/>
+<area shape="rect" id="Node000004" href="$p6est__ghost_8h.html" title="passing columns of layers and data to neighboring processes" alt="" coords="417,79,553,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="424,37,472,76,469,81,421,41"/>
+<area shape="rect" id="Node000007" href="$p6est__vtk_8h_source.html" title=" " alt="" coords="577,79,699,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="451,32,600,76,598,81,449,37"/>
+<area shape="rect" id="Node000005" href="$p6est__lnodes_8h_source.html" title=" " alt="" coords="413,152,556,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="487,118,487,152,482,152,482,118"/>
+<area shape="rect" id="Node000006" href="$p6est__profile_8h_source.html" title=" " alt="" coords="413,225,556,251"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="487,191,487,225,482,225,482,191"/>
+</map>

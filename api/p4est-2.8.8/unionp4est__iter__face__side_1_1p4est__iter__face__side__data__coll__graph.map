@@ -1,0 +1,12 @@
+<map id="p4est_iter_face_side::p4est_iter_face_side_data" name="p4est_iter_face_side::p4est_iter_face_side_data">
+<area shape="rect" id="Node000001" title=" " alt="" coords="95,299,295,339"/>
+<area shape="rect" id="Node000002" href="$structp4est__iter__face__side__full.html" title="Shortcut to access full face information." alt="" coords="5,203,189,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,237,178,297,174,300,116,241"/>
+<area shape="rect" id="Node000003" href="$structp4est__quadrant.html" title="The 2D quadrant datatype." alt="" coords="132,108,255,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="174,145,111,205,107,201,170,141"/>
+<area shape="rect" id="Node000005" href="$structp4est__iter__face__side__hanging.html" title="Shortcut to access hanging face information." alt="" coords="214,196,370,236"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="217,141,274,194,270,198,214,145"/>
+<area shape="rect" id="Node000004" href="$unionp4est__quadrant_1_1p4est__quadrant__data.html" title="Union for quadrant data." alt="" coords="110,5,277,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="196,59,196,108,191,108,191,59"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="266,248,215,300,211,297,262,244"/>
+</map>

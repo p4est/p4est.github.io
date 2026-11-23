@@ -1,0 +1,14 @@
+<map id="p8est_iter_face_side" name="p8est_iter_face_side">
+<area shape="rect" id="Node000001" title="Information about one side of a face in the forest." alt="" coords="117,401,273,427"/>
+<area shape="rect" id="Node000002" href="$unionp8est__iter__face__side_1_1p8est__iter__face__side__data.html" title=" " alt="" coords="95,299,295,339"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,353,197,401,192,401,192,353"/>
+<area shape="rect" id="Node000003" href="$structp8est__iter__face__side__full.html" title="Shortcut to access full face information." alt="" coords="5,203,189,229"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="120,237,178,297,174,300,116,241"/>
+<area shape="rect" id="Node000004" href="$structp8est__quadrant.html" title="The 3D quadrant (i.e., octant) datatype." alt="" coords="132,108,255,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="174,145,111,205,107,201,170,141"/>
+<area shape="rect" id="Node000006" href="$structp8est__iter__face__side__hanging.html" title="Shortcut to access hanging face information." alt="" coords="214,196,370,236"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="217,141,274,194,270,198,214,145"/>
+<area shape="rect" id="Node000005" href="$unionp8est__quadrant_1_1p8est__quadrant__data.html" title="Union for quadrant data." alt="" coords="110,5,277,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="196,59,196,108,191,108,191,59"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="266,248,215,300,211,297,262,244"/>
+</map>

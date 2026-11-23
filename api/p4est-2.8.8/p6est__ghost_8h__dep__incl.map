@@ -1,0 +1,7 @@
+<map id="src/p6est_ghost.h" name="src/p6est_ghost.h">
+<area shape="rect" id="Node000001" title="passing columns of layers and data to neighboring processes" alt="" coords="9,5,145,31"/>
+<area shape="rect" id="Node000002" href="$p6est__lnodes_8h_source.html" title=" " alt="" coords="5,79,148,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,44,79,79,74,79,74,44"/>
+<area shape="rect" id="Node000003" href="$p6est__profile_8h_source.html" title=" " alt="" coords="5,152,148,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,118,79,152,74,152,74,118"/>
+</map>

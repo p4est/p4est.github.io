@@ -1,0 +1,5 @@
+<map id="p6est_ghost" name="p6est_ghost">
+<area shape="rect" id="Node000001" title="columns of layers that neighbor the local domain" alt="" coords="5,93,107,119"/>
+<area shape="rect" id="Node000002" href="$structp4est__ghost.html" title="Quadrants that neighbor the local domain." alt="" coords="5,5,107,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,45,59,93,53,93,53,45"/>
+</map>

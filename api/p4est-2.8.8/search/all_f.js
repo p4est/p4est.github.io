@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['i_20choose_0',['Which way should I choose?',['../example_userdata.html#autotoc_md20',1,'']]],
+  ['icorner_1',['icorner',['../structp8est__corner__info__t.html#a5ac3f7b7d187874c7a9bd8fdedc0f7ac',1,'p8est_corner_info_t::icorner'],['../structp4est__corner__info__t.html#a4970cafebd5d9d216ffc9956e91bf1e6',1,'p4est_corner_info_t::icorner']]],
+  ['idea_2',['idea',['../simplices.html#autotoc_md38',1,'General idea'],['../search.html#autotoc_md33',1,'The basic idea']]],
+  ['idea_20and_20definition_3',['idea and definition',['../ghost.html#autotoc_md27',1,'The basic idea and definition'],['../connectivity.html#autotoc_md0',1,'The basic idea and definition']]],
+  ['iedge_4',['iedge',['../structp8est__edge__info__t.html#a571e3f0a74a6f190125b86d5f077fcff',1,'p8est_edge_info_t']]],
+  ['index_5fneighbor_5',['index_neighbor',['../structp8est__neighbor__transform__t.html#ad5c13a06500e7eb3e4930dbb2f070409',1,'p8est_neighbor_transform_t::index_neighbor'],['../structp4est__neighbor__transform__t.html#a9c73e70604484b9d1c41f9d8b6328d84',1,'p4est_neighbor_transform_t::index_neighbor']]],
+  ['index_5fself_6',['index_self',['../structp4est__neighbor__transform__t.html#a6b724fa4313821fda99a51e03af0c944',1,'p4est_neighbor_transform_t::index_self'],['../structp8est__neighbor__transform__t.html#ac6351d675bf96c8dfd587e4572cf484b',1,'p8est_neighbor_transform_t::index_self']]],
+  ['information_7',['information',['../ghost.html#autotoc_md31',1,'Find more information'],['../connectivity.html#autotoc_md6',1,'Find more information']]],
+  ['information_20and_20links_8',['Further information and links',['../installing_p4est.html#further',1,'']]],
+  ['inspect_9',['inspect',['../structp4est.html#a8471d9aacc47e5f6db816aa9439554fe',1,'p4est::inspect'],['../structp8est.html#a8357e416408f3c45d50238a947c7bc76',1,'p8est::inspect']]],
+  ['install_20the_20software_20optional_10',['5. Install the software (optional)',['../installing_p4est.html#install_software',1,'']]],
+  ['installation_11',['Installation',['../installing_p4est.html',1,'']]],
+  ['installing_20p4est_20from_20a_20tar_20gz_20archive_12',['Installing p4est from a .tar.gz archive',['../installing_p4est.html#tarbuild',1,'']]],
+  ['integrating_20with_20p4est_13',['7. Integrating with p4est',['../installing_p4est.html#integration',1,'']]],
+  ['internal_20element_20data_14',['p4est-internal element data',['../example_userdata.html#autotoc_md18',1,'']]],
+  ['into_20a_20build_20directory_15',['2. Create and change into a build directory',['../installing_p4est.html#create_dir',1,'']]],
+  ['introduction_16',['Introduction',['../forest.html#autotoc_md21',1,'']]],
+  ['is_5fcustom_17',['is_custom',['../structp8est__ghost__exchange.html#a58f440cecda791236dc7ecc4c79b3077',1,'p8est_ghost_exchange::is_custom'],['../structp4est__ghost__exchange.html#a3230e784531023afe3c16e737fc686c1',1,'p4est_ghost_exchange::is_custom']]],
+  ['is_5fghost_18',['is_ghost',['../structp4est__iter__face__side__hanging.html#aa06a9e79c65a4e6ab293dd8dc8944955',1,'p4est_iter_face_side_hanging::is_ghost'],['../structp4est__iter__corner__side.html#ac3c52cd0815885d42eb2f84acd307898',1,'p4est_iter_corner_side::is_ghost'],['../structp8est__iter__face__side__full.html#a61aadc2212bf455ce5139913897ea6c5',1,'p8est_iter_face_side_full::is_ghost'],['../structp8est__iter__face__side__hanging.html#a1bfc27bdf319ec2fdf5828440d174b15',1,'p8est_iter_face_side_hanging::is_ghost'],['../structp8est__iter__edge__side__full.html#aef964bc85696855444ce38a180e942b7',1,'p8est_iter_edge_side_full::is_ghost'],['../structp8est__iter__edge__side__hanging.html#af774227038ed781384642f1248ccd8de',1,'p8est_iter_edge_side_hanging::is_ghost'],['../structp8est__iter__corner__side.html#a825324007ec7f92dc227b84f5a53a7dc',1,'p8est_iter_corner_side::is_ghost'],['../structp4est__iter__face__side__full.html#ad4e8c17afb0a555743d1affc42730740',1,'p4est_iter_face_side_full::is_ghost']]],
+  ['is_5fhanging_19',['is_hanging',['../structp8est__iter__edge__side.html#abcb06cf420928a143435162e47867364',1,'p8est_iter_edge_side::is_hanging'],['../structp8est__iter__face__side.html#a8495463ced63b59bc6c8e4eba175699a',1,'p8est_iter_face_side::is_hanging'],['../structp4est__iter__face__side.html#aaa99624f4e1502443888a9718e099322',1,'p4est_iter_face_side::is_hanging']]],
+  ['is_5flevels_20',['is_levels',['../structp8est__ghost__exchange.html#af0594a2d7b539dc71b2ce3114ec2f566',1,'p8est_ghost_exchange::is_levels'],['../structp4est__ghost__exchange.html#a291f34bbc6be1806ffe47d12162237e8',1,'p4est_ghost_exchange::is_levels']]],
+  ['is_5fmirror_21',['is_mirror',['../structp8est__wrap__leaf.html#affa3731efa30c7159a273548652595e3',1,'p8est_wrap_leaf::is_mirror'],['../structp4est__wrap__leaf.html#aac66cb056107e0fb5901f2de49f3bebb',1,'p4est_wrap_leaf::is_mirror']]]
+];

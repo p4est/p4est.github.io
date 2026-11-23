@@ -1,0 +1,32 @@
+<map id="src/p8est_ghost.h" name="src/p8est_ghost.h">
+<area shape="rect" id="Node000001" title="Passing quadrants and data to neighboring processes." alt="" coords="284,5,420,31"/>
+<area shape="rect" id="Node000002" href="$p8est__iterate_8h.html" title="Iteration over mesh topology via callbacks." alt="" coords="35,79,178,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,37,147,81,146,76,299,32"/>
+<area shape="rect" id="Node000007" href="$p8est__lnodes_8h.html" title="Generate Lobatto node numbers for any degree." alt="" coords="363,79,506,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="377,38,423,76,419,80,374,42"/>
+<area shape="rect" id="Node000013" href="$p8est__mesh_8h.html" title="Forest topology in a conventional mesh format." alt="" coords="203,79,339,104"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="330,42,286,80,282,76,327,38"/>
+<area shape="rect" id="Node000014" href="$p8est__nodes_8h_source.html" title=" " alt="" coords="531,79,669,104"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="406,32,561,76,559,81,404,37"/>
+<area shape="rect" id="Node000003" href="$p8est__dune_8h.html" title="Provide various functions to interface dune to a p4est mesh." alt="" coords="22,152,154,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,118,94,153,88,151,98,117"/>
+<area shape="rect" id="Node000004" href="$p8est__extended_8h.html" title="Interface routines with extended capabilities." alt="" coords="178,152,339,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="144,107,235,149,233,154,142,112"/>
+<area shape="rect" id="Node000005" href="$p8est__algorithms_8h.html" title="Routines for managing quadrants as elements of trees and subtrees." alt="" coords="5,225,176,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="220,185,119,228,117,223,218,180"/>
+<area shape="rect" id="Node000006" href="$p8est__wrap_8h.html" title="This wrapper API encapsulates core p4est data structures and provides functions that clarify the mark..." alt="" coords="201,225,333,251"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="264,191,268,225,263,226,259,191"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="395,112,288,154,286,149,393,107"/>
+<area shape="rect" id="Node000008" href="$p6est__lnodes_8h_source.html" title=" " alt="" coords="363,152,506,177"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="437,118,437,152,432,152,432,118"/>
+<area shape="rect" id="Node000010" href="$p8est__geometry_8h.html" title="Transform from tree&#45;local &quot;reference&quot; coordinate system to global &quot;physical space&quot; coordinates." alt="" coords="530,152,691,177"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="477,107,583,149,581,154,475,112"/>
+<area shape="rect" id="Node000012" href="$p8est__tnodes_8h.html" title="Generate a conforming tetrahedron mesh from a 2:1 balanced p8est." alt="" coords="716,152,860,177"/>
+<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="505,104,731,149,730,155,504,109"/>
+<area shape="rect" id="Node000009" href="$p6est__profile_8h_source.html" title=" " alt="" coords="363,225,506,251"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="437,191,437,225,432,225,432,191"/>
+<area shape="rect" id="Node000011" href="$p8est__vtk_8h.html" title="Routines for printing a forest and associated fields to VTK format." alt="" coords="638,225,759,251"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="637,184,686,223,683,227,634,188"/>
+<area shape="poly" id="edge13_Node000012_Node000011" title=" " alt="" coords="765,188,715,227,712,223,761,184"/>
+<area shape="poly" id="edge15_Node000013_Node000004" title=" " alt="" coords="269,118,263,152,258,151,264,117"/>
+</map>

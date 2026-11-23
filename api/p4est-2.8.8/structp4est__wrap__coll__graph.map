@@ -1,0 +1,25 @@
+<map id="p4est_wrap" name="p4est_wrap">
+<area shape="rect" id="Node000001" title="Wrapping a p4est object for an alternative API." alt="" coords="313,387,411,412"/>
+<area shape="poly" id="edge9_Node000001_Node000001" title=" " alt="" coords="425,389,434,393,437,400,429,408,411,411,410,406,427,404,432,399,430,397,423,394"/>
+<area shape="rect" id="Node000002" href="$structp4est__wrap__params__t.html" title="This structure contains the different parameters of wrap creation." alt="" coords="149,284,314,309"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,319,269,340,292,361,334,384,331,389,288,365,265,344,246,322"/>
+<area shape="rect" id="Node000003" href="$structp4est__mesh__params__t.html" title="This structure contains the different parameters of mesh creation." alt="" coords="15,196,184,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="120,229,154,258,201,282,199,286,151,262,117,233"/>
+<area shape="rect" id="Node000010" href="$structp4est__mesh__t.html" title="This structure contains complete mesh information on a 2:1 balanced forest." alt="" coords="5,284,119,309"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="71,232,60,246,57,265,61,283,55,284,52,265,56,244,67,229"/>
+<area shape="rect" id="Node000004" href="$structp4est.html" title="The p4est forest datatype." alt="" coords="333,196,391,221"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="365,235,365,386,359,386,359,235"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="321,223,295,233,272,247,253,266,240,285,235,282,249,263,268,243,293,229,319,218"/>
+<area shape="rect" id="Node000005" href="$structp4est__quadrant.html" title="The 2D quadrant datatype." alt="" coords="137,108,259,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="207,146,213,159,222,170,248,186,277,196,333,205,332,210,276,201,246,191,219,174,209,162,202,148"/>
+<area shape="rect" id="Node000006" href="$unionp4est__quadrant_1_1p4est__quadrant__data.html" title="Union for quadrant data." alt="" coords="115,5,281,45"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="201,59,201,108,195,108,195,59"/>
+<area shape="rect" id="Node000007" href="$structp4est__connectivity.html" title="This structure holds the 2D inter&#45;tree connectivity information." alt="" coords="472,108,617,133"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="553,147,560,195,560,256,555,287,545,317,530,343,508,365,485,378,460,387,411,398,410,392,458,382,482,373,504,361,526,340,541,315,550,286,555,256,554,196,548,147"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="506,141,463,160,385,198,383,193,461,155,503,136"/>
+<area shape="rect" id="Node000008" href="$structp4est__inspect.html" title="Data pertaining to selecting, inspecting, and profiling algorithms." alt="" coords="310,108,422,133"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="367,147,365,196,360,195,362,147"/>
+<area shape="rect" id="Node000009" href="$structp4est__ghost.html" title="Quadrants that neighbor the local domain." alt="" coords="427,284,529,309"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="456,321,377,389,373,385,452,317"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="93,314,137,338,188,360,253,378,314,389,313,394,252,383,186,365,135,343,91,319"/>
+</map>
